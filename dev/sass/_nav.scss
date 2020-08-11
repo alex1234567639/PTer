@@ -1,0 +1,57 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    .navUl{
+        box-shadow: 1px 1px 2px 1px lightgray;
+        .navIcon{
+            display: inline-block;
+            font-size: 14px;
+            padding: 18px;
+        }
+        .navLi1{
+            display: inline-block;
+            font-size: 14px;
+            padding: 18px;
+            float: right;
+            &:hover{
+                background-color: lightgray;
+                cursor: pointer;
+                transition-duration: .5s;
+            }
+        }
+        .navLi2{
+            display: inline-block;
+            font-size: 14px;
+            padding: 18px 20px;
+            float: right;
+            &:hover{
+                background-color: lightgray;
+                cursor: pointer;
+                transition-duration: .5s;
+            }
+        }
+        .navLi3{
+            display: inline-block;
+            font-size: 14px;
+            padding: 18px 24px;
+            background-color: rgb(248, 189, 26);
+            color: white;
+            float: right;
+            &:hover{
+                background-color: rgb(255, 205, 68);
+                cursor: pointer;
+                transition-duration: .5s;
+            }
+        }
+        .navLi4{
+            float: right;
+            display: inline-block;
+            padding: 16px;
+            padding-left: 20px;
+            margin-right: 4px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.landingPageMain{
+    // border: 1px solid red;
+    height: 90vh;
+    min-height: 600px;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: relative;
+    .banner{
+        // border: 1px solid red;       
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 25%;
+        .bannerTitle{
+            color: white;
+            font-size: 30px;
+            letter-spacing: .3px;
+            margin-bottom: 10px;
+        }
+        .bannerSubtitle{
+            color: white;
+            font-size: 18px;
+            letter-spacing: .3px;
+            margin-bottom: 20px;
+        }
+        .bannerSearch{
+            // border: 1px solid green;
+            height: 70px;
+            width: 90%;
+            margin-left: 5%;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            .bannerSearchInputIcon{
+                color: rgb(187, 187, 187);
+                position: absolute;
+                top: 27px;
+                left: 8.2%;
+            }
+            .bannerSearchInput{
+                border: 1px solid rgb(187, 187, 187);
+                width: 60%;
+                padding: 5px;
+                padding-left: 27px;
+                margin-left: calc(16% - 50px);
+                margin-top: 20px;
+                border-radius: 5px;
+            }
+            .bannerSearchBtn{
+                width: 100px;
+                height: 35px;
+                color: white;
+                background-color: rgb(0, 0, 194);
+                border: 1px solid white;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(54, 54, 199);
+                    transition-duration: .5s;
+                }
+            }
+        }
+    }
+}
