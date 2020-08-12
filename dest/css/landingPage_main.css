@@ -1,0 +1,188 @@
+.landingPageMain {
+  height: 90vh;
+  min-height: 600px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .landingPageMain .banner {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 22%; }
+    .landingPageMain .banner .bannerTitle {
+      color: white;
+      font-size: 30px;
+      letter-spacing: .3px;
+      margin-bottom: 15px; }
+    .landingPageMain .banner .bannerSubtitle {
+      color: white;
+      font-size: 18px;
+      letter-spacing: .3px;
+      margin-bottom: 25px; }
+    .landingPageMain .banner .bannerSearch {
+      height: 70px;
+      width: 100%;
+      background-color: white;
+      border-radius: 5px;
+      position: relative; }
+      .landingPageMain .banner .bannerSearch .bannerSearchInputIcon {
+        color: #bbbbbb;
+        position: absolute;
+        top: 27px;
+        left: 4.7%; }
+      .landingPageMain .banner .bannerSearch .bannerSearchInput {
+        border: 1px solid #bbbbbb;
+        width: 70%;
+        padding: 5px;
+        padding-left: 27px;
+        margin-left: calc(10% - 40px);
+        margin-top: 20px;
+        border-radius: 5px; }
+      .landingPageMain .banner .bannerSearch .bannerSearchBtn {
+        width: 100px;
+        height: 35px;
+        color: white;
+        background-color: #103784;
+        border: 1px solid white;
+        border-radius: 5px; }
+        .landingPageMain .banner .bannerSearch .bannerSearchBtn:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+
+.landingPage2nd {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  letter-spacing: .5px; }
+  .landingPage2nd .landingPage2ndTitle {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .landingPage2nd .landingPage2ndContent {
+    overflow-x: scroll;
+    height: 350px;
+    white-space: nowrap; }
+    .landingPage2nd .landingPage2ndContent .landingPage2ndContentCard {
+      border: 1px solid purple;
+      width: 300px;
+      height: 320px;
+      display: inline-block;
+      margin: 10px; }
+
+.landingPage3rd {
+  height: 700px;
+  background-image: url(../images/landingPage3rd.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%; }
+  .landingPage3rd .landingPage3rdContent {
+    width: 65%;
+    height: 100%;
+    background-color: #103784;
+    color: white;
+    padding: 100px;
+    box-sizing: border-box; }
+  .landingPage3rd .landingPage3rdTitle {
+    font-size: 35px;
+    margin-bottom: 80px;
+    letter-spacing: .5px;
+    line-height: 40px; }
+  .landingPage3rd .landingPage3rdSubtitle {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+    line-height: 25px; }
+  .landingPage3rd .landingPage3rdText {
+    font-size: 16px;
+    margin-bottom: 35px;
+    letter-spacing: .5px;
+    line-height: 25px;
+    color: #d1d1d1; }
+
+.landingPage4th {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-color: #f0f0f0;
+  letter-spacing: .5px; }
+  .landingPage4th .landingPage4thTitle {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px; }
+  .landingPage4th .landingPage4thContent {
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center; }
+    .landingPage4th .landingPage4thContent .landingPage4thContentCard {
+      border: 1px solid #dfdfdf;
+      border-radius: 10px;
+      width: 180px;
+      height: 180px;
+      display: inline-block;
+      margin: 5px;
+      box-sizing: border-box;
+      padding: 40px; }
+      .landingPage4th .landingPage4thContent .landingPage4thContentCard:hover {
+        cursor: pointer;
+        background-color: #dfdfdf;
+        transition-duration: .5s; }
+      .landingPage4th .landingPage4thContent .landingPage4thContentCard .landingPage4thContentCardImg {
+        width: 60px;
+        margin-bottom: 20px; }
+      .landingPage4th .landingPage4thContent .landingPage4thContentCard .landingPage4thContentCardText {
+        text-align: center; }
+
+.landingPage5th {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  letter-spacing: .5px; }
+  .landingPage5th .landingPage5thTitle {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 500; }
+  .landingPage5th .landingPage5thContent .landingPage5thContentCard {
+    width: 372px;
+    height: 260px;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 3px lightgray; }
+    .landingPage5th .landingPage5thContent .landingPage5thContentCard .landingPage5thContentCardImg {
+      height: 40px;
+      margin-bottom: 20px; }
+    .landingPage5th .landingPage5thContent .landingPage5thContentCard .landingPage5thContentCardTitle {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: .5px;
+      line-height: 25px;
+      margin-bottom: 50px; }
+    .landingPage5th .landingPage5thContent .landingPage5thContentCard .landingPage5thContentCardText {
+      font-size: 16px;
+      color: #8b8b8b;
+      letter-spacing: .5px;
+      line-height: 20px; }
+  .landingPage5th .landingPage5thBtn {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+    height: 40px;
+    width: 150px;
+    background-color: #fcbb48;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    box-sizing: border-box; }
+    .landingPage5th .landingPage5thBtn:hover {
+      background-color: #ffcd44;
+      cursor: pointer;
+      transition-duration: .5s; }
