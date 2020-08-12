@@ -8,9 +8,13 @@
   .nav .navUl {
     box-shadow: 1px 1px 2px 2px lightgray; }
     .nav .navUl .navIcon {
-      display: inline-block;
-      font-size: 14px;
-      padding: 18px; }
+      display: inline-block; }
+      .nav .navUl .navIcon img {
+        width: 45px;
+        margin-left: 25px;
+        margin-top: 3px; }
+      .nav .navUl .navIcon:hover {
+        cursor: pointer; }
     .nav .navUl .navLi1 {
       display: inline-block;
       font-size: 14px;
@@ -156,6 +160,7 @@ table {
   .landingPage2nd .landingPage2ndContent {
     overflow-x: scroll;
     height: 350px;
+    overflow-y: hidden;
     white-space: nowrap; }
     .landingPage2nd .landingPage2ndContent .landingPage2ndContentCard {
       width: 300px;

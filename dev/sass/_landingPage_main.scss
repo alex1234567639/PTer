@@ -6,7 +6,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // position: relative;
     .banner{
         // border: 1px solid red;       
         display: inline-block;
@@ -81,6 +80,7 @@
         // border: 1px solid green;
         overflow-x: scroll;
         height: 350px;
+        overflow-y: hidden;
         white-space: nowrap;
         .landingPage2ndContentCard{
             // border: 1px solid purple;
