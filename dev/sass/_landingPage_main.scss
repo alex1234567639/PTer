@@ -176,7 +176,7 @@
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 80px;
-    background-color: rgb(240,240,240);
+    background-color: rgb(230,230,230);
     letter-spacing: .5px;
     .landingPage4thTitle{
         // border: 1px solid green;
@@ -190,7 +190,7 @@
         box-sizing: border-box;
         text-align: center;
         .landingPage4thContentCard{
-            border: 1px solid rgb(223, 223, 223);
+            border: 1px solid rgb(200, 200, 200);
             border-radius: 10px;
             width: 180px;
             height: 180px;
@@ -200,7 +200,7 @@
             padding: 40px;
             &:hover{
                 cursor: pointer;
-                background-color: rgb(223, 223, 223);
+                background-color: rgb(215, 215, 215);
                 transition-duration: .5s;
             }
             .landingPage4thContentCardImg{

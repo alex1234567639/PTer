@@ -3,6 +3,8 @@
     <head>
     <!-- icon套件 -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/nav.js"></script>
     <!-- 標籤上的logo -->
@@ -16,10 +18,55 @@
         <li class="navLi navIcon" onclick="location.href=
         'index.html';"><img src="./images/PTerLogo.png"></li>
         <li class="navLi navLi4"><i class="fa fa-globe"></i></li>
-        <li class="navLi navLi3">JOIN</li>
-        <li class="navLi navLi2">Sign in</li>
+        <li class="navLi navLi3" id="join">JOIN</li>
+        <li class="navLi navLi2" id="signIn">Sign in</li>
         <li class="navLi navLi1">Be a Provider</li>              
     </ul>
+</div>
+
+<!-- 註冊燈箱 -->
+<div class="regist" id="regist">
+    <div class="registLightbox">
+        <img class="cross" id="cross" src="./images/cross.png">
+        <div class="registTitle">註冊 PTer</div>
+        <div class="fb">
+            <div class="registFacebook">使用Facebook帳號註冊</div>
+            <img class="registFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google">
+            <div class="registGoogle">使用Google帳號註冊</div>
+            <img class="registGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="registForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button>註冊</button>
+        </form>
+        <div class="alreadyMember">已經是會員？<span id="alreadyMember">登入</span></div>
+    </div>
+</div>
+
+<!-- 登入燈箱 -->
+<div class="login" id="login">
+    <div class="loginLightbox">
+        <img class="loginCross" id="loginCross" src="./images/cross.png">
+        <div class="loginTitle">登入 PTer</div>
+        <div class="fb">
+            <div class="loginFacebook">使用Facebook帳號登入</div>
+            <img class="loginFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google">
+            <div class="loginGoogle">使用Google帳號登入</div>
+            <img class="loginGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="loginForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button>登入</button>
+        </form>
+    </div>
 </div>
 
     <div class="landingPageMain">

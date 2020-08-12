@@ -64,3 +64,250 @@
         }
     }
 }
+
+//註冊燈箱
+.regist.open{
+    display: block;
+}
+.regist{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .registLightbox{
+        // border: 1px solid red;
+        width: 400px;
+        height: 380px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .cross{
+            width: 15px;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .registTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .fb{
+            .registFacebook{
+                // border: 1px solid red;
+                display: inline-block;
+                text-align: center;
+                font-size: 16px;
+                position: absolute;
+                left: 135px;
+                top: 98px;
+                color: white;
+            }
+            .registFacebookImg{
+                border-radius: 5px;
+                margin-left: 30px;
+                width: 300px;
+                margin-bottom: 10px;
+                transition-duration: .2s;
+                &:hover{
+                    box-shadow: 1px 1px 5px 2px lightgray;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .google{
+            .registGoogle{
+                display: inline-block;
+                text-align: center;
+                font-size: 16px;
+                position: absolute;
+                left: 145px;
+                top: 163px;
+                color: rgb(102, 102, 102);
+            }
+            .registGoogleImg{
+                border: 1px solid lightgray;
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-left: 30px;
+                width: 300px;
+                margin-bottom: 10px;
+                transition-duration: .2s;
+                &:hover{
+                    box-shadow: 1px 1px 5px 1px lightgray;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        } 
+        .registForm{
+            // border: 1px solid red;
+            text-align: center;
+            input{
+                border: 1px solid lightgray;
+                width: 135px;
+                padding: 5px;
+                margin-bottom: 10px;
+                outline: none;
+            }
+            button{
+                width: 100px;
+                height: 35px;
+                color: white;
+                background-color: rgb(19, 64, 153);
+                border: 1px solid white;
+                border-radius: 5px;
+                margin-bottom: 40px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(54, 54, 199);
+                    transition-duration: .5s;
+                }
+            }     
+        }  
+        .alreadyMember{
+            // border: 1px solid red;
+            font-size: 14px;
+            text-align: center;
+            span{
+                text-decoration: underline;
+                color: rgb(19, 64, 153);
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(54, 54, 199);
+                    transition-duration: .3s;
+                }
+            }
+        }     
+    }
+}
+
+//登入燈箱
+.login.open{
+    display: block;
+}
+.login{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .loginLightbox{
+        // border: 1px solid red;
+        width: 400px;
+        height: 340px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .loginCross{
+            width: 15px;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .loginTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .fb{
+            .loginFacebook{
+                // border: 1px solid red;
+                display: inline-block;
+                text-align: center;
+                font-size: 16px;
+                position: absolute;
+                left: 135px;
+                top: 98px;
+                color: white;
+            }
+            .loginFacebookImg{
+                border-radius: 5px;
+                margin-left: 30px;
+                width: 300px;
+                margin-bottom: 10px;
+                transition-duration: .2s;
+                &:hover{
+                    box-shadow: 1px 1px 5px 2px lightgray;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .google{
+            .loginGoogle{
+                display: inline-block;
+                text-align: center;
+                font-size: 16px;
+                position: absolute;
+                left: 145px;
+                top: 163px;
+                color: rgb(102, 102, 102);
+            }
+            .loginGoogleImg{
+                border: 1px solid lightgray;
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-left: 30px;
+                width: 300px;
+                margin-bottom: 10px;
+                transition-duration: .2s;
+                &:hover{
+                    box-shadow: 1px 1px 5px 1px lightgray;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        } 
+        .loginForm{           
+            text-align: center;
+            input{
+                border: 1px solid lightgray;
+                width: 135px;
+                padding: 5px;
+                margin-bottom: 10px;
+                outline: none;
+            }
+            button{
+                width: 100px;
+                height: 35px;
+                color: white;
+                background-color: rgb(19, 64, 153);
+                border: 1px solid white;
+                border-radius: 5px;
+                margin-bottom: 40px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(54, 54, 199);
+                    transition-duration: .5s;
+                }
+            }     
+        }      
+    }
+}
