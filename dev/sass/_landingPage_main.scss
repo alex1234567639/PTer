@@ -1,0 +1,280 @@
+.landingPageMain{
+    // border: 1px solid red;
+    height: 90vh;
+    min-height: 600px;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: relative;
+    .banner{
+        // border: 1px solid red;       
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 22%;
+        .bannerTitle{
+            color: white;
+            font-size: 30px;
+            letter-spacing: .3px;
+            margin-bottom: 15px;
+        }
+        .bannerSubtitle{
+            color: white;
+            font-size: 18px;
+            letter-spacing: .3px;
+            margin-bottom: 25px;
+        }
+        .bannerSearch{
+            // border: 1px solid green;
+            height: 70px;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+            position: relative;
+            .bannerSearchInputIcon{
+                color: rgb(187, 187, 187);
+                position: absolute;
+                top: 27px;
+                left: 4.7%;
+            }
+            .bannerSearchInput{
+                border: 1px solid rgb(187, 187, 187);
+                width: 70%;
+                padding: 5px;
+                padding-left: 27px;
+                margin-left: calc(10% - 40px);
+                margin-top: 20px;
+                border-radius: 5px;
+            }
+            .bannerSearchBtn{
+                width: 100px;
+                height: 35px;
+                color: white;
+                background-color: rgb(19, 64, 153);
+                border: 1px solid white;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(54, 54, 199);
+                    transition-duration: .5s;
+                }
+            }
+        }
+    }
+}
+
+.landingPage2nd{
+    // border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    letter-spacing: .5px;
+    .landingPage2ndTitle{
+        // border: 1px solid green;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;       
+    }
+    .landingPage2ndContent{
+        // border: 1px solid green;
+        overflow-x: scroll;
+        height: 350px;
+        white-space: nowrap;
+        .landingPage2ndContentCard{
+            border: 1px solid purple;
+            width: 300px;
+            height: 320px;
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .landingPage2ndContentCardMask{
+                width: 300px;
+                height: 130px;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                bottom: 0;
+                white-space: normal;
+                padding: 20px 15px;
+                color: white;
+                box-sizing: border-box;         
+                .landingPage2ndContentCardText{
+                    font-size: 14px;
+                    line-height: 15px;
+                    width: 270px;
+                    height: 45px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;     
+                }
+                .landingPage2ndContentCardBtn{
+                    width: 100px;
+                    height: 35px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.landingPage3rd{
+    height: 700px;
+    background-image: url(../images/landingPage3rd.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    .landingPage3rdContent{
+        // border: 1px solid green;
+        width: 65%;
+        height: 100%;
+        background-color: rgb(16,55,132);
+        color: white;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    .landingPage3rdTitle{
+        font-size: 35px;
+        margin-bottom: 80px;
+        letter-spacing: .5px;
+        line-height: 40px;
+    }
+    .landingPage3rdSubtitle{
+        font-size: 22px;
+        margin-bottom: 10px;
+        letter-spacing: .5px;
+        line-height: 25px;
+    }
+    .landingPage3rdText{
+        font-size: 16px;
+        margin-bottom: 35px;
+        letter-spacing: .5px;
+        line-height: 25px;
+        color: rgb(209, 209, 209);
+    }
+}
+
+.landingPage4th{
+    // border: 1px solid red;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: rgb(240,240,240);
+    letter-spacing: .5px;
+    .landingPage4thTitle{
+        // border: 1px solid green;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 60px; 
+    }
+    .landingPage4thContent{
+        // border: 1px solid green;
+        white-space: nowrap;
+        box-sizing: border-box;
+        text-align: center;
+        .landingPage4thContentCard{
+            border: 1px solid rgb(223, 223, 223);
+            border-radius: 10px;
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            margin: 5px;
+            box-sizing: border-box;
+            padding: 40px;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(223, 223, 223);
+                transition-duration: .5s;
+            }
+            .landingPage4thContentCardImg{
+                width: 60px;
+                margin-bottom: 20px;
+            }
+            .landingPage4thContentCardText{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.landingPage5th{
+    // border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    letter-spacing: .5px;
+    .landingPage5thTitle{
+        // border: 1px solid green;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 60px; 
+        font-weight: 500;
+    }
+    .landingPage5thContent{
+        .landingPage5thContentCard{
+            // border: 1px solid red;
+            width: 372px;
+            height: 260px;
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px 3px lightgray;
+            .landingPage5thContentCardImg{
+                height: 40px;
+                margin-bottom: 20px;
+            }
+            .landingPage5thContentCardTitle{
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: .5px;
+                line-height: 25px;
+                margin-bottom: 50px;
+            }
+            .landingPage5thContentCardText{
+                font-size: 16px;
+                color: rgb(139, 139, 139);
+                letter-spacing: .5px;
+                line-height: 20px;
+            }
+        }
+    }
+    .landingPage5thBtn{
+        // border: 1px solid green;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 80px;
+        height: 40px;
+        width: 150px;
+        background-color: rgb(252,187,72);
+        color: white;
+        border-radius: 5px;
+        padding: 12px;
+        text-align: center;
+        box-sizing: border-box;
+        &:hover{
+            background-color: rgb(255, 205, 68);
+            cursor: pointer;
+            transition-duration: .5s;
+        }
+    }
+}
