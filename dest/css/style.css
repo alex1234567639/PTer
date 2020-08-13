@@ -415,7 +415,7 @@
         text-align: center; }
         .providerRegist .providerRegistLightbox form .formBtn .formBtnSubmit {
           width: 80px;
-          height: 30px;
+          height: 33px;
           color: white;
           background-color: #134099;
           border: 1px solid #134099;
@@ -427,7 +427,7 @@
             transition-duration: .5s; }
         .providerRegist .providerRegistLightbox form .formBtn .formBtnReset {
           width: 80px;
-          height: 30px;
+          height: 33px;
           color: #134099;
           background-color: white;
           border: 1px solid #134099;
@@ -480,7 +480,7 @@
       margin-top: 40px; }
       .providerRegistSucess .providerRegistSucessLightbox .providerRegistSucessBtn .providerRegistSucessGo {
         width: 80px;
-        height: 30px;
+        height: 33px;
         color: white;
         background-color: #134099;
         border: 1px solid #134099;
@@ -492,7 +492,7 @@
           transition-duration: .5s; }
       .providerRegistSucess .providerRegistSucessLightbox .providerRegistSucessBtn .providerRegistSucessLater {
         width: 80px;
-        height: 30px;
+        height: 33px;
         color: #134099;
         background-color: white;
         border: 1px solid #134099;
