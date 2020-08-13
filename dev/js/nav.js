@@ -42,6 +42,16 @@ window.onload=function(){
     document.getElementById('formBtnReset').onclick = function(){     
         document.getElementById('providerRegist').classList.remove("open");
     }
+    //點擊繼續關閉燈箱，彈出完成表單燈箱
+    document.getElementById('formBtnSubmit').onclick = function(){     
+        document.getElementById('providerRegist').classList.remove("open");
+        document.getElementById('providerRegistSucess').classList.add("open");
+    }
+
+    //點擊Later關閉燈箱
+    document.getElementById('providerRegistSucessLater').onclick = function(){     
+        document.getElementById('providerRegistSucess').classList.remove("open");
+    }
 }
 
 
