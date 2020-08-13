@@ -128,7 +128,12 @@
         width: 135px;
         padding: 5px;
         margin-bottom: 10px;
-        outline: none; }
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .regist .registLightbox .registForm input:focus, .regist .registLightbox .registForm input:hover {
+          border: 1px solid #bbbbbb; }
       .regist .registLightbox .registForm button {
         width: 100px;
         height: 35px;
@@ -229,7 +234,12 @@
         width: 135px;
         padding: 5px;
         margin-bottom: 10px;
-        outline: none; }
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .login .loginLightbox .loginForm input:focus, .login .loginLightbox .loginForm input:hover {
+          border: 1px solid #bbbbbb; }
       .login .loginLightbox .loginForm button {
         width: 100px;
         height: 35px;
