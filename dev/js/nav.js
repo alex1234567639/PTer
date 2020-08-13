@@ -20,6 +20,7 @@ window.onload=function(){
         regist.classList.remove("open");
         login.classList.add("open");
     }
+
     //點擊登入彈出登入燈箱
     signIn.onclick = function(){     
         login.classList.add("open");
@@ -28,4 +29,33 @@ window.onload=function(){
     loginCross.onclick = function(){      
         login.classList.remove("open");
     }
+
+    //點擊 Be a Provider彈出燈箱
+    document.getElementById('beAprovider').onclick = function(){
+        document.getElementById('providerRegist').classList.add("open");
+    }
+    //點擊叉叉關閉燈箱
+    // document.getElementById('providerRegistCross').onclick = function(){      
+    //     document.getElementById('providerRegist').classList.remove("open");
+    // }
+    //點擊返回關閉燈箱
+    document.getElementById('formBtnReset').onclick = function(){     
+        document.getElementById('providerRegist').classList.remove("open");
+    }
 }
+
+
+//寫手註冊燈箱
+//選擇大頭照後顯示預覽在畫面上
+window.addEventListener("load", function(){
+	document.getElementById("chooseFileLabel").onchange = function(e){
+        console.log('123');
+        document.getElementById("showPhoto").innerHTML = `<img id="imgPreview">`;
+		let file = e.target.files[0];
+		let reader = new FileReader();
+		reader.onload = function(){       //讀取完畢後執行function
+			document.getElementById("imgPreview").src = reader.result;
+		}
+		reader.readAsDataURL(file);
+	}
+})

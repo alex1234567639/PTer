@@ -166,7 +166,7 @@
   z-index: 1001; }
   .login .loginLightbox {
     width: 400px;
-    height: 340px;
+    height: 320px;
     background-color: white;
     padding: 25px 20px;
     box-sizing: border-box;
@@ -242,6 +242,191 @@
           cursor: pointer;
           background-color: #3636c7;
           transition-duration: .5s; }
+
+.providerRegist.open {
+  display: block; }
+
+.providerRegist {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+  .providerRegist .providerRegistLightbox {
+    width: 850px;
+    height: 670px;
+    background-color: white;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 8vh; }
+    .providerRegist .providerRegistLightbox .providerRegistCross {
+      width: 15px;
+      position: absolute;
+      right: 8px;
+      top: 8px; }
+      .providerRegist .providerRegistLightbox .providerRegistCross:hover {
+        cursor: pointer; }
+    .providerRegist .providerRegistLightbox .providerRegistTitle {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px; }
+    .providerRegist .providerRegistLightbox form {
+      position: relative; }
+      .providerRegist .providerRegistLightbox form .showPhoto {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid #c8c8c8;
+        margin-left: 20px; }
+        .providerRegist .providerRegistLightbox form .showPhoto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .providerRegist .providerRegistLightbox form label.chooseFile {
+        font-size: 14px;
+        color: #4d4d4d;
+        position: absolute;
+        top: 65px;
+        left: 95px; }
+        .providerRegist .providerRegistLightbox form label.chooseFile:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+        .providerRegist .providerRegistLightbox form label.chooseFile #chooseFile {
+          display: none; }
+      .providerRegist .providerRegistLightbox form .formLeft {
+        width: 330px;
+        display: inline-block;
+        position: absolute;
+        top: 120px;
+        left: 20px; }
+        .providerRegist .providerRegistLightbox form .formLeft .formLeftTitle {
+          font-weight: 500;
+          margin-bottom: 10px;
+          display: inline-block; }
+        .providerRegist .providerRegistLightbox form .formLeft input {
+          margin-bottom: 20px;
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd; }
+          .providerRegist .providerRegistLightbox form .formLeft input:focus, .providerRegist .providerRegistLightbox form .formLeft input:hover {
+            border: 1px solid #bbbbbb; }
+        .providerRegist .providerRegistLightbox form .formLeft select {
+          margin-bottom: 20px;
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          cursor: pointer;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+          background-position: right 10px top 50%;
+          background-repeat: no-repeat;
+          background-size: 10px; }
+          .providerRegist .providerRegistLightbox form .formLeft select:focus, .providerRegist .providerRegistLightbox form .formLeft select:hover {
+            border: 1px solid #bbbbbb; }
+          .providerRegist .providerRegistLightbox form .formLeft select option {
+            background: #ffffff; }
+      .providerRegist .providerRegistLightbox form .formRight {
+        width: 330px;
+        display: inline-block;
+        position: absolute;
+        top: 60px;
+        left: 400px; }
+        .providerRegist .providerRegistLightbox form .formRight .formRightTitle {
+          font-weight: 500;
+          margin-bottom: 10px;
+          display: inline-block; }
+        .providerRegist .providerRegistLightbox form .formRight input[type=text], .providerRegist .providerRegistLightbox form .formRight textarea {
+          margin-bottom: 20px;
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd; }
+          .providerRegist .providerRegistLightbox form .formRight input[type=text]:focus, .providerRegist .providerRegistLightbox form .formRight input[type=text]:hover, .providerRegist .providerRegistLightbox form .formRight textarea:focus, .providerRegist .providerRegistLightbox form .formRight textarea:hover {
+            border: 1px solid #bbbbbb; }
+        .providerRegist .providerRegistLightbox form .formRight select {
+          margin-bottom: 20px;
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          cursor: pointer;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+          background-position: right 10px top 50%;
+          background-repeat: no-repeat;
+          background-size: 10px; }
+          .providerRegist .providerRegistLightbox form .formRight select:focus, .providerRegist .providerRegistLightbox form .formRight select:hover {
+            border: 1px solid #bbbbbb; }
+          .providerRegist .providerRegistLightbox form .formRight select option {
+            background: #ffffff; }
+        .providerRegist .providerRegistLightbox form .formRight label {
+          cursor: pointer; }
+          .providerRegist .providerRegistLightbox form .formRight label input[type=checkbox] {
+            margin-bottom: 20px;
+            padding: 4px;
+            outline: none;
+            color: #333333;
+            background-color: #eeeeee;
+            border: 1px solid #dddddd;
+            cursor: pointer; }
+        .providerRegist .providerRegistLightbox form .formRight .checkboxLeft {
+          margin-left: 15px;
+          display: inline-block; }
+          .providerRegist .providerRegistLightbox form .formRight .checkboxLeft label input {
+            margin-bottom: 10px; }
+        .providerRegist .providerRegistLightbox form .formRight .checkboxMiddle {
+          margin-left: 12px;
+          display: inline-block; }
+          .providerRegist .providerRegistLightbox form .formRight .checkboxMiddle label input {
+            margin-bottom: 10px; }
+        .providerRegist .providerRegistLightbox form .formRight .checkboxRight {
+          margin-left: 12px;
+          display: inline-block; }
+          .providerRegist .providerRegistLightbox form .formRight .checkboxRight label input {
+            margin-bottom: 10px; }
+      .providerRegist .providerRegistLightbox form .formBtn {
+        margin-top: 450px;
+        text-align: center; }
+        .providerRegist .providerRegistLightbox form .formBtn .formBtnSubmit {
+          width: 80px;
+          height: 30px;
+          color: white;
+          background-color: #134099;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-right: 20px; }
+          .providerRegist .providerRegistLightbox form .formBtn .formBtnSubmit:hover {
+            cursor: pointer;
+            background-color: #3636c7;
+            transition-duration: .5s; }
+        .providerRegist .providerRegistLightbox form .formBtn .formBtnReset {
+          width: 80px;
+          height: 30px;
+          color: #134099;
+          background-color: white;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-left: 20px; }
+          .providerRegist .providerRegistLightbox form .formBtn .formBtnReset:hover {
+            cursor: pointer;
+            background-color: #eeeeee;
+            transition-duration: .5s; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

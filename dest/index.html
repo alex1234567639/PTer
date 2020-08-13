@@ -20,7 +20,7 @@
         <li class="navLi navLi4"><i class="fa fa-globe"></i></li>
         <li class="navLi navLi3" id="join">JOIN</li>
         <li class="navLi navLi2" id="signIn">Sign in</li>
-        <li class="navLi navLi1">Be a Provider</li>              
+        <li class="navLi navLi1" id="beAprovider">Be a Provider</li>              
     </ul>
 </div>
 
@@ -65,6 +65,114 @@
             <input type="password" placeholder="請輸入密碼">
             <br>
             <button>登入</button>
+        </form>
+    </div>
+</div>
+
+<!-- 寫手註冊燈箱 -->
+<div class="providerRegist" id="providerRegist">
+    <div class="providerRegistLightbox">
+        <!-- <img class="providerRegistCross" id="providerRegistCross" src="./images/cross.png"> -->
+        <div class="providerRegistTitle">Be a Provider</div>
+        <form action="">
+            <div class="showPhoto" id="showPhoto"><img id="imgPreview" src="./images/user.jpeg"></div>
+            <label class="chooseFile" id="chooseFileLabel" for="chooseFile">＋選擇照片<input type="file" name="chooseFile" id="chooseFile"></label>
+            <div class="formLeft">
+                <div class="formLeftTitle">姓名</div><br>
+                <input type="text" placeholder="姓氏" style="width:147px"> 
+                <input type="text" placeholder="名字" style="width:147px">
+
+                <div class="formLeftTitle">Email</div><br>
+                <input type="text" placeholder="請輸入Email" style="width:310px">
+
+                <div class="formLeftTitle">電話號碼</div><br>
+                <input type="text" placeholder="請輸入電話號碼" style="width:310px">
+
+                <div class="formLeftTitle" style="margin-right:125px;">國籍</div>
+                <div class="formLeftTitle">性別</div><br>
+                <select name="country" style="width:158px">
+                    <option value="" style="display:none;">請選擇國籍</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="America">America</option>
+                    <option value="Japan">Japan</option>
+                </select>
+
+                <!-- <div class="formLeftTitle">性別</div><br> -->
+                <select name="gender" style="width:158px">
+                    <option value="" style="display:none;">請選擇性別</option>
+                    <option value="Taiwan">男</option>
+                    <option value="America">女</option>
+                </select>
+
+                <div class="formLeftTitle">語言</div><br>
+                <select name="language" style="width:158px">
+                    <option value="" style="display:none">請選擇語言</option>
+                    <option value="english">英文</option>
+                    <option value="japanese">日文</option>
+                    <option value="chinese">中文</option>
+                    <option value="korean">韓文</option>
+                    <option value="other">其他</option>            
+                </select>
+            </div>
+
+            <div class="formRight">
+                <div class="formRightTitle">簡述</div><br>
+                <textarea name="formRightTitleTextarea" id="formRightTitleTextarea" style="width:310px;" rows="4"></textarea>
+
+                <div class="formRightTitle" style="margin-right:95px;">您的職業</div>
+                <div class="formRightTitle">您的語言需求</div><br>
+                <select name="job" style="width:158px">
+                    <option value="" style="display:none">請選擇職業</option>
+                    <option value="patentAttorney">專利工程師</option>
+                    <option value="translator">翻譯師</option>
+                    <option value="drawer">撰圖</option>
+                    <option value="other">其他</option>
+                </select>
+
+                <!-- <div class="formRightTitle">您的語言需求</div> -->
+                <select name="languageRequst" style="width:158px">
+                    <option value="" style="display:none">請選擇撰稿語言需求</option>
+                    <option value="english">英文</option>
+                    <option value="japanese">日文</option>
+                    <option value="chinese">中文</option>
+                    <option value="korean">韓文</option>
+                    <option value="other">其他</option> 
+                </select>
+
+                <div class="formRightTitle">撰稿需求</div><br>
+                <label><input type="checkbox" value="debate" name="debate">答辯</label>
+                <label><input type="checkbox" value="write" name="write">撰稿</label>
+                <label><input type="checkbox" value="check" name="check">文字校對</label>
+                <label><input type="checkbox" value="search" name="search">檢索</label>
+                <label><input type="checkbox" value="draw" name="draw">撰圖</label><br>
+
+                <div class="formRightTitle">Skills</div><br>
+                <div class="checkboxLeft">
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">專利檢索</label><br>
+                    <label><input type="checkbox" value="patentAnalyze" name="patentAnalyze">專利分析</label><br>
+                    <label><input type="checkbox" value="patentPlan" name="patentPlan">專利佈局</label><br>
+                    <label><input type="checkbox" value="USpatant" name="USpatant">美國專利</label><br>
+                    <label><input type="checkbox" value="japanPatent" name="japanPatent">日本專利</label><br>
+                </div> 
+                <div class="checkboxMiddle">   
+                    <label><input type="checkbox" value="chinaPatent" name="chinaPatent">中國專利</label><br>
+                    <label><input type="checkbox" value="EUpatent" name="EUpatent">歐盟專利</label><br>
+                    <label><input type="checkbox" value="koreaPatent" name="koreaPatent">韓國專利</label><br>
+                    <label><input type="checkbox" value="taiwanPatent" name="taiwanPatent">台灣專利</label><br>
+                    <label><input type="checkbox" value="otherPatent" name="otherPatent">其他</label><br>
+                </div>
+                <div class="checkboxRight">                                     
+                    <label><input type="checkbox" value="Visio" name="Visio">Visio</label><br>
+                    <label><input type="checkbox" value="Illustrator" name="Illustrator">Illustrator</label><br>
+                    <label><input type="checkbox" value="Word" name="Word">Word</label><br>
+                    <label><input type="checkbox" style="opacity:0;"></label><br>
+                    <label><input type="checkbox" style="opacity:0;"></label><br>
+                </div>
+            </div>
+            <div class="formBtn">
+                <button class="formBtnSubmit" type="submit">繼續</button>     
+                <button class="formBtnReset" id="formBtnReset" type="reset">返回</button> 
+            </div>                 
         </form>
     </div>
 </div>

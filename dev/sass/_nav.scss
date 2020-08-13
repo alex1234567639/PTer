@@ -212,7 +212,7 @@
     .loginLightbox{
         // border: 1px solid red;
         width: 400px;
-        height: 340px;       
+        height: 320px;       
         background-color: white;
         padding: 25px 20px;
         box-sizing: border-box;
@@ -309,5 +309,249 @@
                 }
             }     
         }      
+    }
+}
+
+//寫手註冊燈箱
+.providerRegist.open{
+    display: block;
+}
+.providerRegist{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .providerRegistLightbox{
+        // border: 1px solid red;
+        width: 850px;
+        height: 670px;       
+        background-color: white;
+        padding: 30px 50px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 8vh;
+        .providerRegistCross{
+            width: 15px;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .providerRegistTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form{
+            // border: 1px solid red;
+            position: relative;
+            .showPhoto{
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                border-radius: 50%;
+                border: 1px solid rgb(200, 200, 200);
+                margin-left: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            label.chooseFile{
+                // border: 1px solid red;
+                font-size: 14px;
+                color: rgb(77, 77, 77);
+                position: absolute;
+                top: 65px;
+                left: 95px;
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                #chooseFile{
+                    display: none;
+                }
+            } 
+            .formLeft{
+                // border: 1px solid red;
+                width: 330px;
+                display: inline-block;
+                position: absolute;
+                top: 120px;
+                left: 20px;
+                .formLeftTitle{
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+                input{
+                    margin-bottom: 20px;
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                }
+                select{
+                    margin-bottom: 20px;
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    cursor: pointer;
+
+                    // 去除預設下拉箭頭
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+                    background-position: right 10px top 50%;
+                    background-repeat: no-repeat;
+                    background-size: 10px;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                    option{
+                        background: #ffffff;
+                    }
+                }
+            }
+            .formRight{
+                width: 330px;
+                // border: 1px solid red;
+                display: inline-block;
+                position: absolute;
+                top: 60px;
+                left: 400px;
+                .formRightTitle{
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+                input[type=text], textarea{
+                    margin-bottom: 20px;
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                }
+                select{
+                    margin-bottom: 20px;
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    cursor: pointer;
+
+                    // 去除預設下拉箭頭
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+                    background-position: right 10px top 50%;
+                    background-repeat: no-repeat;
+                    background-size: 10px;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                    option{
+                        background: #ffffff;
+                    }
+                }
+                label{
+                    cursor: pointer;
+                    input[type=checkbox]{
+                        margin-bottom: 20px;
+                        padding: 4px;
+                        outline: none;
+                        color: #333333;
+                        background-color: #eeeeee;
+                        border: 1px solid #dddddd;
+                        cursor: pointer;
+                    }
+                }
+                .checkboxLeft{
+                    // border: 1px solid red;
+                    margin-left: 15px;
+                    display: inline-block;
+                    label{
+                        input{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .checkboxMiddle{
+                    // border: 1px solid green;
+                    margin-left: 12px;
+                    display: inline-block;
+                    label{
+                        input{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .checkboxRight{
+                    // border: 1px solid red;
+                    margin-left: 12px;
+                    display: inline-block;
+                    label{
+                        input{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .formBtn{
+                // border: 1px solid red;
+                margin-top: 450px;
+                text-align: center;
+                .formBtnSubmit{
+                    width: 80px;
+                    height: 30px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .formBtnReset{
+                    width: 80px;
+                    height: 30px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }       
     }
 }
