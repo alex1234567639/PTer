@@ -55,6 +55,7 @@
   display: block; }
 
 .regist {
+  animation: fadeEffect .5s;
   display: none;
   position: fixed;
   top: 0;
@@ -63,6 +64,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .regist .registLightbox {
     width: 400px;
     height: 380px;
@@ -161,6 +168,7 @@
   display: block; }
 
 .login {
+  animation: fadeEffect .5s;
   display: none;
   position: fixed;
   top: 0;
@@ -169,6 +177,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .login .loginLightbox {
     width: 400px;
     height: 320px;
@@ -257,6 +271,7 @@
   display: block; }
 
 .providerRegist {
+  animation: fadeEffect .5s;
   display: none;
   position: fixed;
   top: 0;
@@ -265,6 +280,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .providerRegist .providerRegistLightbox {
     width: 850px;
     height: 670px;
@@ -316,7 +337,7 @@
         top: 120px;
         left: 20px; }
         .providerRegist .providerRegistLightbox form .formLeft .formLeftTitle {
-          font-weight: 500;
+          font-weight: 600;
           margin-bottom: 10px;
           display: inline-block; }
         .providerRegist .providerRegistLightbox form .formLeft input {
@@ -354,7 +375,7 @@
         top: 60px;
         left: 400px; }
         .providerRegist .providerRegistLightbox form .formRight .formRightTitle {
-          font-weight: 500;
+          font-weight: 600;
           margin-bottom: 10px;
           display: inline-block; }
         .providerRegist .providerRegistLightbox form .formRight input[type=text], .providerRegist .providerRegistLightbox form .formRight textarea {
@@ -442,6 +463,7 @@
   display: block; }
 
 .providerRegistSucess {
+  animation: fadeEffect .5s;
   display: none;
   position: fixed;
   top: 0;
@@ -450,6 +472,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .providerRegistSucess .providerRegistSucessLightbox {
     width: 400px;
     height: 340px;
@@ -835,7 +863,7 @@ footer {
         text-align: center;
         margin-top: 15px; }
       .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopName {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         text-align: center;
         margin-top: 15px; }
@@ -941,7 +969,7 @@ footer {
               display: inline-block;
               margin-top: 20px; }
               .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .dashboardRightTopTabContent1Part1LeftTitle, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .dashboardRightTopTabContent1Part1LeftTitle, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .dashboardRightTopTabContent1Part1LeftTitle {
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
                 letter-spacing: .5px;
                 margin-bottom: 10px; }
@@ -959,8 +987,7 @@ footer {
                 margin-bottom: 5px; }
                 .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress .myBar {
                   position: absolute;
-                  height: 100%;
-                  background-color: #9146cf; }
+                  height: 100%; }
             .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn {
               display: inline-block;
               height: 90px;
@@ -1017,18 +1044,58 @@ footer {
           height: 20px;
           background-color: #e0e0e0;
           box-sizing: border-box; }
-          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress:hover {
-            border: 1px solid #c8c8c8; }
-            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress:hover .myBar {
-              background-color: #ffcd44; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress:hover .myBar {
+            background-color: #ffcd44; }
           .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress .myBar {
             position: absolute;
             height: 100%;
-            background-color: #fcbb48; }
+            background-color: #fcbb48;
+            transition-duration: .5s; }
             .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress .myBar .myBarLabel {
               margin-left: 5px;
               line-height: 20px;
               color: #f1f1f1; }
+      .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight {
+        width: 500px;
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 20px;
+        vertical-align: top; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightTitle {
+          font-weight: 600;
+          font-size: 20px;
+          margin-bottom: 10px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot {
+          border-bottom: 1px solid #c8c8c8;
+          height: 40px;
+          margin-top: 5px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot .dashboardRightBotRightHotImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot .dashboardRightBotRightHotImg img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightHot .dashboardRightBotRightHotComment {
+            display: inline-block;
+            margin-left: 5px;
+            transform: translateY(-13px); }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightBtn {
+          width: 80px;
+          height: 33px;
+          color: #134099;
+          background-color: white;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-top: 10px;
+          float: right; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotRight .dashboardRightBotRightBtn:hover {
+            cursor: pointer;
+            background-color: #eeeeee;
+            transition-duration: .5s; }
       .dashboard .dashboardRight .dashboardRightBot hr {
         width: 95%;
         margin-top: 20px; }
@@ -1037,12 +1104,12 @@ footer {
         margin: 0 auto;
         position: relative; }
         .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentTitle {
-          font-weight: 500;
+          font-weight: 600;
           font-size: 20px;
           margin-top: 20px;
           margin-bottom: 30px; }
         .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect {
-          padding: 4px;
+          padding: 4px 8px;
           outline: none;
           color: #333333;
           background-color: #eeeeee;
@@ -1086,7 +1153,7 @@ footer {
                 height: 100%;
                 object-fit: cover; }
             .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonName {
-              font-weight: 500;
+              font-weight: 600;
               width: 60px;
               text-align: center;
               font-size: 14px; }
