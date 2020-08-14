@@ -1,0 +1,417 @@
+.dashboard{
+    // border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    .dashboardLeft{
+        position: sticky;
+        top: 80px;
+        left: 0;
+        // border: 1px solid rgb(200, 200, 200);
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 50px;
+        .dashboardLeftTop{
+            border: 1px solid rgb(200, 200, 200);
+            width: 100%;
+            .dashboardPhoto{
+                border: 1px solid rgb(200, 200, 200);
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto;
+                margin-top: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .dashboardLeftTopTitle{
+                font-size: 14px;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .dashboardLeftTopName{
+                font-weight: 500;
+                font-size: 18px;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .dashboardLeftTopStatus{
+                margin-bottom: 20px;
+                text-align: center;
+                .dashboardLeftTopStars{
+                    margin-top: 15px;
+                    width: 100px;
+                }
+                .dashboardLeftTopCounts{
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+            }            
+        }
+        .dashboardLeftBot{
+            border: 1px solid rgb(200, 200, 200);
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            .dashboardLeftBotTitle{
+                margin-top: 20px;
+                // border: 1px solid red;
+                display: inline-block;
+                text-align: initial;
+                .dashboardLeftBotTitleText{
+                    color: gray;
+                    margin-bottom: 15px;
+                }
+            }
+            .dashboardLeftBotContent{
+                margin-top: 20px;
+                // border: 1px solid red;
+                display: inline-block;
+                text-align: initial;
+                margin-left: 30px;
+                .dashboardLeftBotContentText{
+                    margin-bottom: 15px;
+                }
+            }
+            hr{
+                width: 90%;
+            }
+            .dashboardLeftBotSelfIntro{
+                // border: 1px solid red;
+                font-size: 14px;
+                letter-spacing: .5px;
+                line-height: 18px;
+                width: 255px;
+                margin: 0 auto;
+                margin-top: 20px;
+                text-align: initial;
+            }
+            .dashboardLeftBotProvide{
+                // border: 1px solid red;
+                text-align: initial;
+                width: 255px;
+                margin: 0 auto;
+                margin-top: 30px;
+                .dashboardLeftBotProvideTitle{
+                    color: gray;
+                    margin-bottom: 15px;
+                }
+                .dashboardLeftBotProvideContent{
+                    margin-bottom: 30px;
+                    ul{
+                        li{
+                            font-size: 14px;
+                            margin-bottom: 5px;
+                            letter-spacing: .5px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .dashboardRight{
+        // border: 1px solid red;
+        width: 870px;
+        // height: 1500px;
+        margin-left: 15px;
+        display: inline-block;
+        margin-bottom: 50px;
+        .dashboardRightTop{
+            border: 1px solid rgb(200,200,200);
+            .dashboardRightTopTabButton{
+                // border: 1px solid red;
+                width: 150px;
+                display: inline-block;
+                vertical-align: auto;
+                padding: 50px 30px;
+                box-sizing: border-box;
+                .tablinks{
+                    width: 80px;
+                    height: 35px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    margin: 10px 0;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                    }
+                }
+                .active {
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                    }
+                }
+            }
+            .dashboardRightTopTabContent{
+                // border: 1px solid blue;
+                width: 700px;
+                display: inline-block;
+                vertical-align: top;
+                .tabcontent{
+                    // border: 1px solid blue;
+                    animation: fadeEffect .5s;
+                    @keyframes fadeEffect {
+                        from {opacity: 0;}
+                        to {opacity: 1;}
+                    }
+                    .dashboardRightTopTabContent1Part1, .dashboardRightTopTabContent1Part2, .dashboardRightTopTabContent1Part3{
+                        margin-bottom: 20px;
+                        .dashboardRightTopTabContent1Part1Left{
+                            // border: 1px solid blue;
+                            width: 500px;
+                            height: 90px;
+                            display: inline-block;
+                            margin-top: 20px;
+                            .dashboardRightTopTabContent1Part1LeftTitle{
+                                font-weight: 500;
+                                font-size: 18px;
+                                letter-spacing: .5px;
+                                margin-bottom: 10px;
+                            }
+                            .pin{
+                                font-size: 14px;
+                                color: gray;
+                                display: inline-block;
+                            }
+                            .myProgress{
+                                position: relative;
+                                width: 90%;
+                                height: 20px;
+                                background-color: rgb(224, 224, 224);
+                                box-sizing: border-box;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                                .myBar{
+                                    position: absolute;
+                                    height: 100%;
+                                    background-color: rgb(145, 70, 207);
+                                }
+                            }
+                        }
+                        .dashboardRightTopTabContent1Part1Btn{
+                            // border: 1px solid green;
+                            display: inline-block;
+                            height: 90px;
+                            vertical-align: top;
+                            margin-top: 20px;
+                            text-align: center;
+                            .dashboardRightTopTabContent1Part1BtnPrice{
+                                font-size: 14px;
+                                color: gray;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                            }
+                            .dashboardRightTopTabContent1Part1BtnContact{
+                                width: 80px;
+                                height: 33px;
+                                color: white;
+                                background-color: rgb(19, 64, 153);
+                                border: 1px solid rgb(19, 64, 153);
+                                border-radius: 5px;
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: rgb(54, 54, 199);
+                                    transition-duration: .5s;
+                                }
+                            }
+                            .dashboardRightTopTabContent1Part1BtnPay{
+                                width: 80px;
+                                height: 33px;
+                                color: rgb(19, 64, 153);
+                                background-color: white;
+                                border: 1px solid rgb(19, 64, 153);
+                                border-radius: 5px;
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: rgb(238, 238, 238);
+                                    transition-duration: .5s;
+                                }
+                            }
+                        }
+                    }                   
+                }
+            }
+        }
+        .dashboardRightBot{
+            border: 1px solid rgb(200,200,200);
+            margin-top: 30px;
+            .dashboardRightBotLeft{
+                // border: 1px solid blue;
+                width: 300px;
+                display: inline-block;
+                margin-top: 20px;
+                img{
+                    width: 100px;
+                    margin-left: 30px;
+                }
+                .dashboardRightBotLeftComment{
+                    display: inline-block;
+                    font-size: 14px;
+                    margin-left: 5px;
+                    transform: translateY(-2px);
+                }
+                .myProgress{
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    position: relative;
+                    width: 80%;
+                    height: 20px;
+                    background-color: rgb(224, 224, 224);
+                    box-sizing: border-box;
+                    &:hover{
+                        border: 1px solid  rgb(200, 200, 200);
+                        .myBar{
+                            background-color: rgb(255,205,68);
+                        }
+                    }
+                    .myBar{
+                        position: absolute;
+                        height: 100%;
+                        background-color: rgb(252,187,72);
+                        .myBarLabel{
+                            margin-left: 5px;
+                            line-height: 20px;
+                            color: rgb(241, 241, 241);
+                        }
+                    }
+                }
+                
+            }
+            hr{
+                width: 95%;
+                margin-top: 20px;
+            }
+            .dashboardRightBotAllComment{
+                // border: 1px solid green;
+                width: 95%;
+                margin: 0 auto;
+                position: relative;
+                .dashboardRightBotAllCommentTitle{
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+                .dashboardRightBotAllCommentSelect{
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+
+                    // 去除預設下拉箭頭
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+                    background-position: right 10px top 50%;
+                    background-repeat: no-repeat;
+                    background-size: 10px;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                    option{
+                        background: #ffffff;
+                    }
+                }
+                .commentItem{
+                    // border:  1px solid red;
+                    width: 100%;
+                    height: 90px;
+                    background-color: rgb(240, 240, 240);
+                    padding: 5px;
+                    box-sizing: border-box;
+                    position: relative;
+                    margin-bottom: 20px;
+                    .commentItemPersonInfo{
+                        // border:  1px solid red;
+                        display: inline-block;
+                        width: 70px;
+                        text-align: center;
+                        margin-left: 10px;
+                        .commentItemPersonPhoto{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin-bottom: 5px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .commentItemPersonName{
+                            // border:  1px solid red;
+                            font-weight: 500;
+                            width: 60px;
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                    .commentItemInside{
+                        // border:  1px solid blue;
+                        width: 105px;
+                        display: inline-block;
+                        font-size: 14px;
+                        .commentItemInsideStatus{
+                            color: gray;
+                            margin-bottom: 10px;
+                            img{
+                                margin-left: 3px;
+                                width: 15px;
+                                transform: translateY(2px);
+                            }
+                        }
+                        .commentItemInsideFlag{
+                            width: 30px;
+                            margin-bottom: 5px;
+                        }
+                        .commentItemInsideCountry{
+                            display: inline-block;
+                            color: gray;
+                        }
+                    }
+                    .commentItemMessageComment{
+                        border:  1px solid rgb(230, 230, 230);
+                        padding: 5px 10px;
+                        box-sizing: border-box;   
+                        background-color: white;    
+                        display: inline-block;
+                        width: 500px;
+                        // height: 60px;
+                        position: absolute;
+                        right: 120px;
+                        // top: 17px;
+                        top: 30px;
+                        letter-spacing: .5px;
+                        line-height: 20px;
+                        overflow: hidden;
+                    }
+                    .commentItemMessageTime{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: gray;
+                        position: absolute;
+                        right: 20px;
+                        top: 68px;
+                    }
+                }                  
+            }
+        }
+    }  
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- icon套件 -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/nav.js"></script> 
+    <!-- 標籤上的logo -->
+    <link rel="booknark" href="./images/PTerLogo.png">
+    <link rel="shortcut icon" href="./images/PTerLogo.png">
+    <title>PTer</title>
+</head>
+<body>
+    <div class="nav">
+    <ul class="navUl">
+        <li class="navLi navIcon" onclick="location.href=
+        'index.html';"><img src="./images/PTerLogo.png"></li>
+        <li class="navLi navLi4" onclick="location.href=
+        'dashboard.html';"><i class="fa fa-globe"></i></li>
+        <li class="navLi navLi3" id="join">JOIN</li>
+        <li class="navLi navLi2" id="signIn">Sign in</li>
+        <li class="navLi navLi1" id="beAprovider">Be a Provider</li>              
+    </ul>
+</div>
+
+<!-- 註冊燈箱 -->
+<div class="regist" id="regist">
+    <div class="registLightbox">
+        <img class="cross" id="cross" src="./images/cross.png">
+        <div class="registTitle">註冊 PTer</div>
+        <div class="fb">
+            <div class="registFacebook">使用Facebook帳號註冊</div>
+            <img class="registFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google">
+            <div class="registGoogle">使用Google帳號註冊</div>
+            <img class="registGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="registForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button>註冊</button>
+        </form>
+        <div class="alreadyMember">已經是會員？<span id="alreadyMember">登入</span></div>
+    </div>
+</div>
+
+<!-- 登入燈箱 -->
+<div class="login" id="login">
+    <div class="loginLightbox">
+        <img class="loginCross" id="loginCross" src="./images/cross.png">
+        <div class="loginTitle">登入 PTer</div>
+        <div class="fb">
+            <div class="loginFacebook">使用Facebook帳號登入</div>
+            <img class="loginFacebookImg" src="./images/facebook.png">
+        </div>
+        <div class="google">
+            <div class="loginGoogle">使用Google帳號登入</div>
+            <img class="loginGoogleImg" src="./images/google.png">
+        </div>       
+        <form action="" class="loginForm">
+            <input type="text" placeholder="請輸入帳號">
+            <input type="password" placeholder="請輸入密碼">
+            <br>
+            <button>登入</button>
+        </form>
+    </div>
+</div>
+
+<!-- 寫手註冊燈箱 -->
+<div class="providerRegist" id="providerRegist">
+    <div class="providerRegistLightbox">
+        <!-- <img class="providerRegistCross" id="providerRegistCross" src="./images/cross.png"> -->
+        <div class="providerRegistTitle">Be a Provider</div>
+        <form action="">
+            <div class="showPhoto" id="showPhoto"><img id="imgPreview" src="./images/user.jpeg"></div>
+            <label class="chooseFile" id="chooseFileLabel" for="chooseFile">＋選擇照片<input type="file" name="chooseFile" id="chooseFile"></label>
+            <div class="formLeft">
+                <div class="formLeftTitle">姓名</div><br>
+                <input type="text" placeholder="姓氏" style="width:147px"> 
+                <input type="text" placeholder="名字" style="width:147px">
+
+                <div class="formLeftTitle">Email</div><br>
+                <input type="text" placeholder="請輸入Email" style="width:310px">
+
+                <div class="formLeftTitle">電話號碼</div><br>
+                <input type="text" placeholder="請輸入電話號碼" style="width:310px">
+
+                <div class="formLeftTitle" style="margin-right:125px;">國籍</div>
+                <div class="formLeftTitle">性別</div><br>
+                <select name="country" style="width:158px">
+                    <option value="" style="display:none;">請選擇國籍</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="America">America</option>
+                    <option value="Japan">Japan</option>
+                </select>
+
+                <!-- <div class="formLeftTitle">性別</div><br> -->
+                <select name="gender" style="width:158px">
+                    <option value="" style="display:none;">請選擇性別</option>
+                    <option value="Taiwan">男</option>
+                    <option value="America">女</option>
+                </select>
+
+                <div class="formLeftTitle">語言</div><br>
+                <select name="language" style="width:158px">
+                    <option value="" style="display:none">請選擇語言</option>
+                    <option value="english">英文</option>
+                    <option value="japanese">日文</option>
+                    <option value="chinese">中文</option>
+                    <option value="korean">韓文</option>
+                    <option value="other">其他</option>            
+                </select>
+            </div>
+
+            <div class="formRight">
+                <div class="formRightTitle">簡述</div><br>
+                <textarea name="formRightTitleTextarea" id="formRightTitleTextarea" style="width:310px;" rows="4"></textarea>
+
+                <div class="formRightTitle" style="margin-right:95px;">您的職業</div>
+                <div class="formRightTitle">您的語言需求</div><br>
+                <select name="job" style="width:158px">
+                    <option value="" style="display:none">請選擇職業</option>
+                    <option value="patentAttorney">專利工程師</option>
+                    <option value="translator">翻譯師</option>
+                    <option value="drawer">撰圖</option>
+                    <option value="other">其他</option>
+                </select>
+
+                <!-- <div class="formRightTitle">您的語言需求</div> -->
+                <select name="languageRequst" style="width:158px">
+                    <option value="" style="display:none">請選擇撰稿語言需求</option>
+                    <option value="english">英文</option>
+                    <option value="japanese">日文</option>
+                    <option value="chinese">中文</option>
+                    <option value="korean">韓文</option>
+                    <option value="other">其他</option> 
+                </select>
+
+                <div class="formRightTitle">撰稿需求</div><br>
+                <label><input type="checkbox" value="debate" name="debate">答辯</label>
+                <label><input type="checkbox" value="write" name="write">撰稿</label>
+                <label><input type="checkbox" value="check" name="check">文字校對</label>
+                <label><input type="checkbox" value="search" name="search">檢索</label>
+                <label><input type="checkbox" value="draw" name="draw">撰圖</label><br>
+
+                <div class="formRightTitle">Skills</div><br>
+                <div class="checkboxLeft">
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">專利檢索</label><br>
+                    <label><input type="checkbox" value="patentAnalyze" name="patentAnalyze">專利分析</label><br>
+                    <label><input type="checkbox" value="patentPlan" name="patentPlan">專利佈局</label><br>
+                    <label><input type="checkbox" value="USpatant" name="USpatant">美國專利</label><br>
+                    <label><input type="checkbox" value="japanPatent" name="japanPatent">日本專利</label><br>
+                </div> 
+                <div class="checkboxMiddle">   
+                    <label><input type="checkbox" value="chinaPatent" name="chinaPatent">中國專利</label><br>
+                    <label><input type="checkbox" value="EUpatent" name="EUpatent">歐盟專利</label><br>
+                    <label><input type="checkbox" value="koreaPatent" name="koreaPatent">韓國專利</label><br>
+                    <label><input type="checkbox" value="taiwanPatent" name="taiwanPatent">台灣專利</label><br>
+                    <label><input type="checkbox" value="otherPatent" name="otherPatent">其他</label><br>
+                </div>
+                <div class="checkboxRight">                                     
+                    <label><input type="checkbox" value="Visio" name="Visio">Visio</label><br>
+                    <label><input type="checkbox" value="Illustrator" name="Illustrator">Illustrator</label><br>
+                    <label><input type="checkbox" value="Word" name="Word">Word</label><br>
+                    <label><input type="checkbox" style="opacity:0;"></label><br>
+                    <label><input type="checkbox" style="opacity:0;"></label><br>
+                </div>
+            </div>
+            <div class="formBtn">
+                <button class="formBtnSubmit" id="formBtnSubmit" type="reset">繼續</button>     
+                <button class="formBtnReset" id="formBtnReset" type="reset">返回</button> 
+            </div>                 
+        </form>
+    </div>
+</div>
+
+<!-- 寫手註冊成功燈箱 -->
+<div class="providerRegistSucess" id="providerRegistSucess">
+    <div class="providerRegistSucessLightbox">
+        <div class="providerRegistSucessTitle">All Done</div>
+        <img class="smile" src="./images/smile.png" alt="">
+        <div class="providerRegistSucessText1">Congratulations!!</div>
+        <div class="providerRegistSucessText2">Now you can put your service to PTer!</div>
+        <div class="providerRegistSucessBtn">
+            <button class="providerRegistSucessGo">Go</button>     
+            <button class="providerRegistSucessLater" id="providerRegistSucessLater">Later</button> 
+        </div>    
+    </div>
+</div>
+    <div class="dashboard">
+    <div class="dashboardLeft">
+        <div class="dashboardLeftTop">
+            <div class="dashboardPhoto"><img src="./images/user.jpeg"></div>
+            <div class="dashboardLeftTopTitle">撰稿迅速小快手</div>
+            <div class="dashboardLeftTopName">王小明</div>
+            <div class="dashboardLeftTopStatus">
+                <img class="dashboardLeftTopStars" src="./images/stars.png">
+                <span class="dashboardLeftTopCounts">(15)</span>
+            </div>    
+        </div>
+        <div class="dashboardLeftBot">
+            <div class="dashboardLeftBotTitle">
+                <div class="dashboardLeftBotTitleText">國家或地區</div>
+                <div class="dashboardLeftBotTitleText">會員時間</div>
+                <div class="dashboardLeftBotTitleText">回覆時間</div>
+                <div class="dashboardLeftBotTitleText">上次完成專案時間</div>
+                
+            </div>
+            <div class="dashboardLeftBotContent">
+                <div class="dashboardLeftBotContentText">台灣</div>
+                <div class="dashboardLeftBotContentText">2020/06/03</div>
+                <div class="dashboardLeftBotContentText">20分鐘內</div>
+                <div class="dashboardLeftBotContentText">1小時前</div>
+            </div>
+            <hr>
+            <div class="dashboardLeftBotSelfIntro">你在尋找媒合工程師嗎？<br>我可以在3天內快速完成高品質的繪圖，若您有興趣，可以隨時與我溝通！</div>
+            <div class="dashboardLeftBotProvide">
+                <div class="dashboardLeftBotProvideTitle">我的服務</div>
+                <div class="dashboardLeftBotProvideContent">
+                    <ul>
+                        <li>- 專利範圍撰稿</li>
+                        <li>- 繪圖(Visio Illustrator PPT)</li>
+                        <li>- 翻譯500字內(字數可私訊溝通)</li>
+                        <li>- 專利檢索報告</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboardRight">
+        <div class="dashboardRightTop">
+            <div class="dashboardRightTopTabButton">
+                <button id="dashboardRightTopTabButton1" class="tablinks" onclick="tabChange(event, 'dashboardRightTopTabContent1')">基本專案</button><br>
+                <button id="dashboardRightTopTabButton2" class="tablinks" onclick="tabChange(event, 'dashboardRightTopTabContent2')">中階專案</button><br>
+                <button id="dashboardRightTopTabButton3" class="tablinks" onclick="tabChange(event, 'dashboardRightTopTabContent3')">Pro專案</button><br>
+            </div>
+            <div class="dashboardRightTopTabContent">
+                <div id="dashboardRightTopTabContent1" class="tabcontent">
+                    <div class="dashboardRightTopTabContent1Part1">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">專利繪圖/美國/3天/可修稿2次</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:160px;">繪製中</div>
+                            <div class="pin" style="margin-left:160px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:25%;"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:170px;">day2</div>
+                            <div class="pin" style="margin-left:165px;">day3</div>                       
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄已隱藏</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div> 
+                    <div class="dashboardRightTopTabContent1Part2">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">專利範圍撰稿/台灣/5天/可修稿3次</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:160px;">繪製中</div>
+                            <div class="pin" style="margin-left:160px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:75%;"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:170px;">day3</div>
+                            <div class="pin" style="margin-left:165px;">day5</div>                       
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄4500</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div>
+                    <div class="dashboardRightTopTabContent1Part3">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">檢索報告/歐盟、日本/2天/不提供修稿</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:367px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:100%;"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:372px;">day2</div>                      
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄1200</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div>                                    
+                </div>
+                <div id="dashboardRightTopTabContent2" class="tabcontent">
+                    <div class="dashboardRightTopTabContent1Part1">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">專利繪圖/美國/3天/可修稿2次</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:160px;">繪製中</div>
+                            <div class="pin" style="margin-left:160px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:75%;background-color:rgb(54,54,199);"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:170px;">day2</div>
+                            <div class="pin" style="margin-left:165px;">day3</div>                       
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄已隱藏</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div> 
+                    <div class="dashboardRightTopTabContent1Part2">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">專利範圍撰稿/台灣/5天/可修稿3次</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:160px;">繪製中</div>
+                            <div class="pin" style="margin-left:160px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:25%;background-color:rgb(54,54,199);"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:170px;">day3</div>
+                            <div class="pin" style="margin-left:165px;">day5</div>                       
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄4500</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div>
+                    <div class="dashboardRightTopTabContent1Part3">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">檢索報告/歐盟、日本/2天/不提供修稿</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:367px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:50%;background-color:rgb(54,54,199);"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:372px;">day2</div>                      
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄1200</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div> 
+                </div>
+                <div id="dashboardRightTopTabContent3" class="tabcontent">
+                    <div class="dashboardRightTopTabContent1Part1">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">專利繪圖/美國/3天/可修稿2次</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:160px;">繪製中</div>
+                            <div class="pin" style="margin-left:160px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:25%;background-color:rgb(62, 173, 207);"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:170px;">day2</div>
+                            <div class="pin" style="margin-left:165px;">day3</div>                       
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄已隱藏</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div> 
+                    <div class="dashboardRightTopTabContent1Part2">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">專利範圍撰稿/台灣/5天/可修稿3次</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:160px;">繪製中</div>
+                            <div class="pin" style="margin-left:160px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:75%;background-color:rgb(62, 173, 207);"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:170px;">day3</div>
+                            <div class="pin" style="margin-left:165px;">day5</div>                       
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄4500</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div>
+                    <div class="dashboardRightTopTabContent1Part3">
+                        <div class="dashboardRightTopTabContent1Part1Left">
+                            <div class="dashboardRightTopTabContent1Part1LeftTitle">檢索報告/歐盟、日本/2天/不提供修稿</div>
+                            <div class="pin">已接案</div>
+                            <div class="pin" style="margin-left:367px;">完成</div>
+                            <div class="myProgress">
+                                <div class="myBar" style="width:100%;background-color:rgb(62, 173, 207);"></div>
+                            </div>
+                            <div class="pin" style="margin-left:8px;">day1</div>
+                            <div class="pin" style="margin-left:372px;">day2</div>                      
+                        </div> 
+                        <div class="dashboardRightTopTabContent1Part1Btn">
+                            <div class="dashboardRightTopTabContent1Part1BtnPrice">＄1200</div>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="dashboardRightBot">
+            <div class="dashboardRightBotLeft">
+                <img src="./images/stars.png">
+                <div class="dashboardRightBotLeftComment">15則評論</div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:80%;">
+                        <div class="myBarLabel">5★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:70%;">
+                        <div class="myBarLabel">4★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:40%;">
+                        <div class="myBarLabel">3★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:10%;">
+                        <div class="myBarLabel">2★</div>
+                    </div>
+                </div>
+                <div class="myProgress">
+                    <div class="myBar" style="width:15%;">
+                        <div class="myBarLabel">1★</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="dashboardRightBotAllComment">
+                <div class="dashboardRightBotAllCommentTitle">所有評論</div>
+                <select class="dashboardRightBotAllCommentSelect" style="width:158px">
+                    <option value="">最新評論</option>
+                    <option value="">最舊評論</option>
+                    <option value="">最高評分</option>
+                    <option value="">最低評分</option>
+                </select>
+
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/user.jpeg"></div>
+                        <div class="commentItemPersonName">遊戲王</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/usFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">United States</div>
+                    </div>
+                    <div class="commentItemMessageComment">寫手溝通水平極高，非常細心！下次還會找他～</div>
+                    <div class="commentItemMessageTime">發佈於2天前</div>
+                </div>
+                <!-- 評論留言end -->
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/user.jpeg"></div>
+                        <div class="commentItemPersonName">Gary</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">4<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/franceFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">France</div>
+                    </div>
+                    <div class="commentItemMessageComment">我會推薦給朋友！</div>
+                    <div class="commentItemMessageTime">發佈於2天前</div>
+                </div>
+                <!-- 評論留言end -->
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/user.jpeg"></div>
+                        <div class="commentItemPersonName">周小倫</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/taiwanFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">Taiwan</div>
+                    </div>
+                    <div class="commentItemMessageComment">迅速又專業！價格也很合理，往後再合作吧！</div>
+                    <div class="commentItemMessageTime">發佈於3天前</div>
+                </div>
+                <!-- 評論留言end -->
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/user.jpeg"></div>
+                        <div class="commentItemPersonName">Henry</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/franceFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">France</div>
+                    </div>
+                    <div class="commentItemMessageComment">Thanks u so much!</div>
+                    <div class="commentItemMessageTime">發佈於5天前</div>
+                </div>
+                <!-- 評論留言end -->
+
+                <!-- 評論留言start -->
+                <div class="commentItem">
+                    <div class="commentItemPersonInfo">
+                        <div class="commentItemPersonPhoto"><img src="./images/user.jpeg"></div>
+                        <div class="commentItemPersonName">大壯</div>
+                    </div>
+                    <div class="commentItemInside">
+                        <div class="commentItemInsideStatus">5<img src="./images/singleStar.png"></div>
+                        <img class="commentItemInsideFlag" src="./images/usFlag.jpg"><br>
+                        <div class="commentItemInsideCountry">United States</div>
+                    </div>
+                    <div class="commentItemMessageComment">寫手溝通水平極高，非常細心！下次還會找他～</div>
+                    <div class="commentItemMessageTime">發佈於7天前</div>
+                </div>
+                <!-- 評論留言end -->
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+    <ul class="footerUl">
+        <li class="footerLi">
+            <div class="footerLiTitle">INFORMATION</div>
+            <div class="footerLiText">Our Contacts</div>
+            <div class="footerLiText">Privacy Policy</div>
+            <div class="footerLiText">terms and Conditions</div>
+            <div class="footerLiText">FAQs</div>
+            <div>&nbsp;</div>
+        </li>
+        <li class="footerLi">
+            <div class="footerLiTitle">PROPERTIES</div>
+            <div class="footerLiText">Commercial</div>
+            <div class="footerLiText">House</div>
+            <div class="footerLiText">Office</div>
+            <div class="footerLiText">Residential</div>
+            <div class="footerLiText">Residential Tower</div>
+        </li>
+        <li class="footerLi">
+            <div class="footerLiTitle">LOCATIONS</div>
+            <div class="footerLiText">Beverly Hills</div>
+            <div class="footerLiText">Los Angeles</div>
+            <div class="footerLiText">Mission Viejo</div>
+            <div class="footerLiText">Newport Beach</div>
+            <div class="footerLiText">Pesadena</div>
+        </li>
+        <li class="footerLi">
+            <div class="footerLiTitle">USEFULL LINKS</div>
+            <div class="footerLiText">Blog</div>
+            <div class="footerLiText">Our Contacts</div>
+            <div class="footerLiText">Submit Listing</div>
+            <div class="footerLiText">Support</div>
+            <div>&nbsp;</div>
+        </li>
+    </ul>
+    <ul class="footerUl2">
+        <li class="footerUl2Li">Privacy Policy</li>
+        <li class="footerUl2Li">Terms and Conditions</li>
+        <li class="footerUl2Li">Contact Us</li>
+    </ul>
+</footer>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

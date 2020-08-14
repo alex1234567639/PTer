@@ -803,5 +803,330 @@ footer {
         cursor: pointer;
         text-decoration: underline; }
 
+.dashboard {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px; }
+  .dashboard .dashboardLeft {
+    position: sticky;
+    top: 80px;
+    left: 0;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px; }
+    .dashboard .dashboardLeft .dashboardLeftTop {
+      border: 1px solid #c8c8c8;
+      width: 100%; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardPhoto {
+        border: 1px solid #c8c8c8;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 20px; }
+        .dashboard .dashboardLeft .dashboardLeftTop .dashboardPhoto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopTitle {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopName {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopStatus {
+        margin-bottom: 20px;
+        text-align: center; }
+        .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopStatus .dashboardLeftTopStars {
+          margin-top: 15px;
+          width: 100px; }
+        .dashboard .dashboardLeft .dashboardLeftTop .dashboardLeftTopStatus .dashboardLeftTopCounts {
+          display: inline-block;
+          margin-left: 5px; }
+    .dashboard .dashboardLeft .dashboardLeftBot {
+      border: 1px solid #c8c8c8;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle {
+        margin-top: 20px;
+        display: inline-block;
+        text-align: initial; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle .dashboardLeftBotTitleText {
+          color: gray;
+          margin-bottom: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotContent {
+        margin-top: 20px;
+        display: inline-block;
+        text-align: initial;
+        margin-left: 30px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotContent .dashboardLeftBotContentText {
+          margin-bottom: 15px; }
+      .dashboard .dashboardLeft .dashboardLeftBot hr {
+        width: 90%; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotSelfIntro {
+        font-size: 14px;
+        letter-spacing: .5px;
+        line-height: 18px;
+        width: 255px;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: initial; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide {
+        text-align: initial;
+        width: 255px;
+        margin: 0 auto;
+        margin-top: 30px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideTitle {
+          color: gray;
+          margin-bottom: 15px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent {
+          margin-bottom: 30px; }
+          .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotProvide .dashboardLeftBotProvideContent ul li {
+            font-size: 14px;
+            margin-bottom: 5px;
+            letter-spacing: .5px; }
+  .dashboard .dashboardRight {
+    width: 870px;
+    margin-left: 15px;
+    display: inline-block;
+    margin-bottom: 50px; }
+    .dashboard .dashboardRight .dashboardRightTop {
+      border: 1px solid #c8c8c8; }
+      .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton {
+        width: 150px;
+        display: inline-block;
+        vertical-align: auto;
+        padding: 50px 30px;
+        box-sizing: border-box; }
+        .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .tablinks {
+          width: 80px;
+          height: 35px;
+          color: #134099;
+          background-color: white;
+          border: 1px solid #134099;
+          margin: 10px 0; }
+          .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .tablinks:hover {
+            cursor: pointer;
+            background-color: #eeeeee; }
+        .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .active {
+          color: white;
+          background-color: #134099;
+          border: 1px solid #134099; }
+          .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabButton .active:hover {
+            cursor: pointer;
+            background-color: #3636c7; }
+      .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent {
+        width: 700px;
+        display: inline-block;
+        vertical-align: top; }
+        .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent {
+          animation: fadeEffect .5s; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+          .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 {
+            margin-bottom: 20px; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left {
+              width: 500px;
+              height: 90px;
+              display: inline-block;
+              margin-top: 20px; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .dashboardRightTopTabContent1Part1LeftTitle, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .dashboardRightTopTabContent1Part1LeftTitle, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .dashboardRightTopTabContent1Part1LeftTitle {
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: .5px;
+                margin-bottom: 10px; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .pin, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .pin, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .pin {
+                font-size: 14px;
+                color: gray;
+                display: inline-block; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress {
+                position: relative;
+                width: 90%;
+                height: 20px;
+                background-color: #e0e0e0;
+                box-sizing: border-box;
+                margin-top: 5px;
+                margin-bottom: 5px; }
+                .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress .myBar {
+                  position: absolute;
+                  height: 100%;
+                  background-color: #9146cf; }
+            .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn {
+              display: inline-block;
+              height: 90px;
+              vertical-align: top;
+              margin-top: 20px;
+              text-align: center; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPrice, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPrice, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPrice {
+                font-size: 14px;
+                color: gray;
+                margin-top: 15px;
+                margin-bottom: 15px; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnContact, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnContact, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnContact {
+                width: 80px;
+                height: 33px;
+                color: white;
+                background-color: #134099;
+                border: 1px solid #134099;
+                border-radius: 5px; }
+                .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnContact:hover, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnContact:hover, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnContact:hover {
+                  cursor: pointer;
+                  background-color: #3636c7;
+                  transition-duration: .5s; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPay, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPay, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPay {
+                width: 80px;
+                height: 33px;
+                color: #134099;
+                background-color: white;
+                border: 1px solid #134099;
+                border-radius: 5px; }
+                .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPay:hover, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPay:hover, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn .dashboardRightTopTabContent1Part1BtnPay:hover {
+                  cursor: pointer;
+                  background-color: #eeeeee;
+                  transition-duration: .5s; }
+    .dashboard .dashboardRight .dashboardRightBot {
+      border: 1px solid #c8c8c8;
+      margin-top: 30px; }
+      .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft {
+        width: 300px;
+        display: inline-block;
+        margin-top: 20px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft img {
+          width: 100px;
+          margin-left: 30px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .dashboardRightBotLeftComment {
+          display: inline-block;
+          font-size: 14px;
+          margin-left: 5px;
+          transform: translateY(-2px); }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress {
+          margin: 0 auto;
+          margin-top: 10px;
+          position: relative;
+          width: 80%;
+          height: 20px;
+          background-color: #e0e0e0;
+          box-sizing: border-box; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress:hover {
+            border: 1px solid #c8c8c8; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress:hover .myBar {
+              background-color: #ffcd44; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress .myBar {
+            position: absolute;
+            height: 100%;
+            background-color: #fcbb48; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotLeft .myProgress .myBar .myBarLabel {
+              margin-left: 5px;
+              line-height: 20px;
+              color: #f1f1f1; }
+      .dashboard .dashboardRight .dashboardRightBot hr {
+        width: 95%;
+        margin-top: 20px; }
+      .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment {
+        width: 95%;
+        margin: 0 auto;
+        position: relative; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentTitle {
+          font-weight: 500;
+          font-size: 20px;
+          margin-top: 20px;
+          margin-bottom: 30px; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect {
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          top: 0;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+          background-position: right 10px top 50%;
+          background-repeat: no-repeat;
+          background-size: 10px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect:focus, .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect:hover {
+            border: 1px solid #bbbbbb; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .dashboardRightBotAllCommentSelect option {
+            background: #ffffff; }
+        .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem {
+          width: 100%;
+          height: 90px;
+          background-color: #f0f0f0;
+          padding: 5px;
+          box-sizing: border-box;
+          position: relative;
+          margin-bottom: 20px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo {
+            display: inline-block;
+            width: 70px;
+            text-align: center;
+            margin-left: 10px; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonPhoto {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-bottom: 5px; }
+              .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonPhoto img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemPersonInfo .commentItemPersonName {
+              font-weight: 500;
+              width: 60px;
+              text-align: center;
+              font-size: 14px; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside {
+            width: 105px;
+            display: inline-block;
+            font-size: 14px; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideStatus {
+              color: gray;
+              margin-bottom: 10px; }
+              .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideStatus img {
+                margin-left: 3px;
+                width: 15px;
+                transform: translateY(2px); }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideFlag {
+              width: 30px;
+              margin-bottom: 5px; }
+            .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemInside .commentItemInsideCountry {
+              display: inline-block;
+              color: gray; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemMessageComment {
+            border: 1px solid #e6e6e6;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            background-color: white;
+            display: inline-block;
+            width: 500px;
+            position: absolute;
+            right: 120px;
+            top: 30px;
+            letter-spacing: .5px;
+            line-height: 20px;
+            overflow: hidden; }
+          .dashboard .dashboardRight .dashboardRightBot .dashboardRightBotAllComment .commentItem .commentItemMessageTime {
+            display: inline-block;
+            font-size: 14px;
+            color: gray;
+            position: absolute;
+            right: 20px;
+            top: 68px; }
+
 * {
   font-family: Microsoft JhengHei; }
