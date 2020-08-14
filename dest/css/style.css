@@ -1195,5 +1195,153 @@ footer {
             right: 20px;
             top: 68px; }
 
+.payBill.open {
+  display: block; }
+
+.payBill {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .payBill .payBillLightbox {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .payBill .payBillLightbox .payBillLightboxTitle {
+      text-align: center; }
+      .payBill .payBillLightbox .payBillLightboxTitle .payBillLightboxTitle1, .payBill .payBillLightbox .payBillLightboxTitle .payBillLightboxTitle2, .payBill .payBillLightbox .payBillLightboxTitle .payBillLightboxTitle3 {
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 30px;
+        color: #c8c8c8; }
+    .payBill .payBillLightbox form .wayToPayBill {
+      border: 1px solid #c8c8c8;
+      background-color: #f0f0f0;
+      width: 290px;
+      height: 370px;
+      margin-top: 20px;
+      box-sizing: border-box;
+      padding: 20px;
+      display: inline-block; }
+      .payBill .payBillLightbox form .wayToPayBill .wayToPayBillTitle {
+        font-size: 18px;
+        font-weight: 600; }
+      .payBill .payBillLightbox form .wayToPayBill .wayToPayBillSubtitle {
+        margin-top: 20px; }
+      .payBill .payBillLightbox form .wayToPayBill img {
+        width: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .payBill .payBillLightbox form .wayToPayBill input[type=text] {
+        width: 100px;
+        margin-bottom: 15px;
+        padding: 4px 8px;
+        outline: none;
+        color: #333333;
+        background-color: white;
+        border: 1px solid #dddddd; }
+        .payBill .payBillLightbox form .wayToPayBill input[type=text]:focus, .payBill .payBillLightbox form .wayToPayBill input[type=text]:hover {
+          border: 1px solid #bbbbbb; }
+      .payBill .payBillLightbox form .wayToPayBill label {
+        font-size: 14px; }
+        .payBill .payBillLightbox form .wayToPayBill label input {
+          margin-right: 5px; }
+    .payBill .payBillLightbox form .detailForPayBill {
+      border: 1px solid #c8c8c8;
+      background-color: #f0f0f0;
+      width: 290px;
+      height: 370px;
+      margin-top: 20px;
+      margin-left: 12px;
+      box-sizing: border-box;
+      padding: 20px;
+      display: inline-block;
+      vertical-align: top; }
+      .payBill .payBillLightbox form .detailForPayBill .detailForPayBillTitle {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center; }
+      .payBill .payBillLightbox form .detailForPayBill .detailForPayBillType {
+        font-weight: 600;
+        margin-top: 10px;
+        display: inline-block; }
+      .payBill .payBillLightbox form .detailForPayBill .detailForPayBillPrice {
+        display: inline-block;
+        float: right;
+        margin-top: 10px; }
+      .payBill .payBillLightbox form .detailForPayBill .detailForPayBillFinishDay {
+        font-size: 12px;
+        color: gray;
+        text-align: right;
+        margin-top: 5px; }
+      .payBill .payBillLightbox form .detailForPayBill .detailForPayBillItems {
+        margin-top: 20px; }
+        .payBill .payBillLightbox form .detailForPayBill .detailForPayBillItems .detailForPayBillItem {
+          margin-bottom: 10px; }
+          .payBill .payBillLightbox form .detailForPayBill .detailForPayBillItems .detailForPayBillItem img {
+            width: 20px;
+            margin: 0 5px; }
+      .payBill .payBillLightbox form .detailForPayBill input[type=text] {
+        width: 100px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        padding: 4px 8px;
+        outline: none;
+        color: #333333;
+        background-color: white;
+        border: 1px solid #dddddd; }
+        .payBill .payBillLightbox form .detailForPayBill input[type=text]:focus, .payBill .payBillLightbox form .detailForPayBill input[type=text]:hover {
+          border: 1px solid #bbbbbb; }
+      .payBill .payBillLightbox form .detailForPayBill .totalPrice {
+        font-weight: 600;
+        display: inline-block; }
+      .payBill .payBillLightbox form .detailForPayBill .totalMoney {
+        font-weight: 600;
+        display: inline-block;
+        float: right; }
+      .payBill .payBillLightbox form .detailForPayBill .detailForPayBillBtn {
+        margin-top: 40px;
+        text-align: center; }
+        .payBill .payBillLightbox form .detailForPayBill .detailForPayBillBtn .detailForPayBillBtnChecked {
+          width: 80px;
+          height: 33px;
+          color: white;
+          background-color: #134099;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-right: 10px; }
+          .payBill .payBillLightbox form .detailForPayBill .detailForPayBillBtn .detailForPayBillBtnChecked:hover {
+            cursor: pointer;
+            background-color: #3636c7;
+            transition-duration: .5s; }
+        .payBill .payBillLightbox form .detailForPayBill .detailForPayBillBtn .detailForPayBillBtnCancel {
+          width: 80px;
+          height: 33px;
+          color: #134099;
+          background-color: white;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-left: 10px; }
+          .payBill .payBillLightbox form .detailForPayBill .detailForPayBillBtn .detailForPayBillBtnCancel:hover {
+            cursor: pointer;
+            background-color: #eeeeee;
+            transition-duration: .5s; }
+
 * {
   font-family: Microsoft JhengHei; }

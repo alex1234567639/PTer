@@ -465,3 +465,183 @@
         }
     }  
 }
+
+//付款燈箱
+.payBill.open{
+    display: block;
+}
+.payBill{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .payBillLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 500px;       
+        background-color: white;
+        padding: 30px 50px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .payBillLightboxTitle{
+            // border: 1px solid red;
+            text-align: center;
+            .payBillLightboxTitle1, .payBillLightboxTitle2, .payBillLightboxTitle3{
+                display: inline-block;
+                margin: 0 5px;
+                line-height: 30px;
+                color: rgb(200, 200, 200);
+            }
+        }
+        form{
+            .wayToPayBill{
+                border: 1px solid rgb(200,200,200);
+                background-color: rgb(240, 240, 240);
+                width: 290px;
+                height: 370px;
+                margin-top: 20px;
+                box-sizing: border-box;
+                padding: 20px;
+                display: inline-block;
+                .wayToPayBillTitle{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                .wayToPayBillSubtitle{
+                    margin-top: 20px;
+                }
+                img{
+                    width: 120px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                input[type=text]{
+                    width: 100px;
+                    margin-bottom: 15px;
+                    padding: 4px 8px;
+                    outline: none;
+                    color: #333333;
+                    background-color: white;
+                    border: 1px solid #dddddd;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                }
+                label{
+                    font-size: 14px;
+                    input{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .detailForPayBill{
+                border: 1px solid rgb(200,200,200);
+                background-color: rgb(240, 240, 240);
+                width: 290px;
+                height: 370px;
+                margin-top: 20px;
+                margin-left: 12px;
+                box-sizing: border-box;
+                padding: 20px;
+                display: inline-block;
+                vertical-align: top;
+                .detailForPayBillTitle{
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+                .detailForPayBillType{
+                    font-weight: 600;
+                    margin-top: 10px;
+                    display: inline-block;
+                }
+                .detailForPayBillPrice{
+                    display: inline-block;
+                    float: right;
+                    margin-top: 10px;
+                }
+                .detailForPayBillFinishDay{
+                    font-size: 12px;
+                    color: gray;
+                    text-align: right;
+                    margin-top: 5px;
+                }
+                .detailForPayBillItems{
+                    margin-top: 20px;
+                    .detailForPayBillItem{
+                        margin-bottom: 10px;
+                        img{
+                            width: 20px;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+                input[type=text]{
+                    width: 100px;
+                    margin-bottom: 5px;
+                    margin-top: 10px;
+                    padding: 4px 8px;
+                    outline: none;
+                    color: #333333;
+                    background-color: white;
+                    border: 1px solid #dddddd;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                }
+                .totalPrice{
+                    font-weight: 600;
+                    display: inline-block;
+                }
+                .totalMoney{
+                    font-weight: 600;
+                    display: inline-block;
+                    float: right;
+                }
+                .detailForPayBillBtn{
+                    margin-top: 40px;
+                    text-align: center;
+                    .detailForPayBillBtnChecked{
+                        width: 80px;
+                        height: 33px;
+                        color: white;
+                        background-color: rgb(19, 64, 153);
+                        border: 1px solid rgb(19, 64, 153);
+                        border-radius: 5px;
+                        margin-right: 10px;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgb(54, 54, 199);
+                            transition-duration: .5s;
+                        }
+                    }
+                    .detailForPayBillBtnCancel{
+                        width: 80px;
+                        height: 33px;
+                        color: rgb(19, 64, 153);
+                        background-color: white;
+                        border: 1px solid rgb(19, 64, 153);
+                        border-radius: 5px;
+                        margin-left: 10px;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgb(238, 238, 238);
+                            transition-duration: .5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

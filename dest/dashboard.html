@@ -275,7 +275,7 @@
                         <div class="dashboardRightTopTabContent1Part1Btn">
                             <div class="dashboardRightTopTabContent1Part1BtnPrice">＄4500</div>
                             <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
-                            <button class="dashboardRightTopTabContent1Part1BtnPay">付款</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnPay" id="dashboardRightTopTabContent1Part1BtnPay">付款</button>
                         </div>
                     </div>
                     <div class="dashboardRightTopTabContent1Part3">
@@ -546,6 +546,50 @@
                 <!-- 評論留言end -->
             </div>
         </div>
+    </div>
+</div>
+
+<!-- 付款燈箱 -->
+<div class="payBill" id="payBill">
+    <div class="payBillLightbox">
+        <div class="payBillLightboxTitle">
+            <div class="payBillLightboxTitle1">訂單確認</div>
+            <div class="payBillLightboxTitle2" style="color:rgb(19,64,153);border-bottom:1px solid rgb(19,64,153);">付款確認</div>
+            <div class="payBillLightboxTitle3">完成訂單</div>
+        </div>
+        <form action="">
+            <div class="wayToPayBill">
+                <div class="wayToPayBillTitle">付款方式</div>
+                <div class="wayToPayBillSubtitle">信用卡/金融卡</div>
+                <img src="./images/creditCard.png"><br>
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="MM/YY">
+                <input type="text" placeholder="Sercurity Code"><br>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <label><input type="checkbox">儲存我的卡片</label>
+            </div>
+            <div class="detailForPayBill">
+                <div class="detailForPayBillTitle">專利範圍撰稿</div>
+                <hr>
+                <div class="detailForPayBillType">基本專案</div>
+                <div class="detailForPayBillPrice">$4500</div>
+                <div class="detailForPayBillFinishDay">完成日&nbsp;2020/08/24</div>
+                <div class="detailForPayBillItems">
+                    <div class="detailForPayBillItem"><img src="./images/check.png">台灣</div>
+                    <div class="detailForPayBillItem"><img src="./images/check.png">5天完成</div>
+                    <div class="detailForPayBillItem"><img src="./images/check.png">可修改3次</div>
+                </div>
+                <input type="text" placeholder="您有優惠卷嗎？">
+                <hr>
+                <div class="totalPrice">總計</div>
+                <div class="totalMoney">$1200</div>
+                <div class="detailForPayBillBtn">
+                    <button type="button" class="detailForPayBillBtnChecked" id="detailForPayBillBtnChecked">確認付款</button>
+                    <button type="reset" class="detailForPayBillBtnCancel" id="detailForPayBillBtnCancel">取消訂單</button>
+                </div>
+            </div>
+        </form>      
     </div>
 </div>
     <footer>

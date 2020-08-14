@@ -37,3 +37,13 @@ document.getElementById("dashboardRightTopTabButton1").click();
 //   }
 // }
 
+window.onload=function(){
+  //點擊付款，彈出付款燈箱
+  document.getElementById('dashboardRightTopTabContent1Part1BtnPay').onclick = function(){
+    document.getElementById('payBill').classList.add("open");
+  }
+  //點擊取消訂單，關閉燈箱
+    document.getElementById('detailForPayBillBtnCancel').onclick = function(){     
+      document.getElementById('payBill').classList.remove("open");
+  }
+}
