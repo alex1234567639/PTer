@@ -29,6 +29,21 @@ window.onload=function(){
     loginCross.onclick = function(){      
         login.classList.remove("open");
     }
+    //登入，點擊fb彈出完成燈箱
+    document.getElementById('fb').onclick = function(){     
+        document.getElementById('login').classList.remove("open");
+        document.getElementById('providerRegistSucess').classList.add("open");
+    }
+    //登入，點擊google彈出完成燈箱
+    document.getElementById('google').onclick = function(){     
+        document.getElementById('login').classList.remove("open");
+        document.getElementById('providerRegistSucess').classList.add("open");
+    }
+    //登入，點擊登入彈出完成燈箱
+    document.getElementById('loginFormLogin').onclick = function(){     
+        document.getElementById('login').classList.remove("open");
+        document.getElementById('providerRegistSucess').classList.add("open");
+    }
 
     //點擊 Be a Provider彈出燈箱
     document.getElementById('beAprovider').onclick = function(){
@@ -42,7 +57,7 @@ window.onload=function(){
     document.getElementById('formBtnReset').onclick = function(){     
         document.getElementById('providerRegist').classList.remove("open");
     }
-    //點擊繼續關閉燈箱，彈出完成表單燈箱
+    //點擊繼續關閉燈箱，彈出完成燈箱
     document.getElementById('formBtnSubmit').onclick = function(){     
         document.getElementById('providerRegist').classList.remove("open");
         document.getElementById('providerRegistSucess').classList.add("open");

@@ -53,11 +53,11 @@
     <div class="loginLightbox">
         <img class="loginCross" id="loginCross" src="./images/cross.png">
         <div class="loginTitle">登入 PTer</div>
-        <div class="fb">
+        <div class="fb" id="fb">
             <div class="loginFacebook">使用Facebook帳號登入</div>
             <img class="loginFacebookImg" src="./images/facebook.png">
         </div>
-        <div class="google">
+        <div class="google" id="google">
             <div class="loginGoogle">使用Google帳號登入</div>
             <img class="loginGoogleImg" src="./images/google.png">
         </div>       
@@ -65,7 +65,7 @@
             <input type="text" placeholder="請輸入帳號">
             <input type="password" placeholder="請輸入密碼">
             <br>
-            <button>登入</button>
+            <button id="loginFormLogin" type="button">登入</button>
         </form>
     </div>
 </div>
@@ -171,7 +171,7 @@
                 </div>
             </div>
             <div class="formBtn">
-                <button class="formBtnSubmit" id="formBtnSubmit" type="reset">繼續</button>     
+                <button class="formBtnSubmit" id="formBtnSubmit" type="button">繼續</button>     
                 <button class="formBtnReset" id="formBtnReset" type="reset">返回</button> 
             </div>                 
         </form>
