@@ -191,10 +191,22 @@
                                 box-sizing: border-box;
                                 margin-top: 5px;
                                 margin-bottom: 5px;
+                                &:hover .myBar{
+                                    background-color: rgb(246, 96, 96);
+                                }
                                 .myBar{
                                     position: absolute;
                                     height: 100%;
-                                    // background-color: rgb(145, 70, 207);
+                                    background-color: rgb(207, 70, 70);
+                                    transition-duration: .5s;
+                                }
+                            }
+                            .myProgressCompleted{
+                                &:hover .myBar{
+                                    background-color: rgb(255,205,68);
+                                }
+                                .myBar{
+                                    background-color: rgb(252, 188, 72);
                                 }
                             }
                         }

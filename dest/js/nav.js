@@ -71,7 +71,7 @@ window.onload=function(){
     }
 
     //點擊登入後頭像，彈出登出選項
-    document.getElementById('navLi4').onclick = function(){     
+    document.getElementById('navLi4').onclick = function(){    
         let navLi4Logout = document.getElementById('navLi4Logout');
         if(navLi4Logout.classList.contains('open')){
             navLi4Logout.classList.remove("open");

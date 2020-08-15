@@ -1087,9 +1087,17 @@ footer {
                 box-sizing: border-box;
                 margin-top: 5px;
                 margin-bottom: 5px; }
+                .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar {
+                  background-color: #f66060; }
                 .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress .myBar {
                   position: absolute;
-                  height: 100%; }
+                  height: 100%;
+                  background-color: #cf4646;
+                  transition-duration: .5s; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgressCompleted:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgressCompleted:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgressCompleted:hover .myBar {
+                background-color: #ffcd44; }
+              .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgressCompleted .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgressCompleted .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgressCompleted .myBar {
+                background-color: #fcbc48; }
             .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Btn, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Btn, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Btn {
               display: inline-block;
               height: 90px;
