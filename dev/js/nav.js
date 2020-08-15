@@ -1,4 +1,5 @@
-window.onload=function(){
+// window.onload=function(){
+window.addEventListener("load",function(){
     let join = document.getElementById('join');
     let regist = document.getElementById('regist');
     let cross = document.getElementById('cross');
@@ -71,7 +72,8 @@ window.onload=function(){
     }
 
     //點擊登入後頭像，彈出登出選項
-    document.getElementById('navLi4').onclick = function(){    
+    document.getElementById('navLi4').onclick = function(){  
+        console.log('123');  
         let navLi4Logout = document.getElementById('navLi4Logout');
         if(navLi4Logout.classList.contains('open')){
             navLi4Logout.classList.remove("open");
@@ -103,7 +105,7 @@ window.onload=function(){
         document.getElementById('nav2').style.display = 'none';
         document.getElementById('navLi4Logout').classList.remove("open");
     }
-}
+},false);
 
 
 //寫手註冊燈箱
