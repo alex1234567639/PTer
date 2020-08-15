@@ -39,7 +39,7 @@ function tabChange(evt, tabName) {
 window.onload=function(){
   //預設載入網頁後點擊第一個tab
   document.getElementById("dashboardRightTopTabButton1").click();
-  
+
   //點擊付款，彈出付款燈箱
   document.getElementById('dashboardRightTopTabContent1Part1BtnPay').onclick = function(){
     document.getElementById('payBill').classList.add("open");
@@ -61,9 +61,8 @@ window.onload=function(){
     document.getElementById('contactMeLightboxAttachmentThing').innerHTML = '';
     document.getElementById('contactMeLightboxPhotoThing').innerHTML = '';
   } 
-}
 
-//在textarea輸入時，監控輸入的字數
+  //在textarea輸入時，監控輸入的字數
 var txt = document.getElementById("contactMeLightboxTextarea");
 var txtNum = document.getElementById("txtcontactMeLightboxTextareaNum");
 var sw = false; //定義關閉的開關
@@ -99,3 +98,5 @@ document.getElementById('contactMeLightboxPhoto').onchange = function(){
   let photoThing = document.getElementById('contactMeLightboxPhotoThing');
   photoThing.innerHTML = photo.value.split(/(\\|\/)/g).pop();
 }
+}
+
