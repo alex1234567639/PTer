@@ -12,17 +12,20 @@
         margin-left: 50%;
         transform: translateX(-50%);
         margin-top: 22%;
+        width: 618px;
         .bannerTitle{
             color: white;
             font-size: 30px;
             letter-spacing: .3px;
             margin-bottom: 15px;
+            text-align: center;
         }
         .bannerSubtitle{
             color: white;
             font-size: 18px;
             letter-spacing: .3px;
             margin-bottom: 25px;
+            text-align: center;
         }
         .bannerSearch{
             // border: 1px solid green;
@@ -69,19 +72,20 @@
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 80px;
-    letter-spacing: .5px;
     .landingPage2ndTitle{
         // border: 1px solid green;
         font-size: 35px;
         text-align: center;
-        margin-bottom: 40px;       
+        margin-bottom: 40px;
+        font-weight: 600; 
+        letter-spacing: 1px;      
     }
     .landingPage2ndContent{
         // border: 1px solid green;
-        // overflow-x: scroll;
         height: 350px;
         overflow-y: hidden;
         white-space: nowrap;
+        letter-spacing: .5px;
         .landingPage2ndContentCard{
             // border: 1px solid purple;
             width: 300px;
@@ -95,34 +99,43 @@
                 object-fit: cover;
             }
             .landingPage2ndContentCardMask{
+                // border: 1px solid purple;
                 width: 300px;
-                height: 130px;
+                height: 133px;
                 background-color: rgba(0, 0, 0, 0.5);
                 position: absolute;
                 bottom: 0;
                 white-space: normal;
-                padding: 20px 15px;
+                padding: 15px 20px;
                 color: white;
-                box-sizing: border-box;         
+                box-sizing: border-box; 
+                .landingPage2ndContentCardTitle{
+                    // border: 1px solid purple;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    font-size: 18px;   
+                }        
                 .landingPage2ndContentCardText{
+                    // border: 1px solid purple;
+                    margin: 0 auto;
                     font-size: 14px;
-                    line-height: 15px;
-                    width: 270px;
-                    height: 45px;
+                    line-height: 17px;
+                    height: 34px;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
-                    -webkit-line-clamp: 3;
+                    -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;     
                 }
                 .landingPage2ndContentCardBtn{
-                    width: 100px;
-                    height: 35px;
+                    // border: 1px solid purple;
+                    width: 90px;
+                    height: 30px;
                     color: white;
                     background-color: rgb(19, 64, 153);
                     border: 1px solid rgb(19, 64, 153);
                     border-radius: 5px;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     &:hover{
                         cursor: pointer;
                         background-color: rgb(54, 54, 199);
@@ -135,7 +148,7 @@
 }
 
 .landingPage3rd{
-    height: 700px;
+    height: 650px;
     background-image: url(../images/landingPage3rd.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -146,24 +159,24 @@
         height: 100%;
         background-color: rgb(16,55,132);
         color: white;
-        padding: 100px;
+        padding: 100px 180px;
         box-sizing: border-box;
     }
     .landingPage3rdTitle{
         font-size: 35px;
         margin-bottom: 80px;
-        letter-spacing: .5px;
         line-height: 40px;
+        letter-spacing: 1px; 
     }
     .landingPage3rdSubtitle{
         font-size: 22px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         letter-spacing: .5px;
         line-height: 25px;
     }
     .landingPage3rdText{
         font-size: 16px;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
         letter-spacing: .5px;
         line-height: 25px;
         color: rgb(209, 209, 209);
@@ -183,6 +196,8 @@
         font-size: 35px;
         text-align: center;
         margin-bottom: 60px; 
+        font-weight: 600;
+        letter-spacing: 1px; 
     }
     .landingPage4thContent{
         // border: 1px solid green;
@@ -209,6 +224,8 @@
             }
             .landingPage4thContentCardText{
                 text-align: center;
+                letter-spacing: 1px;
+                font-size: 18px;
             }
         }
     }
@@ -220,13 +237,13 @@
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 80px;
-    letter-spacing: .5px;
+    letter-spacing: 1px; 
     .landingPage5thTitle{
         // border: 1px solid green;
         font-size: 35px;
         text-align: center;
         margin-bottom: 60px; 
-        font-weight: 500;
+        font-weight: 600;
     }
     .landingPage5thContent{
         .landingPage5thContentCard{
@@ -244,7 +261,7 @@
             }
             .landingPage5thContentCardTitle{
                 font-size: 20px;
-                font-weight: 500;
+                font-weight: 600;
                 letter-spacing: .5px;
                 line-height: 25px;
                 margin-bottom: 50px;
