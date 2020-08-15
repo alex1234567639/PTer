@@ -81,7 +81,7 @@
                         </div> 
                         <div class="dashboardRightTopTabContent1Part1Btn">
                             <div class="dashboardRightTopTabContent1Part1BtnPrice">＄4500</div>
-                            <button class="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
+                            <button class="dashboardRightTopTabContent1Part1BtnContact" id="dashboardRightTopTabContent1Part1BtnContact">聯絡我</button>
                             <button class="dashboardRightTopTabContent1Part1BtnPay" id="dashboardRightTopTabContent1Part1BtnPay">付款</button>
                         </div>
                     </div>
@@ -397,5 +397,39 @@
                 </div>
             </div>
         </form>      
+    </div>
+</div>
+
+<!-- 聯絡我燈箱 -->
+<div class="contactMe" id="contactMe">
+    <div class="contactMeLightbox">
+        <div class="contactMeLightboxTitle">王小明</div>
+        <hr>
+        <div class="contactMeLightboxPhoto"><img src="./images/user.jpeg"></div>
+        <div class="contactMeLightboxLoginStatus"></div>
+        <div class="contactMeLightboxLoginStatusText">online</div>
+        <div class="contactMeLightboxReyplyTime">最近回覆 15分鐘前</div>
+        <div class="separateLine">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+        <div class="contactMeLightboxTime">當地時間 Wed 12:00 PM</div>
+        <form action="">
+            <textarea maxlength="1000" id="contactMeLightboxTextarea"></textarea>
+            <div class="contactMeLightboxBot">
+                <p class="contactMeLightboxTextareaP"><span id="txtcontactMeLightboxTextareaNum">0</span>/1000</p>
+                <label>
+                    <img src="./images/attachment.png">
+                    <input id="contactMeLightboxAttachment" type="file" accept=".pdf,.ppt,.doc,.docx">
+                </label>
+                <label>
+                    <img src="./images/photo.png">
+                    <input id="contactMeLightboxPhoto" type="file" accept="image/*">
+                </label>
+                <div class="contactMeLightboxAttachmentThing" id="contactMeLightboxAttachmentThing"></div>
+                <div class="contactMeLightboxPhotoThing" id="contactMeLightboxPhotoThing"></div>
+            </div>       
+            <div class="contactMeLightboxBtn">
+                <button type="button" class="contactMeLightboxBtnSend">傳送</button>
+                <button type="reset" class="contactMeLightboxBtnCancel" id="contactMeLightboxBtnCancel">取消</button>
+            </div>
+        </form>
     </div>
 </div>

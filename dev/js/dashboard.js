@@ -44,6 +44,56 @@ window.onload=function(){
   }
   //點擊取消訂單，關閉燈箱
     document.getElementById('detailForPayBillBtnCancel').onclick = function(){     
-      document.getElementById('payBill').classList.remove("open");
+     document.getElementById('payBill').classList.remove("open");
   }
+  
+  //點擊聯絡我，彈出聯絡燈箱
+  $('.dashboardRightTopTabContent1Part1BtnContact').each(function () {
+    $(this).click(function(){
+    	document.getElementById('contactMe').classList.add("open");
+    });
+  });
+  //點擊取消，關閉聯絡燈箱
+  document.getElementById('contactMeLightboxBtnCancel').onclick = function(){     
+    document.getElementById('contactMe').classList.remove("open");
+    document.getElementById('contactMeLightboxAttachmentThing').innerHTML = '';
+    document.getElementById('contactMeLightboxPhotoThing').innerHTML = '';
+  } 
+}
+
+//在textarea輸入時，監控輸入的字數
+var txt = document.getElementById("contactMeLightboxTextarea");
+var txtNum = document.getElementById("txtcontactMeLightboxTextareaNum");
+var sw = false; //定義關閉的開關
+txt.addEventListener("keyup", function(){
+  if(sw == false){
+    countTxt();
+  }
+});
+
+txt.addEventListener("compositionstart", function(){
+  sw = true;
+});
+
+txt.addEventListener("compositionend", function(){
+  sw = false;
+  countTxt();
+});
+
+function countTxt(){ //計數函式
+  if(sw == false){ //只有開關關閉時，才賦值
+    txtNum.textContent = txt.value.length;
+  }
+}
+
+//上傳檔案後，顯示檔案名稱
+document.getElementById('contactMeLightboxAttachment').onchange = function(){
+  let attachment = document.getElementById('contactMeLightboxAttachment');
+  let attachmentThing = document.getElementById('contactMeLightboxAttachmentThing');
+  attachmentThing.innerHTML = attachment.value.split(/(\\|\/)/g).pop();
+}
+document.getElementById('contactMeLightboxPhoto').onchange = function(){
+  let photo = document.getElementById('contactMeLightboxPhoto');
+  let photoThing = document.getElementById('contactMeLightboxPhotoThing');
+  photoThing.innerHTML = photo.value.split(/(\\|\/)/g).pop();
 }

@@ -645,3 +645,172 @@
         }
     }
 }
+
+//聯絡我燈箱
+.contactMe.open{
+    display: block;
+}
+.contactMe{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .contactMeLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 570px;       
+        background-color: white;
+        padding: 30px 50px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .contactMeLightboxTitle{
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 25px;
+            // text-align: center;
+        }
+        .contactMeLightboxPhoto{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .contactMeLightboxLoginStatus{
+            // border: 1px solid gray;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: rgb(12, 180, 12);
+            margin-left: 30px;
+        }
+        .contactMeLightboxLoginStatusText{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .contactMeLightboxReyplyTime{
+            display: inline-block;
+            float: right;
+            font-size: 14px;
+        }
+        .separateLine{
+            display: inline-block;
+            float: right;
+            font-size: 14px;
+            color: gray;
+        }
+        .contactMeLightboxTime{
+            display: inline-block;
+            float: right;
+            font-size: 14px;
+        }
+        form{
+            // border: 1px solid red;
+            margin-top: 10px;
+            textarea{
+                width: 600px;
+                height: 200px;
+                box-sizing: border-box;
+                padding: 10px;
+                letter-spacing: 1.5px;
+                line-height: 15px;
+                outline: none;
+                color: #333333;
+                background-color: #eeeeee;
+                border: 1px solid #dddddd;
+                &:focus, &:hover{
+                    border: 1px solid #bbbbbb;
+                }
+            }
+            .contactMeLightboxBot{
+                padding: 10px;
+                padding-bottom: 3px;
+                background-color: #eeeeee;
+                border: 1px solid #dddddd;
+                &:focus, &:hover{
+                    border: 1px solid #bbbbbb;
+                }
+                .contactMeLightboxTextareaP{
+                    color: gray;
+                    float: right;
+                    letter-spacing: .5px;
+                    margin-right: 5px;
+                    transform: translateY(3px);
+                }
+                label{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    img{
+                        height: 20px;
+                        margin-left: 5px;
+                    }
+                    input{
+                        display: none;
+                    }
+                }
+                .contactMeLightboxAttachmentThing, .contactMeLightboxPhotoThing{
+                    font-size: 14px;
+                    color: gray;
+                    letter-spacing: .5px;
+                    margin-top: 6px;
+                    margin-bottom: 3px;
+                    margin-left: 5px;
+                }
+            }
+            .contactMeLightboxBtn{
+                // border: 1px solid red;
+                text-align: center;
+                margin-top: 50px;
+                .contactMeLightboxBtnSend{
+                    width: 80px;
+                    height: 33px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .contactMeLightboxBtnCancel{
+                    width: 80px;
+                    height: 33px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }    
+    }
+}

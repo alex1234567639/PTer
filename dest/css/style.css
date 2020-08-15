@@ -1343,5 +1343,143 @@ footer {
             background-color: #eeeeee;
             transition-duration: .5s; }
 
+.contactMe.open {
+  display: block; }
+
+.contactMe {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .contactMe .contactMeLightbox {
+    width: 700px;
+    height: 570px;
+    background-color: white;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .contactMe .contactMeLightbox .contactMeLightboxTitle {
+      font-size: 24px;
+      font-weight: 600;
+      margin-left: 25px; }
+    .contactMe .contactMeLightbox .contactMeLightboxPhoto {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 30px;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+      .contactMe .contactMeLightbox .contactMeLightboxPhoto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .contactMe .contactMeLightbox .contactMeLightboxLoginStatus {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #0cb40c;
+      margin-left: 30px; }
+    .contactMe .contactMeLightbox .contactMeLightboxLoginStatusText {
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 14px; }
+    .contactMe .contactMeLightbox .contactMeLightboxReyplyTime {
+      display: inline-block;
+      float: right;
+      font-size: 14px; }
+    .contactMe .contactMeLightbox .separateLine {
+      display: inline-block;
+      float: right;
+      font-size: 14px;
+      color: gray; }
+    .contactMe .contactMeLightbox .contactMeLightboxTime {
+      display: inline-block;
+      float: right;
+      font-size: 14px; }
+    .contactMe .contactMeLightbox form {
+      margin-top: 10px; }
+      .contactMe .contactMeLightbox form textarea {
+        width: 600px;
+        height: 200px;
+        box-sizing: border-box;
+        padding: 10px;
+        letter-spacing: 1.5px;
+        line-height: 15px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .contactMe .contactMeLightbox form textarea:focus, .contactMe .contactMeLightbox form textarea:hover {
+          border: 1px solid #bbbbbb; }
+      .contactMe .contactMeLightbox form .contactMeLightboxBot {
+        padding: 10px;
+        padding-bottom: 3px;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBot:focus, .contactMe .contactMeLightbox form .contactMeLightboxBot:hover {
+          border: 1px solid #bbbbbb; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBot .contactMeLightboxTextareaP {
+          color: gray;
+          float: right;
+          letter-spacing: .5px;
+          margin-right: 5px;
+          transform: translateY(3px); }
+        .contactMe .contactMeLightbox form .contactMeLightboxBot label:hover {
+          cursor: pointer; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBot label img {
+          height: 20px;
+          margin-left: 5px; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBot label input {
+          display: none; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBot .contactMeLightboxAttachmentThing, .contactMe .contactMeLightbox form .contactMeLightboxBot .contactMeLightboxPhotoThing {
+          font-size: 14px;
+          color: gray;
+          letter-spacing: .5px;
+          margin-top: 6px;
+          margin-bottom: 3px;
+          margin-left: 5px; }
+      .contactMe .contactMeLightbox form .contactMeLightboxBtn {
+        text-align: center;
+        margin-top: 50px; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBtn .contactMeLightboxBtnSend {
+          width: 80px;
+          height: 33px;
+          color: white;
+          background-color: #134099;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-right: 10px; }
+          .contactMe .contactMeLightbox form .contactMeLightboxBtn .contactMeLightboxBtnSend:hover {
+            cursor: pointer;
+            background-color: #3636c7;
+            transition-duration: .5s; }
+        .contactMe .contactMeLightbox form .contactMeLightboxBtn .contactMeLightboxBtnCancel {
+          width: 80px;
+          height: 33px;
+          color: #134099;
+          background-color: white;
+          border: 1px solid #134099;
+          border-radius: 5px;
+          margin-left: 10px; }
+          .contactMe .contactMeLightbox form .contactMeLightboxBtn .contactMeLightboxBtnCancel:hover {
+            cursor: pointer;
+            background-color: #eeeeee;
+            transition-duration: .5s; }
+
 * {
   font-family: Microsoft JhengHei; }
