@@ -19,8 +19,7 @@ function tabChange(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-//預設載入網頁後點擊第一個tab
-document.getElementById("dashboardRightTopTabButton1").click();
+
 
 // function move() {
 //   var elem = document.getElementById("myBar"); 
@@ -38,6 +37,9 @@ document.getElementById("dashboardRightTopTabButton1").click();
 // }
 
 window.onload=function(){
+  //預設載入網頁後點擊第一個tab
+  document.getElementById("dashboardRightTopTabButton1").click();
+  
   //點擊付款，彈出付款燈箱
   document.getElementById('dashboardRightTopTabContent1Part1BtnPay').onclick = function(){
     document.getElementById('payBill').classList.add("open");

@@ -6,22 +6,41 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/nav.js"></script> 
+    <!-- <script src="./js/nav.js"></script>  -->
     <!-- 標籤上的logo -->
     <link rel="booknark" href="./images/PTerLogo.png">
     <link rel="shortcut icon" href="./images/PTerLogo.png">
     <title>PTer</title>
 </head>
 <body>
-    <div class="nav">
+    <script src="./js/nav.js"></script> 
+<!-- 登入前的nav -->
+<div class="nav" id="nav">
     <ul class="navUl">
         <li class="navLi navIcon" onclick="location.href=
         'index.html';"><img src="./images/PTerLogo.png"></li>
-        <li class="navLi navLi4" onclick="location.href=
-        'dashboard.html';"><i class="fa fa-globe"></i></li>
+        <!-- <li class="navLi navLi4" onclick="location.href=
+        'dashboard.html';"><i class="fa fa-globe"></i></li> -->
+        <li class="navLi navLi4"></li>
         <li class="navLi navLi3" id="join">JOIN</li>
         <li class="navLi navLi2" id="signIn">Sign in</li>
         <li class="navLi navLi1" id="beAprovider">Be a Provider</li>              
+    </ul>
+</div>
+
+<!-- 登入後的nav -->
+<div class="nav2" id="nav2">
+    <ul class="navUl">
+        <li class="navLi navIcon" onclick="location.href=
+        'index.html';"><img src="./images/PTerLogo.png"></li>
+        <li class="navLi navLi4" id="navLi4">
+            <div><img src="./images/user.jpeg"></div>                  
+        </li> 
+        <li class="navLi navLi3" id="join">Message</li>
+        <li class="navLi navLi2" id="signIn">Order</li>
+        <li class="navLi navLi1" id="beAprovider" onclick="location.href=
+        'dashboard.html';">Profile</li> 
+        <div class="navLi4Logout" id="navLi4Logout">Logout</div>             
     </ul>
 </div>
 
@@ -30,11 +49,11 @@
     <div class="registLightbox">
         <img class="cross" id="cross" src="./images/cross.png">
         <div class="registTitle">註冊 PTer</div>
-        <div class="fb">
+        <div class="fb" id="registFB">
             <div class="registFacebook">使用Facebook帳號註冊</div>
             <img class="registFacebookImg" src="./images/facebook.png">
         </div>
-        <div class="google">
+        <div class="google" id="registGoogle">
             <div class="registGoogle">使用Google帳號註冊</div>
             <img class="registGoogleImg" src="./images/google.png">
         </div>       
@@ -42,7 +61,7 @@
             <input type="text" placeholder="請輸入帳號">
             <input type="password" placeholder="請輸入密碼">
             <br>
-            <button>註冊</button>
+            <button type="button" id="registBtn">註冊</button>
         </form>
         <div class="alreadyMember">已經是會員？<span id="alreadyMember">登入</span></div>
     </div>

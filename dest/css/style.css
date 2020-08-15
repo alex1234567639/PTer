@@ -51,6 +51,108 @@
       padding-left: 20px;
       margin-right: 4px; }
 
+.nav2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  z-index: 1000; }
+  .nav2 .navUl {
+    position: relative;
+    box-shadow: 1px 1px 2px 2px lightgray; }
+    .nav2 .navUl .navIcon {
+      display: inline-block; }
+      .nav2 .navUl .navIcon img {
+        width: 43px;
+        margin-left: 25px;
+        margin-top: 4px; }
+      .nav2 .navUl .navIcon:hover {
+        cursor: pointer; }
+    .nav2 .navUl .navLi1 {
+      display: inline-block;
+      font-size: 14px;
+      padding: 18px;
+      float: right; }
+      .nav2 .navUl .navLi1:hover {
+        background-color: #e6e6e6;
+        cursor: pointer;
+        transition-duration: .5s; }
+    .nav2 .navUl .navLi2 {
+      display: inline-block;
+      font-size: 14px;
+      padding: 18px 20px;
+      float: right; }
+      .nav2 .navUl .navLi2:hover {
+        background-color: #e6e6e6;
+        cursor: pointer;
+        transition-duration: .5s; }
+    .nav2 .navUl .navLi3 {
+      display: inline-block;
+      font-size: 14px;
+      padding: 18px 20px;
+      float: right; }
+      .nav2 .navUl .navLi3:hover {
+        background-color: #e6e6e6;
+        cursor: pointer;
+        transition-duration: .5s; }
+    .nav2 .navUl .navLi4 {
+      float: right;
+      display: inline-block;
+      margin-right: 50px;
+      margin-left: 10px; }
+      .nav2 .navUl .navLi4:hover {
+        cursor: pointer; }
+      .nav2 .navUl .navLi4 div {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .nav2 .navUl .navLi4 div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .nav2 .navUl .navLi4Logout.open {
+      display: block; }
+    .nav2 .navUl .navLi4Logout {
+      animation: fadeEffect .5s;
+      position: absolute;
+      top: 60px;
+      right: 24px;
+      width: 100px;
+      text-align: center;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      transition-duration: .5;
+      display: none; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+      .nav2 .navUl .navLi4Logout:hover {
+        cursor: pointer;
+        background-color: #ebebeb;
+        transition-duration: .5s; }
+    .nav2 .navUl .navLi4Logout::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -8px;
+      border-top: 0px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #f0f0f0;
+      border-left: 8px solid transparent; }
+
 .regist.open {
   display: block; }
 

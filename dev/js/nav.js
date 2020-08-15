@@ -30,17 +30,23 @@ window.onload=function(){
         login.classList.remove("open");
     }
     //登入，點擊fb彈出完成燈箱
-    document.getElementById('fb').onclick = function(){     
+    document.getElementById('fb').onclick = function(){ 
+        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav2').style.display = 'block';    
         document.getElementById('login').classList.remove("open");
         document.getElementById('providerRegistSucess').classList.add("open");
     }
     //登入，點擊google彈出完成燈箱
-    document.getElementById('google').onclick = function(){     
+    document.getElementById('google').onclick = function(){ 
+        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav2').style.display = 'block';    
         document.getElementById('login').classList.remove("open");
         document.getElementById('providerRegistSucess').classList.add("open");
     }
     //登入，點擊登入彈出完成燈箱
-    document.getElementById('loginFormLogin').onclick = function(){     
+    document.getElementById('loginFormLogin').onclick = function(){  
+        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav2').style.display = 'block';   
         document.getElementById('login').classList.remove("open");
         document.getElementById('providerRegistSucess').classList.add("open");
     }
@@ -49,10 +55,6 @@ window.onload=function(){
     document.getElementById('beAprovider').onclick = function(){
         document.getElementById('providerRegist').classList.add("open");
     }
-    //點擊叉叉關閉燈箱
-    // document.getElementById('providerRegistCross').onclick = function(){      
-    //     document.getElementById('providerRegist').classList.remove("open");
-    // }
     //點擊返回關閉燈箱
     document.getElementById('formBtnReset').onclick = function(){     
         document.getElementById('providerRegist').classList.remove("open");
@@ -66,6 +68,30 @@ window.onload=function(){
     //點擊Later關閉燈箱
     document.getElementById('providerRegistSucessLater').onclick = function(){     
         document.getElementById('providerRegistSucess').classList.remove("open");
+    }
+
+    //點擊登入後頭像，彈出登出選項
+    document.getElementById('navLi4').onclick = function(){     
+        let navLi4Logout = document.getElementById('navLi4Logout');
+        if(navLi4Logout.classList.contains('open')){
+            navLi4Logout.classList.remove("open");
+        }else{
+            navLi4Logout.classList.add("open");
+        }
+    }
+
+    //註冊，點擊註冊鍵後切換到登入狀態
+    document.getElementById('registBtn').onclick = function(){   
+        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav2').style.display = 'block';
+        document.getElementById('regist').classList.remove("open");
+    }
+
+    //點擊logout，切換到登出狀態
+    document.getElementById('navLi4Logout').onclick = function(){   
+        document.getElementById('nav').style.display = 'block';
+        document.getElementById('nav2').style.display = 'none';
+        document.getElementById('navLi4Logout').classList.remove("open");
     }
 }
 
