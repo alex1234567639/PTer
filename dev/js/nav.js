@@ -80,8 +80,18 @@ window.onload=function(){
         }
     }
 
-    //註冊，點擊註冊鍵後切換到登入狀態
+    //註冊，點擊各種註冊鍵後切換到登入狀態
     document.getElementById('registBtn').onclick = function(){   
+        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav2').style.display = 'block';
+        document.getElementById('regist').classList.remove("open");
+    }
+    document.getElementById('registFB').onclick = function(){   
+        document.getElementById('nav').style.display = 'none';
+        document.getElementById('nav2').style.display = 'block';
+        document.getElementById('regist').classList.remove("open");
+    }
+    document.getElementById('registGoogle').onclick = function(){   
         document.getElementById('nav').style.display = 'none';
         document.getElementById('nav2').style.display = 'block';
         document.getElementById('regist').classList.remove("open");
