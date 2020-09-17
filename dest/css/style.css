@@ -404,7 +404,7 @@
     opacity: 1; } }
   .providerRegist .providerRegistLightbox {
     width: 850px;
-    height: 670px;
+    height: 700px;
     background-color: white;
     padding: 30px 50px;
     box-sizing: border-box;
@@ -525,7 +525,8 @@
         .providerRegist .providerRegistLightbox form .formRight label {
           cursor: pointer; }
           .providerRegist .providerRegistLightbox form .formRight label input[type=checkbox] {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            margin-right: 5px;
             padding: 4px;
             outline: none;
             color: #333333;
@@ -533,22 +534,17 @@
             border: 1px solid #dddddd;
             cursor: pointer; }
         .providerRegist .providerRegistLightbox form .formRight .checkboxLeft {
-          margin-left: 15px;
+          margin-left: 5px;
           display: inline-block; }
           .providerRegist .providerRegistLightbox form .formRight .checkboxLeft label input {
             margin-bottom: 10px; }
-        .providerRegist .providerRegistLightbox form .formRight .checkboxMiddle {
-          margin-left: 12px;
-          display: inline-block; }
-          .providerRegist .providerRegistLightbox form .formRight .checkboxMiddle label input {
-            margin-bottom: 10px; }
         .providerRegist .providerRegistLightbox form .formRight .checkboxRight {
-          margin-left: 12px;
+          margin-left: 10px;
           display: inline-block; }
           .providerRegist .providerRegistLightbox form .formRight .checkboxRight label input {
             margin-bottom: 10px; }
       .providerRegist .providerRegistLightbox form .formBtn {
-        margin-top: 450px;
+        margin-top: 480px;
         text-align: center; }
         .providerRegist .providerRegistLightbox form .formBtn .formBtnSubmit {
           width: 80px;
@@ -819,11 +815,11 @@ table {
     height: 100%;
     background-color: #103784;
     color: white;
-    padding: 100px 180px;
+    padding: 70px 180px;
     box-sizing: border-box; }
   .landingPage3rd .landingPage3rdTitle {
     font-size: 35px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     line-height: 40px;
     letter-spacing: 1px; }
   .landingPage3rd .landingPage3rdSubtitle {

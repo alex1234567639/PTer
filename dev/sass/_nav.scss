@@ -504,7 +504,7 @@
     .providerRegistLightbox{
         // border: 1px solid red;
         width: 850px;
-        height: 670px;       
+        height: 700px;       
         background-color: white;
         padding: 30px 50px;
         box-sizing: border-box;
@@ -655,7 +655,8 @@
                 label{
                     cursor: pointer;
                     input[type=checkbox]{
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
+                        margin-right: 5px;
                         padding: 4px;
                         outline: none;
                         color: #333333;
@@ -666,17 +667,7 @@
                 }
                 .checkboxLeft{
                     // border: 1px solid red;
-                    margin-left: 15px;
-                    display: inline-block;
-                    label{
-                        input{
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
-                .checkboxMiddle{
-                    // border: 1px solid green;
-                    margin-left: 12px;
+                    margin-left: 5px;
                     display: inline-block;
                     label{
                         input{
@@ -686,7 +677,7 @@
                 }
                 .checkboxRight{
                     // border: 1px solid red;
-                    margin-left: 12px;
+                    margin-left: 10px;
                     display: inline-block;
                     label{
                         input{
@@ -697,7 +688,7 @@
             }
             .formBtn{
                 // border: 1px solid red;
-                margin-top: 450px;
+                margin-top: 480px;
                 text-align: center;
                 .formBtnSubmit{
                     width: 80px;
