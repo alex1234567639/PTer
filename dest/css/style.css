@@ -1838,5 +1838,482 @@ footer {
           background-color: #eeeeee;
           transition-duration: .5s; }
 
+.security.open {
+  display: block; }
+
+.security {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .security .securityLightbox {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .security .securityLightbox .securityTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .security .securityLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .security .securityLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .security .securityLightbox form .chooseBlockChain {
+      width: 430px;
+      margin: 100px auto; }
+    .security .securityLightbox form .securityBtn {
+      margin-top: 50px;
+      text-align: center; }
+      .security .securityLightbox form .securityBtn .securityBtnSubmit {
+        width: 80px;
+        height: 33px;
+        color: white;
+        background-color: #134099;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-right: 20px; }
+        .security .securityLightbox form .securityBtn .securityBtnSubmit:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+      .security .securityLightbox form .securityBtn .securityBtnReset {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-left: 20px; }
+        .security .securityLightbox form .securityBtn .securityBtnReset:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+
+.securityRegist.open {
+  display: block; }
+
+.securityRegist {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .securityRegist .securityRegistLightbox {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .securityRegist .securityRegistLightbox .securityRegistTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .securityRegist .securityRegistLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .securityRegist .securityRegistLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .securityRegist .securityRegistLightbox form .chooseBlockChain {
+      width: 430px;
+      margin: 0px auto; }
+    .securityRegist .securityRegistLightbox form .memberImgBox {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0px auto;
+      margin-top: 20px; }
+      .securityRegist .securityRegistLightbox form .memberImgBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .securityRegist .securityRegistLightbox form input[type=text] {
+      display: block !important;
+      width: 180px;
+      margin: 15px auto;
+      padding: 4px;
+      outline: none;
+      color: #333333;
+      background-color: #eeeeee;
+      border: 1px solid #dddddd; }
+      .securityRegist .securityRegistLightbox form input[type=text]:focus, .securityRegist .securityRegistLightbox form input[type=text]:hover {
+        border: 1px solid #bbbbbb; }
+    .securityRegist .securityRegistLightbox form textarea {
+      display: block !important;
+      width: 500px;
+      height: 150px;
+      margin: 0 auto;
+      padding: 4px;
+      outline: none;
+      color: #333333;
+      background-color: #eeeeee;
+      border: 1px solid #dddddd;
+      resize: none; }
+      .securityRegist .securityRegistLightbox form textarea:focus, .securityRegist .securityRegistLightbox form textarea:hover {
+        border: 1px solid #bbbbbb; }
+    .securityRegist .securityRegistLightbox form .chooseBlockChainNotice {
+      display: block;
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 5px;
+      color: red;
+      font-size: 10px; }
+    .securityRegist .securityRegistLightbox form .securityRegistBtn {
+      margin-top: 20px;
+      text-align: center; }
+      .securityRegist .securityRegistLightbox form .securityRegistBtn .securityRegistBtnSubmit {
+        width: 80px;
+        height: 33px;
+        color: white;
+        background-color: #134099;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-right: 20px; }
+        .securityRegist .securityRegistLightbox form .securityRegistBtn .securityRegistBtnSubmit:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+      .securityRegist .securityRegistLightbox form .securityRegistBtn .securityRegistBtnReset {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-left: 20px; }
+        .securityRegist .securityRegistLightbox form .securityRegistBtn .securityRegistBtnReset:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+
+.securityEnforce.open {
+  display: block; }
+
+.securityEnforce {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .securityEnforce .securityEnforceLightbox {
+    width: 700px;
+    height: 350px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .securityEnforce .securityEnforceLightbox .securityEnforceTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .securityEnforce .securityEnforceLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .securityEnforce .securityEnforceLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .securityEnforce .securityEnforceLightbox form .chooseBlockChain {
+      width: 430px;
+      margin: 0px auto; }
+    .securityEnforce .securityEnforceLightbox form input[type=text] {
+      display: block !important;
+      width: 180px;
+      margin: 50px auto;
+      padding: 4px 10px;
+      outline: none;
+      color: #333333;
+      background-color: #eeeeee;
+      border: 1px solid #dddddd; }
+      .securityEnforce .securityEnforceLightbox form input[type=text]:focus, .securityEnforce .securityEnforceLightbox form input[type=text]:hover {
+        border: 1px solid #bbbbbb; }
+    .securityEnforce .securityEnforceLightbox form .securityEnforceBtn {
+      margin-top: 20px;
+      text-align: center; }
+      .securityEnforce .securityEnforceLightbox form .securityEnforceBtn .securityEnforceBtnSubmit {
+        width: 80px;
+        height: 33px;
+        color: white;
+        background-color: #134099;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-right: 20px; }
+        .securityEnforce .securityEnforceLightbox form .securityEnforceBtn .securityEnforceBtnSubmit:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+      .securityEnforce .securityEnforceLightbox form .securityEnforceBtn .securityEnforceBtnReset {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-left: 20px; }
+        .securityEnforce .securityEnforceLightbox form .securityEnforceBtn .securityEnforceBtnReset:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+
+.personalOrCompany.open {
+  display: block; }
+
+.personalOrCompany {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .personalOrCompany .personalOrCompanyLightbox {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .personalOrCompany .personalOrCompanyLightbox .personalOrCompanyTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .personalOrCompany .personalOrCompanyLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .personalOrCompany .personalOrCompanyLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .personalOrCompany .personalOrCompanyLightbox form .chooseBlockChain {
+      width: 430px;
+      margin: 100px auto;
+      text-align: center; }
+      .personalOrCompany .personalOrCompanyLightbox form .chooseBlockChain label {
+        margin: 0 10px; }
+    .personalOrCompany .personalOrCompanyLightbox form .personalOrCompanyBtn {
+      margin-top: 50px;
+      text-align: center; }
+      .personalOrCompany .personalOrCompanyLightbox form .personalOrCompanyBtn .personalOrCompanyBtnSubmit {
+        width: 80px;
+        height: 33px;
+        color: white;
+        background-color: #134099;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-right: 20px; }
+        .personalOrCompany .personalOrCompanyLightbox form .personalOrCompanyBtn .personalOrCompanyBtnSubmit:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+      .personalOrCompany .personalOrCompanyLightbox form .personalOrCompanyBtn .personalOrCompanyBtnReset {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-left: 20px; }
+        .personalOrCompany .personalOrCompanyLightbox form .personalOrCompanyBtn .personalOrCompanyBtnReset:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+
+.lastStep.open {
+  display: block; }
+
+.lastStep {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .lastStep .lastStepLightbox {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .lastStep .lastStepLightbox .lastStepTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .lastStep .lastStepLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .lastStep .lastStepLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .lastStep .lastStepLightbox form .lastStepBtn {
+      margin-top: 50px;
+      text-align: center; }
+      .lastStep .lastStepLightbox form .lastStepBtn .lastStepBtnSubmit {
+        width: 80px;
+        height: 33px;
+        color: white;
+        background-color: #134099;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-right: 20px; }
+        .lastStep .lastStepLightbox form .lastStepBtn .lastStepBtnSubmit:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+      .lastStep .lastStepLightbox form .lastStepBtn .lastStepBtnReset {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-left: 20px; }
+        .lastStep .lastStepLightbox form .lastStepBtn .lastStepBtnReset:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+    .lastStep .lastStepLightbox form .lastStepLeft {
+      width: 270px;
+      height: 350px;
+      margin-left: 50px;
+      overflow: scroll;
+      display: inline-block; }
+      .lastStep .lastStepLightbox form .lastStepLeft input[type=text] {
+        display: block !important;
+        width: 180px;
+        margin: 0px auto;
+        margin-top: 15px;
+        padding: 4px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .lastStep .lastStepLightbox form .lastStepLeft input[type=text]:focus, .lastStep .lastStepLightbox form .lastStepLeft input[type=text]:hover {
+          border: 1px solid #bbbbbb; }
+      .lastStep .lastStepLightbox form .lastStepLeft .addNew {
+        color: #134099;
+        font-size: 12px;
+        margin-right: 35px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        float: right;
+        transition-duration: .3s; }
+        .lastStep .lastStepLightbox form .lastStepLeft .addNew:hover {
+          color: #3d67b9;
+          cursor: pointer; }
+      .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadBtn, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgBtn {
+        display: block !important;
+        padding: 7px 5px;
+        text-align: center;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd;
+        font-size: 12px;
+        width: 180px;
+        margin: 0px auto;
+        margin-top: 15px; }
+        .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadBtn:focus, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadBtn:hover, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgBtn:focus, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgBtn:hover {
+          border: 1px solid #bbbbbb;
+          cursor: pointer; }
+        .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadBtn .lastStepLeftUpload, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadBtn .lastStepLeftUploadImg, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgBtn .lastStepLeftUpload, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgBtn .lastStepLeftUploadImg {
+          display: none; }
+      .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadFileName, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgFileName {
+        font-size: 12px;
+        margin-left: 35px;
+        margin-top: 5px;
+        width: 180px;
+        overflow: hidden; }
+      .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadNotice, .lastStep .lastStepLightbox form .lastStepLeft .lastStepLeftUploadImgNotice {
+        font-size: 12px;
+        margin-left: 35px;
+        color: red; }
+    .lastStep .lastStepLightbox form .lastStepRight {
+      width: 270px;
+      height: 350px;
+      overflow: scroll;
+      display: inline-block; }
+      .lastStep .lastStepLightbox form .lastStepRight textarea {
+        display: block !important;
+        width: 260px;
+        height: 300px;
+        margin: 15px auto;
+        padding: 4px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd;
+        resize: none; }
+        .lastStep .lastStepLightbox form .lastStepRight textarea:focus, .lastStep .lastStepLightbox form .lastStepRight textarea:hover {
+          border: 1px solid #bbbbbb; }
+
 * {
   font-family: Microsoft JhengHei; }

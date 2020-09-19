@@ -279,3 +279,583 @@
         }
     }
 }
+
+//security燈箱
+.security.open{
+    display: block;
+}
+.security{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .securityLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 400px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .securityTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(19, 64, 153);
+        }  
+        .subtitleUl{
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            .subtitleLi{
+                display: inline-block;
+                margin: 5px;
+                color: gray;
+            }
+        } 
+        form{
+            .chooseBlockChain{
+                // border: 1px solid red;
+                width: 430px;
+                margin: 100px auto;
+            }
+            .securityBtn{
+                margin-top: 50px;
+                text-align: center;
+                .securityBtnSubmit{
+                    width: 80px;
+                    height: 33px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .securityBtnReset{
+                    width: 80px;
+                    height: 33px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// securityRegist燈箱
+.securityRegist.open{
+    display: block;
+}
+.securityRegist{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .securityRegistLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 600px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .securityRegistTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(19, 64, 153);
+        }  
+        .subtitleUl{
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            .subtitleLi{
+                display: inline-block;
+                margin: 5px;
+                color: gray;
+            }
+        } 
+        form{
+            .chooseBlockChain{
+                // border: 1px solid red;
+                width: 430px;
+                margin: 0px auto;
+            }
+            .memberImgBox{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0px auto;
+                margin-top: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            input[type=text]{
+                display: block !important;
+                width: 180px;
+                margin: 15px auto;
+                padding: 4px;
+                outline: none;
+                color: #333333;
+                background-color: #eeeeee;
+                border: 1px solid #dddddd;
+                &:focus, &:hover{
+                    border: 1px solid #bbbbbb;
+                }
+            }
+            textarea{
+                display: block !important;
+                width: 500px;
+                height: 150px;
+                margin: 0 auto;
+                padding: 4px;
+                outline: none;
+                color: #333333;
+                background-color: #eeeeee;
+                border: 1px solid #dddddd;
+                resize: none;
+                &:focus, &:hover{
+                    border: 1px solid #bbbbbb;
+                }
+            }
+            .chooseBlockChainNotice{
+                display: block;
+                width: 500px;
+                margin: 0 auto;
+                margin-top: 5px;
+                color: red;
+                font-size: 10px;
+            }
+            .securityRegistBtn{
+                margin-top: 20px;
+                text-align: center;
+                .securityRegistBtnSubmit{
+                    width: 80px;
+                    height: 33px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .securityRegistBtnReset{
+                    width: 80px;
+                    height: 33px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// securityEnforce燈箱
+.securityEnforce.open{
+    display: block;
+}
+.securityEnforce{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .securityEnforceLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 350px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .securityEnforceTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(19, 64, 153);
+        }  
+        .subtitleUl{
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            .subtitleLi{
+                display: inline-block;
+                margin: 5px;
+                color: gray;
+            }
+        } 
+        form{
+            .chooseBlockChain{
+                // border: 1px solid red;
+                width: 430px;
+                margin: 0px auto;
+            }
+            input[type=text]{
+                display: block !important;
+                width: 180px;
+                margin: 50px auto;
+                padding: 4px 10px;
+                outline: none;
+                color: #333333;
+                background-color: #eeeeee;
+                border: 1px solid #dddddd;
+                &:focus, &:hover{
+                    border: 1px solid #bbbbbb;
+                }
+            }
+            .securityEnforceBtn{
+                margin-top: 20px;
+                text-align: center;
+                .securityEnforceBtnSubmit{
+                    width: 80px;
+                    height: 33px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .securityEnforceBtnReset{
+                    width: 80px;
+                    height: 33px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//personalOrCompany燈箱
+.personalOrCompany.open{
+    display: block;
+}
+.personalOrCompany{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .personalOrCompanyLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 400px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .personalOrCompanyTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(19, 64, 153);
+        }  
+        .subtitleUl{
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            .subtitleLi{
+                display: inline-block;
+                margin: 5px;
+                color: gray;
+            }
+        } 
+        form{
+            .chooseBlockChain{
+                // border: 1px solid red;
+                width: 430px;
+                margin: 100px auto;
+                text-align: center;
+                label{
+                    margin: 0 10px;
+                }
+            }
+            .personalOrCompanyBtn{
+                margin-top: 50px;
+                text-align: center;
+                .personalOrCompanyBtnSubmit{
+                    width: 80px;
+                    height: 33px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .personalOrCompanyBtnReset{
+                    width: 80px;
+                    height: 33px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//lastStep燈箱
+.lastStep.open{
+    display: block;
+}
+.lastStep{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .lastStepLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 600px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        .lastStepTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(19, 64, 153);
+        }  
+        .subtitleUl{
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            .subtitleLi{
+                display: inline-block;
+                margin: 5px;
+                color: gray;
+            }
+        } 
+        form{
+            .lastStepBtn{
+                margin-top: 50px;
+                text-align: center;
+                .lastStepBtnSubmit{
+                    width: 80px;
+                    height: 33px;
+                    color: white;
+                    background-color: rgb(19, 64, 153);
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(54, 54, 199);
+                        transition-duration: .5s;
+                    }
+                }
+                .lastStepBtnReset{
+                    width: 80px;
+                    height: 33px;
+                    color: rgb(19, 64, 153);
+                    background-color: white;
+                    border: 1px solid rgb(19, 64, 153);
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                        transition-duration: .5s;
+                    }
+                }
+            }
+            .lastStepLeft{
+                // border: 1px solid red;
+                width: 270px;
+                height: 350px;
+                margin-left: 50px;
+                overflow: scroll;
+                display: inline-block;
+                input[type=text]{
+                    display: block !important;
+                    width: 180px;
+                    margin: 0px auto;
+                    margin-top: 15px;
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                }
+                .addNew{
+                    color: rgb(19, 64, 153);
+                    font-size: 12px;
+                    margin-right: 35px;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    float: right;
+                    transition-duration: .3s;
+                    &:hover{
+                        color: rgb(61, 103, 185);
+                        cursor: pointer;
+                    }
+                }
+                .lastStepLeftUploadBtn, .lastStepLeftUploadImgBtn{
+                    display: block !important;
+                    padding: 7px 5px;
+                    text-align: center;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    font-size: 12px;
+                    width: 180px;
+                    margin: 0px auto;
+                    margin-top: 15px;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                        cursor: pointer;
+                    }
+                    .lastStepLeftUpload, .lastStepLeftUploadImg{
+                        display: none;
+                    }
+                }
+                .lastStepLeftUploadFileName, .lastStepLeftUploadImgFileName{
+                    font-size: 12px;
+                    margin-left: 35px;
+                    margin-top: 5px;
+                    width: 180px;
+                    overflow: hidden;
+                }
+                .lastStepLeftUploadNotice, .lastStepLeftUploadImgNotice{
+                    font-size: 12px;
+                    margin-left: 35px;
+                    color: red;
+                }
+            }
+            .lastStepRight{
+                // border: 1px solid red;
+                width: 270px;
+                height: 350px;
+                overflow: scroll;
+                display: inline-block;
+                textarea{
+                    display: block !important;
+                    width: 260px;
+                    height: 300px;
+                    margin: 15px auto;
+                    padding: 4px;
+                    outline: none;
+                    color: #333333;
+                    background-color: #eeeeee;
+                    border: 1px solid #dddddd;
+                    resize: none;
+                    &:focus, &:hover{
+                        border: 1px solid #bbbbbb;
+                    }
+                }
+            }
+        }
+    }
+}
