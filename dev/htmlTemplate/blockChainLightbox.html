@@ -1,0 +1,94 @@
+<!-- matchInfo燈箱 -->
+<div class="matchInfo" id="matchInfo">
+    <div class="matchInfoLightbox">
+        <div id="matchInfoTitle" class="matchInfoTitle">Matching Info</div>
+        <hr>
+        <ul class="subtitleUl">
+            <li class="subtitleLi">Home</li>
+            <li class="subtitleLi">Welcome</li>
+            <li class="subtitleLi">Personal Info</li>
+            <li class="subtitleLi" style="color:rgb(19,64,153);">Matching Info</li>
+            <li class="subtitleLi">Sercurity</li>
+        </ul>
+        <form action="">
+            <div class="formTop">
+                <div class="formTitle">What are you looking for?</div><br>
+                <select name="jobRequest" style="width:170px">
+                    <option value="" style="display:none">Job request</option>
+                    <option value="practitioner">Practitioner</option>
+                    <option value="translator">Translator</option>
+                    <option value="drawing">Drawing</option>
+                    <option value="others">Others</option>      
+                </select>
+                <select name="language" style="width:170px">
+                    <option value="" style="display:none">Language</option>
+                    <option value="english">English</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="korean">Korean</option>   
+                    <option value="others">Others</option>     
+                </select>
+                <input type="text" placeholder="Input Language" style="width:170px">
+                <br>
+                <label><input type="checkbox" value="oa" name="oa">Office Action</label>
+                <label><input type="checkbox" value="dragter" name="dragter">Dragter</label>
+                <label><input type="checkbox" value="proofreading" name="proofreading">Proofreading</label>
+                <label><input type="checkbox" value="searching" name="searching">Searching</label>
+                <label><input type="checkbox" value="drawing" name="drawing">Drawing</label>
+                <br>
+                <span class="formTopAdd">+ Add new</span>
+            </div>
+            <div class="formBot">
+                <div class="formBotLeft">
+                    <div class="formTitle">Skills</div><br>
+                    <div class="checkboxLeft">
+                        <label><input type="checkbox" value="patentSearch" name="patentSearch">Patent Search</label><br>
+                        <label><input type="checkbox" value="patentAnalyze" name="patentAnalyze">Patent Analysis</label><br>
+                        <label><input type="checkbox" value="patentPlan" name="patentPlan">Portfolio Design</label><br>
+                        <label><input type="checkbox" value="USpatant" name="USpatant">US Patent</label><br>
+                        <label><input type="checkbox" value="japanPatent" name="japanPatent">JP Patent</label><br>
+                        <label><input type="checkbox" value="chinaPatent" name="chinaPatent">CN Patent</label><br>
+                        <label><input type="checkbox" value="EUpatent" name="EUpatent">EP Patent</label><br>
+                    </div> 
+                    <div class="checkboxRight"> 
+                        <label><input type="checkbox" value="koreaPatent" name="koreaPatent">KR Patent</label><br>                                    
+                        <label><input type="checkbox" value="taiwanPatent" name="taiwanPatent">TW Patent</label><br>
+                        <label><input type="checkbox" value="otherPatent" name="otherPatent">Others</label><br>
+                        <label><input type="checkbox" value="visio" name="visio">Visio</label><br>
+                        <label><input type="checkbox" value="illustrator" name="illustrator">Illustrator</label><br>
+                        <label><input type="checkbox" value="word" name="word">Word</label><br>
+                        <label><input type="checkbox" style="opacity:0;"></label><br>
+                    </div>
+                </div>
+                <div class="formBotMiddle">
+                    <div class="formTitle">Patent License</div><br>
+                    <label><input name="license" type="radio">Yes</label>
+                    <label><input name="license" type="radio">No</label>
+                    <br>
+                    <div class="formTitle">Background</div><br>
+                    <select name="background" style="width:140px">
+                        <option value="" style="display:none">Select</option>
+                        <option value="english">1-2 years</option>
+                        <option value="japanese">3-4 years</option>
+                        <option value="chinese">5 years up</option>   
+                    </select>
+                    <br>
+                    <div class="formTitle">Upload Document</div><br>
+                    <label class="uploadBtn"><input type="file" class="uploadInput" id="uploadInput" accept=".doc,.ppt,.pdf,.txt">Choose File</label>
+                    <div class="showUploadFileName" id="showUploadFileName"></div>
+                    <div class="uploadNotice">The file only for doc. ppt. pdf. txt.</div>
+                </div>
+                <div class="formBotRight">
+                    <div class="formTitle">Education</div><br>
+                    <input type="text" placeholder="PhD, master's ..." style="width:140px">
+                    <br>
+                    <span class="formBotRightAdd">+ Add new</span>
+                </div>
+            </div>
+            <div class="matchInfoBtn">
+                <button class="matchInfoBtnSubmit" id="matchInfoBtnSubmit" type="button">Countinue</button>     
+                <button class="matchInfoBtnReset" id="matchInfoBtnReset" type="reset">Cancel</button> 
+            </div>
+        </form>
+    </div>
+</div>

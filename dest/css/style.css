@@ -1614,5 +1614,229 @@ footer {
             background-color: #eeeeee;
             transition-duration: .5s; }
 
+.matchInfo.open {
+  display: block; }
+
+.matchInfo {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .matchInfo .matchInfoLightbox {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh; }
+    .matchInfo .matchInfoLightbox .matchInfoTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .matchInfo .matchInfoLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .matchInfo .matchInfoLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .matchInfo .matchInfoLightbox form .formTop {
+      width: 600px;
+      margin: 0 auto; }
+      .matchInfo .matchInfoLightbox form .formTop .formTitle {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 14px;
+        display: inline-block; }
+      .matchInfo .matchInfoLightbox form .formTop input {
+        margin-bottom: 5px;
+        padding: 4px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd; }
+        .matchInfo .matchInfoLightbox form .formTop input:focus, .matchInfo .matchInfoLightbox form .formTop input:hover {
+          border: 1px solid #bbbbbb; }
+      .matchInfo .matchInfoLightbox form .formTop select {
+        margin-bottom: 10px;
+        padding: 4px;
+        outline: none;
+        color: #333333;
+        background-color: #eeeeee;
+        border: 1px solid #dddddd;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+        background-position: right 10px top 50%;
+        background-repeat: no-repeat;
+        background-size: 10px; }
+        .matchInfo .matchInfoLightbox form .formTop select:focus, .matchInfo .matchInfoLightbox form .formTop select:hover {
+          border: 1px solid #bbbbbb; }
+        .matchInfo .matchInfoLightbox form .formTop select option {
+          background: #ffffff; }
+      .matchInfo .matchInfoLightbox form .formTop label {
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 5px; }
+        .matchInfo .matchInfoLightbox form .formTop label input[type=checkbox] {
+          margin-bottom: 10px;
+          margin-right: 5px;
+          padding: 4px; }
+      .matchInfo .matchInfoLightbox form .formTop .formTopAdd {
+        color: #134099;
+        font-size: 12px;
+        transition-duration: .3s; }
+        .matchInfo .matchInfoLightbox form .formTop .formTopAdd:hover {
+          color: #3d67b9;
+          cursor: pointer; }
+    .matchInfo .matchInfoLightbox form .formBot {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 30px; }
+      .matchInfo .matchInfoLightbox form .formBot .formBotLeft {
+        display: inline-block;
+        margin-right: 25px; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotLeft .formTitle {
+          font-weight: 600;
+          margin-bottom: 10px;
+          font-size: 14px;
+          display: inline-block; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft, .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight {
+          display: inline-block; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft label, .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight label {
+            cursor: pointer;
+            margin-right: 5px;
+            font-size: 14px; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft label input[type=checkbox], .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight label input[type=checkbox] {
+              margin-bottom: 10px;
+              margin-right: 5px;
+              padding: 4px; }
+      .matchInfo .matchInfoLightbox form .formBot .formBotMiddle {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 25px; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .formTitle {
+          font-weight: 600;
+          margin-bottom: 10px;
+          display: inline-block;
+          font-size: 14px; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle label {
+          font-size: 14px;
+          margin-right: 5px; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle label:hover {
+            cursor: pointer; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle label input[type=radio] {
+            margin-bottom: 20px;
+            margin-right: 5px;
+            padding: 4px; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle select {
+          margin-bottom: 20px;
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          cursor: pointer;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+          background-position: right 10px top 50%;
+          background-repeat: no-repeat;
+          background-size: 10px; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle select:focus, .matchInfo .matchInfoLightbox form .formBot .formBotMiddle select:hover {
+            border: 1px solid #bbbbbb; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle select option {
+            background: #ffffff; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn {
+          padding: 2px 37px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          font-size: 12px; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn:focus, .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn:hover {
+            border: 1px solid #bbbbbb; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn .uploadInput {
+            display: none; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .showUploadFileName {
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: 400;
+          max-width: 140px;
+          color: gray;
+          overflow: hidden; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadNotice {
+          color: red;
+          font-size: 10px;
+          width: 150px;
+          margin-top: 5px; }
+      .matchInfo .matchInfoLightbox form .formBot .formBotRight {
+        display: inline-block;
+        vertical-align: top; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotRight .formTitle {
+          font-weight: 600;
+          margin-bottom: 10px;
+          display: inline-block;
+          font-size: 14px; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotRight input {
+          margin-bottom: 5px;
+          padding: 4px;
+          outline: none;
+          color: #333333;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotRight input:focus, .matchInfo .matchInfoLightbox form .formBot .formBotRight input:hover {
+            border: 1px solid #bbbbbb; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotRight .formBotRightAdd {
+          color: #134099;
+          font-size: 12px;
+          transition-duration: .3s; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotRight .formBotRightAdd:hover {
+            color: #3d67b9;
+            cursor: pointer; }
+    .matchInfo .matchInfoLightbox form .matchInfoBtn {
+      margin-top: 50px;
+      text-align: center; }
+      .matchInfo .matchInfoLightbox form .matchInfoBtn .matchInfoBtnSubmit {
+        width: 80px;
+        height: 33px;
+        color: white;
+        background-color: #134099;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-right: 20px; }
+        .matchInfo .matchInfoLightbox form .matchInfoBtn .matchInfoBtnSubmit:hover {
+          cursor: pointer;
+          background-color: #3636c7;
+          transition-duration: .5s; }
+      .matchInfo .matchInfoLightbox form .matchInfoBtn .matchInfoBtnReset {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px;
+        margin-left: 20px; }
+        .matchInfo .matchInfoLightbox form .matchInfoBtn .matchInfoBtnReset:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+
 * {
   font-family: Microsoft JhengHei; }
