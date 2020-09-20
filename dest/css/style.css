@@ -2324,5 +2324,71 @@ footer {
         .lastStep .lastStepLightbox form .lastStepRight textarea:focus, .lastStep .lastStepLightbox form .lastStepRight textarea:hover {
           border: 1px solid #bbbbbb; }
 
+.blockChainCompleted.open {
+  display: block; }
+
+.blockChainCompleted {
+  animation: fadeEffect .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001; }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .blockChainCompleted .blockChainCompletedLightbox {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 10px; }
+    .blockChainCompleted .blockChainCompletedLightbox .blockChainCompletedTitle {
+      font-size: 24px;
+      text-align: center;
+      color: #134099; }
+    .blockChainCompleted .blockChainCompletedLightbox .subtitleUl {
+      text-align: center;
+      margin-bottom: 20px; }
+      .blockChainCompleted .blockChainCompletedLightbox .subtitleUl .subtitleLi {
+        display: inline-block;
+        margin: 5px;
+        color: gray; }
+    .blockChainCompleted .blockChainCompletedLightbox .checkedContent {
+      text-align: center; }
+      .blockChainCompleted .blockChainCompletedLightbox .checkedContent .checkedImg {
+        width: 70px;
+        margin: 20px auto; }
+      .blockChainCompleted .blockChainCompletedLightbox .checkedContent .checkedText {
+        color: #16b76d; }
+      .blockChainCompleted .blockChainCompletedLightbox .checkedContent .complete {
+        font-size: 30px;
+        color: #134099;
+        margin-top: 20px; }
+    .blockChainCompleted .blockChainCompletedLightbox .blockChainCompletedBtn {
+      margin-top: 30px;
+      text-align: center; }
+      .blockChainCompleted .blockChainCompletedLightbox .blockChainCompletedBtn .blockChainCompletedBtnClose {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        border-radius: 5px; }
+        .blockChainCompleted .blockChainCompletedLightbox .blockChainCompletedBtn .blockChainCompletedBtnClose:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+
 * {
   font-family: Microsoft JhengHei; }

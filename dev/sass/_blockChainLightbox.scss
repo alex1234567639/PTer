@@ -868,3 +868,83 @@
         }
     }
 }
+
+//上鏈完成燈箱
+.blockChainCompleted.open{
+    display: block;
+}
+.blockChainCompleted{
+    animation: fadeEffect .5s;
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1001;
+    .blockChainCompletedLightbox{
+        // border: 1px solid red;
+        width: 700px;
+        height: 400px;       
+        background-color: white;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vh;
+        border-radius: 10px;
+        .blockChainCompletedTitle{
+            // border: 1px solid red;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(19, 64, 153);
+        }  
+        .subtitleUl{
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 20px;
+            .subtitleLi{
+                display: inline-block;
+                margin: 5px;
+                color: gray;
+            }
+        } 
+        .checkedContent{
+            text-align: center;
+            .checkedImg{
+                width: 70px;
+                margin: 20px auto;
+            }
+            .checkedText{
+                color: rgb(22, 183, 109);
+            }
+            .complete{
+                font-size: 30px;
+                color: rgb(19, 64, 153);
+                margin-top: 20px;
+            }
+        }
+        .blockChainCompletedBtn{
+            margin-top: 30px;
+            text-align: center;
+            .blockChainCompletedBtnClose{
+                width: 80px;
+                height: 33px;
+                color: rgb(19, 64, 153);
+                background-color: white;
+                border: 1px solid rgb(19, 64, 153);
+                border-radius: 5px;               
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(238, 238, 238);
+                    transition-duration: .5s;
+                }
+            }
+        }
+    }
+}

@@ -87,9 +87,14 @@ window.addEventListener("load",function(){
         document.getElementById('lastStep').classList.remove("open");
         localStorage.removeItem('textValue');
     }
-    //lastStep 點擊continue關閉lastStep燈箱
+    //lastStep 點擊continue開啟上鏈完成燈箱
     document.getElementById('lastStepBtnSubmit').onclick = function(){
         document.getElementById('lastStep').classList.remove("open");
         localStorage.removeItem('textValue');
+        document.getElementById('blockChainCompleted').classList.add("open");
+    }
+    //上鏈完成 點擊Finish關閉上鏈完成燈箱
+    document.getElementById('blockChainCompletedBtnClose').onclick = function(){
+        document.getElementById('blockChainCompleted').classList.remove("open");
     }
 },false);
