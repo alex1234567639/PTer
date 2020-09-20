@@ -410,7 +410,8 @@
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 8vh; }
+    margin-top: 8vh;
+    border-radius: 10px; }
     .providerRegist .providerRegistLightbox .providerRegistCross {
       width: 15px;
       position: absolute;
@@ -455,7 +456,8 @@
         .providerRegist .providerRegistLightbox form .formLeft .formLeftTitle {
           font-weight: 600;
           margin-bottom: 10px;
-          display: inline-block; }
+          display: inline-block;
+          color: #11347a; }
         .providerRegist .providerRegistLightbox form .formLeft input {
           margin-bottom: 20px;
           padding: 4px;
@@ -493,7 +495,8 @@
         .providerRegist .providerRegistLightbox form .formRight .formRightTitle {
           font-weight: 600;
           margin-bottom: 10px;
-          display: inline-block; }
+          display: inline-block;
+          color: #11347a; }
         .providerRegist .providerRegistLightbox form .formRight input[type=text], .providerRegist .providerRegistLightbox form .formRight textarea {
           margin-bottom: 20px;
           padding: 4px;
@@ -598,7 +601,8 @@
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .providerRegistSucess .providerRegistSucessLightbox .providerRegistSucessTitle {
       font-size: 24px;
       text-align: center;
@@ -1641,7 +1645,8 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .matchInfo .matchInfoLightbox .matchInfoTitle {
       font-size: 24px;
       text-align: center;
@@ -1659,8 +1664,8 @@ footer {
       .matchInfo .matchInfoLightbox form .formTop .formTitle {
         font-weight: 600;
         margin-bottom: 10px;
-        font-size: 14px;
-        display: inline-block; }
+        display: inline-block;
+        color: #11347a; }
       .matchInfo .matchInfoLightbox form .formTop input {
         margin-bottom: 5px;
         padding: 4px;
@@ -1714,8 +1719,8 @@ footer {
         .matchInfo .matchInfoLightbox form .formBot .formBotLeft .formTitle {
           font-weight: 600;
           margin-bottom: 10px;
-          font-size: 14px;
-          display: inline-block; }
+          display: inline-block;
+          color: #11347a; }
         .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft, .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight {
           display: inline-block; }
           .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft label, .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight label {
@@ -1734,7 +1739,7 @@ footer {
           font-weight: 600;
           margin-bottom: 10px;
           display: inline-block;
-          font-size: 14px; }
+          color: #11347a; }
         .matchInfo .matchInfoLightbox form .formBot .formBotMiddle label {
           font-size: 14px;
           margin-right: 5px; }
@@ -1793,7 +1798,7 @@ footer {
           font-weight: 600;
           margin-bottom: 10px;
           display: inline-block;
-          font-size: 14px; }
+          color: #11347a; }
         .matchInfo .matchInfoLightbox form .formBot .formBotRight input {
           margin-bottom: 5px;
           padding: 4px;
@@ -1865,7 +1870,8 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .security .securityLightbox .securityTitle {
       font-size: 24px;
       text-align: center;
@@ -1935,7 +1941,8 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .securityRegist .securityRegistLightbox .securityRegistTitle {
       font-size: 24px;
       text-align: center;
@@ -2047,7 +2054,8 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .securityEnforce .securityEnforceLightbox .securityEnforceTitle {
       font-size: 24px;
       text-align: center;
@@ -2128,7 +2136,8 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .personalOrCompany .personalOrCompanyLightbox .personalOrCompanyTitle {
       font-size: 24px;
       text-align: center;
@@ -2201,7 +2210,8 @@ footer {
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    border-radius: 10px; }
     .lastStep .lastStepLightbox .lastStepTitle {
       font-size: 24px;
       text-align: center;

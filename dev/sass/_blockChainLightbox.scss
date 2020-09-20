@@ -26,6 +26,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .matchInfoTitle{
             // border: 1px solid red;
             font-size: 24px;
@@ -50,8 +51,9 @@
                 .formTitle{
                     font-weight: 600;
                     margin-bottom: 10px;
-                    font-size: 14px;
+                    // font-size: 14px;
                     display: inline-block;
+                    color: rgb(17, 52, 122);
                 }
                 input{
                     margin-bottom: 5px;
@@ -120,8 +122,9 @@
                     .formTitle{
                         font-weight: 600;
                         margin-bottom: 10px;
-                        font-size: 14px;
+                        // font-size: 14px;
                         display: inline-block;
+                        color: rgb(17, 52, 122);
                     }
                     .checkboxLeft, .checkboxRight{
                         display: inline-block;
@@ -146,7 +149,8 @@
                         font-weight: 600;
                         margin-bottom: 10px;
                         display: inline-block;
-                        font-size: 14px;
+                        // font-size: 14px;
+                        color: rgb(17, 52, 122);
                     }
                     label{
                         font-size: 14px;
@@ -220,7 +224,8 @@
                         font-weight: 600;
                         margin-bottom: 10px;
                         display: inline-block;
-                        font-size: 14px;
+                        // font-size: 14px;
+                        color: rgb(17, 52, 122);
                     }
                     input{
                         margin-bottom: 5px;
@@ -308,6 +313,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .securityTitle{
             // border: 1px solid red;
             font-size: 24px;
@@ -394,6 +400,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .securityRegistTitle{
             // border: 1px solid red;
             font-size: 24px;
@@ -529,6 +536,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .securityEnforceTitle{
             // border: 1px solid red;
             font-size: 24px;
@@ -628,6 +636,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .personalOrCompanyTitle{
             // border: 1px solid red;
             font-size: 24px;
@@ -718,6 +727,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .lastStepTitle{
             // border: 1px solid red;
             font-size: 24px;

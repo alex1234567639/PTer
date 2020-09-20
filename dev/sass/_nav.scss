@@ -511,6 +511,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 8vh;
+        border-radius: 10px;
         .providerRegistCross{
             width: 15px;
             position: absolute;
@@ -568,6 +569,7 @@
                     font-weight: 600;
                     margin-bottom: 10px;
                     display: inline-block;
+                    color: rgb(17, 52, 122);
                 }
                 input{
                     margin-bottom: 20px;
@@ -616,6 +618,7 @@
                     font-weight: 600;
                     margin-bottom: 10px;
                     display: inline-block;
+                    color: rgb(17, 52, 122);
                 }
                 input[type=text], textarea{
                     margin-bottom: 20px;
@@ -751,6 +754,7 @@
         position: relative;
         margin: 0 auto;
         margin-top: 10vh;
+        border-radius: 10px;
         .providerRegistSucessTitle{
             // border: 1px solid red;
             font-size: 24px;
