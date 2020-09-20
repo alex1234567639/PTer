@@ -705,7 +705,7 @@ table {
     .landingPageMain .banner .bannerTitle {
       color: white;
       font-size: 30px;
-      letter-spacing: .3px;
+      letter-spacing: .1px;
       margin-bottom: 15px;
       text-align: center; }
     .landingPageMain .banner .bannerSubtitle {
@@ -1789,8 +1789,7 @@ footer {
         .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadNotice {
           color: red;
           font-size: 10px;
-          width: 150px;
-          margin-top: 5px; }
+          width: 150px; }
       .matchInfo .matchInfoLightbox form .formBot .formBotRight {
         display: inline-block;
         vertical-align: top; }
