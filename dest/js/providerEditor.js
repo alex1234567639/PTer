@@ -88,4 +88,8 @@ window.addEventListener("load",function(){
         // console.log(repeatStringResult5);
         document.getElementById('tags').value += ' '+e;
     }
+
+    document.getElementById('editBoard').onclick = function(){
+        document.getElementById('tags').focus();
+    }
 },false);
