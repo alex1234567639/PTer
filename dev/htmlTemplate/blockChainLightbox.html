@@ -65,24 +65,42 @@
                     <label><input name="license" type="radio">Yes</label>
                     <label><input name="license" type="radio">No</label>
                     <br>
-                    <div class="formTitle">Background</div><br>
-                    <select name="background" style="width:140px">
+                    <div class="formTitle">Experience</div><br>
+                    <select name="experience" style="width:140px">
                         <option value="" style="display:none">Select</option>
                         <option value="english">1-2 years</option>
                         <option value="japanese">3-4 years</option>
                         <option value="chinese">5 years up</option>   
                     </select>
                     <br>
-                    <div class="formTitle">Upload Document</div><br>
-                    <label class="uploadBtn"><input type="file" class="uploadInput" id="uploadInput" accept=".doc,.ppt,.pdf,.txt">Choose File</label>
-                    <div class="showUploadFileName" id="showUploadFileName"></div>
-                    <div class="uploadNotice">The file only for doc. ppt. pdf. txt.</div>
+                    <div class="formTitle">Avg of Writing (days)</div><br>
+                    <div class="scale">
+                        <div class="scale_wrap">
+                            <div class="scale_line" id="scale_budget" data-min="0" data-max="30">
+                                <div class="scale_btn ui-slider-handle">
+                                    <div class="scale_btn_dropdown">
+                                        <div class="scale_btn_dropdown_price"><span id="scale-budget_btn_dropdown">5</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="scaleNum">
+                        <div class="scaleNum0">0</div>
+                        <div class="scaleNum30">30</div>
+                    </div>
                 </div>
                 <div class="formBotRight">
-                    <div class="formTitle">Education</div><br>
-                    <input type="text" placeholder="PhD, master's ..." style="width:140px">
-                    <br>
-                    <span class="formBotRightAdd">+ Add new</span>
+                    <div class="formTitle">Tech Domain</div><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Electricity</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Physics</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Optics</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">IOT</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Information</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Health care</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Agriculture</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch">Engines</label><br>
+                    <label><input type="checkbox" value="patentSearch" name="patentSearch" style="margin-bottom:0;">Mechanical<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Engineering</label>
                 </div>
             </div>
             <div class="matchInfoBtn">

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav {
   position: fixed;
   top: 0;
@@ -1010,8 +1011,25 @@ footer {
       width: 100%;
       margin-top: 30px;
       text-align: center; }
-      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle {
+      .dashboard .dashboardLeft .dashboardLeftBot .techDomain {
+        display: inline-block;
+        width: 240px;
+        margin: 0 auto;
         margin-top: 20px;
+        text-align: initial; }
+        .dashboard .dashboardLeft .dashboardLeftBot .techDomain .techDomainTitle {
+          color: gray;
+          margin-bottom: 5px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .techDomain .techDomainBox {
+          font-size: 12px;
+          margin: 2px;
+          background-color: #5f5fe4;
+          padding: 5px 10px;
+          border-radius: 3px;
+          display: inline-block;
+          color: white; }
+      .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle {
+        margin-top: 10px;
         display: inline-block;
         text-align: initial; }
         .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle .dashboardLeftBotTitleText {
@@ -1026,6 +1044,44 @@ footer {
           margin-bottom: 15px; }
       .dashboard .dashboardLeft .dashboardLeftBot hr {
         width: 90%; }
+      .dashboard .dashboardLeft .dashboardLeftBot .approvalRate {
+        margin: 0 auto;
+        margin-top: 10px;
+        display: inline-block;
+        width: 270px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateTitle {
+          color: gray;
+          margin-bottom: 10px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateSubtitle {
+          display: inline-block;
+          text-align: initial;
+          width: 72px; }
+          .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateSubtitle .approvalRateSubtitleContent {
+            margin: 10px 0px;
+            font-size: 14px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateBar {
+          width: calc(90% - 73px);
+          display: inline-block;
+          vertical-align: bottom; }
+          .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateBar .myProgress {
+            position: relative;
+            overflow: hidden;
+            height: 20px;
+            background-color: #e0e0e0;
+            box-sizing: border-box;
+            margin: 5px auto; }
+            .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateBar .myProgress:hover .myBar {
+              background-color: #8080ee; }
+            .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateBar .myProgress .myBar {
+              font-size: 14px;
+              position: absolute;
+              text-align: initial;
+              padding-left: 5px;
+              padding-top: 3px;
+              height: 100%;
+              background-color: #5f5fe4;
+              color: white;
+              transition-duration: .5s; }
       .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotSelfIntro {
         font-size: 14px;
         letter-spacing: .5px;
@@ -1115,7 +1171,8 @@ footer {
                 margin-top: 5px;
                 margin-bottom: 5px; }
                 .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar {
-                  background-color: #f66060; }
+                  background-color: #f66060;
+                  cursor: pointer; }
                 .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress .myBar {
                   position: absolute;
                   height: 100%;
@@ -1623,7 +1680,6 @@ footer {
 
 .matchInfo {
   animation: fadeEffect .5s;
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1659,7 +1715,7 @@ footer {
         margin: 5px;
         color: gray; }
     .matchInfo .matchInfoLightbox form .formTop {
-      width: 600px;
+      width: 560px;
       margin: 0 auto; }
       .matchInfo .matchInfoLightbox form .formTop .formTitle {
         font-weight: 600;
@@ -1667,6 +1723,7 @@ footer {
         display: inline-block;
         color: #11347a; }
       .matchInfo .matchInfoLightbox form .formTop input {
+        margin: 0 5px;
         margin-bottom: 5px;
         padding: 4px;
         outline: none;
@@ -1676,6 +1733,7 @@ footer {
         .matchInfo .matchInfoLightbox form .formTop input:focus, .matchInfo .matchInfoLightbox form .formTop input:hover {
           border: 1px solid #bbbbbb; }
       .matchInfo .matchInfoLightbox form .formTop select {
+        margin: 0 5px;
         margin-bottom: 10px;
         padding: 4px;
         outline: none;
@@ -1715,7 +1773,8 @@ footer {
       margin-top: 30px; }
       .matchInfo .matchInfoLightbox form .formBot .formBotLeft {
         display: inline-block;
-        margin-right: 25px; }
+        margin: 0 12px;
+        margin-left: 25px; }
         .matchInfo .matchInfoLightbox form .formBot .formBotLeft .formTitle {
           font-weight: 600;
           margin-bottom: 10px;
@@ -1734,7 +1793,7 @@ footer {
       .matchInfo .matchInfoLightbox form .formBot .formBotMiddle {
         display: inline-block;
         vertical-align: top;
-        margin-right: 25px; }
+        margin: 0 12px; }
         .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .formTitle {
           font-weight: 600;
           margin-bottom: 10px;
@@ -1746,11 +1805,11 @@ footer {
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle label:hover {
             cursor: pointer; }
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle label input[type=radio] {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             margin-right: 5px;
             padding: 4px; }
         .matchInfo .matchInfoLightbox form .formBot .formBotMiddle select {
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           padding: 4px;
           outline: none;
           color: #333333;
@@ -1768,54 +1827,109 @@ footer {
             border: 1px solid #bbbbbb; }
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle select option {
             background: #ffffff; }
-        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn {
-          padding: 2px 37px;
-          outline: none;
-          color: #333333;
-          background-color: #eeeeee;
-          border: 1px solid #dddddd;
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale {
+          color: white;
           font-size: 12px; }
-          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn:focus, .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn:hover {
-            border: 1px solid #bbbbbb; }
-          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadBtn .uploadInput {
-            display: none; }
-        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .showUploadFileName {
-          margin-top: 10px;
-          font-size: 14px;
-          font-weight: 400;
-          max-width: 140px;
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale .scale_line {
+            width: 140px;
+            margin-left: 3px; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_text {
+            position: relative;
+            height: 24px;
+            font-size: 12зч;
+            color: #000; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_text_min {
+              position: absolute;
+              left: 0; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_text_max {
+              position: absolute;
+              right: 0; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_text_30 {
+              position: absolute;
+              left: 30%; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_wrap {
+            position: relative;
+            width: 100%;
+            height: 36px;
+            left: 0;
+            right: 0; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_line {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 5px;
+            height: 8px;
+            width: 100%;
+            background-color: #C4C6CC; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_30 {
+            position: absolute;
+            top: 12px;
+            height: 8px;
+            width: 30%;
+            background-color: #939599; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_30_border {
+              position: absolute;
+              height: 24px;
+              width: 30%;
+              border-right: 2px solid #939599; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_progress {
+            top: 12px;
+            height: 8px;
+            width: 10%;
+            background-color: #638bee;
+            z-index: 2; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_btn {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            margin-left: -14px;
+            z-index: 3;
+            background-color: #638bee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+            outline: none;
+            cursor: pointer; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_btn:focus {
+              box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_btn svg path {
+              stroke: #fff; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale .ui-widget-header {
+            top: 12px;
+            height: 8px;
+            background-color: #638bee;
+            z-index: 2; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scaleNum {
           color: gray;
-          overflow: hidden; }
-        .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .uploadNotice {
-          color: red;
-          font-size: 10px;
-          width: 150px; }
+          width: 150px;
+          transform: translateY(-15px); }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scaleNum .scaleNum0 {
+            display: inline-block;
+            float: left; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scaleNum .scaleNum30 {
+            display: inline-block;
+            float: right; }
       .matchInfo .matchInfoLightbox form .formBot .formBotRight {
         display: inline-block;
-        vertical-align: top; }
+        vertical-align: top;
+        margin: 0 12px; }
         .matchInfo .matchInfoLightbox form .formBot .formBotRight .formTitle {
           font-weight: 600;
           margin-bottom: 10px;
           display: inline-block;
           color: #11347a; }
-        .matchInfo .matchInfoLightbox form .formBot .formBotRight input {
-          margin-bottom: 5px;
-          padding: 4px;
-          outline: none;
-          color: #333333;
-          background-color: #eeeeee;
-          border: 1px solid #dddddd; }
-          .matchInfo .matchInfoLightbox form .formBot .formBotRight input:focus, .matchInfo .matchInfoLightbox form .formBot .formBotRight input:hover {
-            border: 1px solid #bbbbbb; }
-        .matchInfo .matchInfoLightbox form .formBot .formBotRight .formBotRightAdd {
-          color: #134099;
-          font-size: 12px;
-          transition-duration: .3s; }
-          .matchInfo .matchInfoLightbox form .formBot .formBotRight .formBotRightAdd:hover {
-            color: #3d67b9;
-            cursor: pointer; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotRight label {
+          cursor: pointer;
+          font-size: 14px;
+          margin-right: 5px; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotRight label input[type=checkbox] {
+            margin-bottom: 10px;
+            margin-right: 5px;
+            padding: 4px; }
     .matchInfo .matchInfoLightbox form .matchInfoBtn {
-      margin-top: 50px;
+      margin-top: 20px;
       text-align: center; }
       .matchInfo .matchInfoLightbox form .matchInfoBtn .matchInfoBtnSubmit {
         width: 80px;
@@ -2390,5 +2504,18 @@ footer {
           background-color: #eeeeee;
           transition-duration: .5s; }
 
+.providerEditor {
+  border: 1px solid red;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px; }
+  .providerEditor .providerEditorTitle {
+    color: #134099;
+    font-size: 25px; }
+  .providerEditor .providerEditorLeft {
+    border: 1px solid red;
+    width: 100px;
+    height: 400px; }
+
 * {
-  font-family: Microsoft JhengHei; }
+  font-family: Helvetica; }

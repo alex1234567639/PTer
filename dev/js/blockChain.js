@@ -98,3 +98,27 @@ window.addEventListener("load",function(){
         document.getElementById('blockChainCompleted').classList.remove("open");
     }
 },false);
+
+//拖曳bar
+// if (document.getElementById('scale_budget')) {
+    jQuery(document).ready(function ($) {
+        $("#scale_budget").each(function () {
+            let $this = $(this);
+            let min = parseInt($this.data('min'));
+            let max = parseInt($this.data('max'));
+
+            $this.slider({
+                animate: true,
+                range: "min",
+                value: 5,
+                min: min,
+                max: max,
+                step: 1,
+                slide: function (event, ui) {
+                    $("#scale-budget_btn_dropdown").text(ui.value);
+                    $("#scale-budget_input").val(ui.value);
+                }
+            });
+        });
+    });
+// }

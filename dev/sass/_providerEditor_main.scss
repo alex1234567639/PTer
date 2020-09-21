@@ -1,0 +1,15 @@
+.providerEditor{
+    border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    .providerEditorTitle{
+        color: rgb(19, 64, 153);
+        font-size: 25px;
+    }
+    .providerEditorLeft{
+        border: 1px solid red;
+        width: 100px;
+        height: 400px;
+    }
+}
