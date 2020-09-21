@@ -7,6 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- 輸入自動完成套件 -->
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/nav.js"></script>  
@@ -218,7 +224,51 @@
     <div class="providerEditor">
     <div class="providerEditorTitle">Patent Claim Drafting</div>
     <div class="providerEditorLeft">
-        
+        <div class="providerEditorLeftTop">
+            <img src="./images/dashboard.png">
+            <div class="iconName">Dashboard</div>
+            <img src="./images/dashboard2.png">
+            <div class="iconName">Dashboard</div>
+            <img src="./images/template.png">
+            <div class="iconName">Template</div>
+        </div>
+        <div class="providerEditorLeftBot">
+            <img src="./images/jepson.png">
+            <div class="iconName">Jepson</div>
+            <img src="./images/markush.png">
+            <div class="iconName" style="color:rgb(19, 64, 153);;">Markush</div>
+        </div>
+    </div>
+    <div class="providerEditorRight">
+        <div class="providerEditorRightBtns">
+            <button class="providerEditorRightBtn">Template</button>
+            <button class="providerEditorRightBtn">New Work</button>
+        </div>
+        <div class="allCases">
+            <div class="allCasesItem">All Cases (20)</div>
+            <div class="allCasesItem complete">| <img src="./images/complete.png"> Complete (5)</div>
+            <div class="allCasesItem active">| <img src="./images/active.png"> Active (8)</div>
+            <div class="allCasesItem pendingPayment">| <img src="./images/pendingPayment.png"> Pending Payment (7)</div>
+            <div class="search">
+                <form action="">
+                    <i class="fa fa-search searchInputIcon"></i>
+                    <input class="searchInput" type="text" placeholder="Search...">
+                    <button class="searchBtn" type="button" value="Submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="title">US Provisional Draft</div>
+        <div class="editBoard">
+            <div id="repeatWords"></div>
+            <div class="ui-widget">
+                <div class="textareaTitle">What is claim is:</div>
+                <textarea class="tags" id="tags" 
+                oninput="this.style.height='0px';
+                this.style.height=(this.scrollHeight+'px');"
+                onpropertychange="this.style.height=(this.scrollHeight+'px')"
+                /></textarea>
+            </div>
+        </div>
     </div>
 </div>
     <footer>

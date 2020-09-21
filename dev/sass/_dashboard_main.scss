@@ -261,9 +261,9 @@
                                 box-sizing: border-box;
                                 margin-top: 5px;
                                 margin-bottom: 5px;
+                                cursor: pointer;
                                 &:hover .myBar{
                                     background-color: rgb(246, 96, 96);
-                                    cursor: pointer;
                                 }
                                 .myBar{
                                     position: absolute;

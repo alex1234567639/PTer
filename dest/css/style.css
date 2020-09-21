@@ -1169,10 +1169,10 @@ footer {
                 background-color: #e0e0e0;
                 box-sizing: border-box;
                 margin-top: 5px;
-                margin-bottom: 5px; }
+                margin-bottom: 5px;
+                cursor: pointer; }
                 .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress:hover .myBar {
-                  background-color: #f66060;
-                  cursor: pointer; }
+                  background-color: #f66060; }
                 .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part1 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part2 .dashboardRightTopTabContent1Part1Left .myProgress .myBar, .dashboard .dashboardRight .dashboardRightTop .dashboardRightTopTabContent .tabcontent .dashboardRightTopTabContent1Part3 .dashboardRightTopTabContent1Part1Left .myProgress .myBar {
                   position: absolute;
                   height: 100%;
@@ -1680,6 +1680,7 @@ footer {
 
 .matchInfo {
   animation: fadeEffect .5s;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2505,7 +2506,6 @@ footer {
           transition-duration: .5s; }
 
 .providerEditor {
-  border: 1px solid red;
   width: 1200px;
   margin: 0 auto;
   margin-top: 80px; }
@@ -2513,9 +2513,128 @@ footer {
     color: #134099;
     font-size: 25px; }
   .providerEditor .providerEditorLeft {
-    border: 1px solid red;
-    width: 100px;
-    height: 400px; }
+    width: 85px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px; }
+    .providerEditor .providerEditorLeft img {
+      height: 35px;
+      margin-top: 10px; }
+    .providerEditor .providerEditorLeft .iconName {
+      color: gray;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 14px; }
+    .providerEditor .providerEditorLeft .providerEditorLeftTop, .providerEditor .providerEditorLeft .providerEditorLeftBot {
+      margin-top: 30px;
+      border: 1px solid lightgray; }
+  .providerEditor .providerEditorRight {
+    display: inline-block;
+    width: 1080px;
+    margin-left: 20px;
+    vertical-align: top; }
+    .providerEditor .providerEditorRight .providerEditorRightBtns {
+      text-align: right; }
+      .providerEditor .providerEditorRight .providerEditorRightBtns .providerEditorRightBtn {
+        width: 80px;
+        height: 33px;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099;
+        margin: 0 8px; }
+        .providerEditor .providerEditorRight .providerEditorRightBtns .providerEditorRightBtn:hover {
+          cursor: pointer;
+          background-color: #eeeeee;
+          transition-duration: .5s; }
+    .providerEditor .providerEditorRight .allCases {
+      margin-top: 10px;
+      border: 1px solid whitesmoke;
+      background-color: #fafafa; }
+      .providerEditor .providerEditorRight .allCases .allCasesItem {
+        margin: 0 10px;
+        margin-top: 25px;
+        display: inline-block; }
+        .providerEditor .providerEditorRight .allCases .allCasesItem img {
+          width: 16px;
+          transform: translateY(2px);
+          margin-left: 5px; }
+      .providerEditor .providerEditorRight .allCases .complete {
+        color: #d82323; }
+      .providerEditor .providerEditorRight .allCases .active {
+        color: #16b76d; }
+      .providerEditor .providerEditorRight .allCases .pendingPayment {
+        color: #ddac40; }
+      .providerEditor .providerEditorRight .allCases .search {
+        height: 70px;
+        width: 280px;
+        display: inline-block;
+        background-color: #fafafa;
+        border-radius: 5px;
+        position: relative;
+        margin-left: 185px; }
+        .providerEditor .providerEditorRight .allCases .search .searchInputIcon {
+          color: #bbbbbb;
+          position: absolute;
+          top: 26px;
+          left: 6px; }
+        .providerEditor .providerEditorRight .allCases .search .searchInput {
+          border: 1px solid #bbbbbb;
+          width: 150px;
+          padding: 5px;
+          padding-left: 27px;
+          margin-top: 20px;
+          border-radius: 5px;
+          outline: none; }
+        .providerEditor .providerEditorRight .allCases .search .searchBtn {
+          width: 80px;
+          height: 30px;
+          color: white;
+          background-color: #134099;
+          border: 1px solid white;
+          border-radius: 5px; }
+          .providerEditor .providerEditorRight .allCases .search .searchBtn:hover {
+            cursor: pointer;
+            background-color: #3636c7;
+            transition-duration: .5s; }
+    .providerEditor .providerEditorRight .title {
+      margin: 20px 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #134099; }
+    .providerEditor .providerEditorRight .editBoard {
+      border: 1px solid lightgray;
+      display: inline-block;
+      border: 1px solid whitesmoke;
+      background-color: #fafafa;
+      padding: 15px;
+      width: 1050px;
+      height: 600px;
+      margin-bottom: 50px; }
+      .providerEditor .providerEditorRight .editBoard .suggestBtn {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 3px 8px;
+        font-size: 12px;
+        outline: none;
+        cursor: pointer;
+        color: #134099;
+        background-color: white;
+        border: 1px solid #134099; }
+      .providerEditor .providerEditorRight .editBoard .textareaTitle {
+        font-size: 30px;
+        font-weight: 600px;
+        margin-bottom: 10px; }
+      .providerEditor .providerEditorRight .editBoard .tags {
+        cursor: text;
+        width: 1040px;
+        line-height: 25px;
+        padding: 3px;
+        height: 25px;
+        *overflow-y: hidden;
+        border: 1px solid #fafafa;
+        background-color: #fafafa;
+        outline: none;
+        resize: none; }
 
 * {
   font-family: Helvetica; }
