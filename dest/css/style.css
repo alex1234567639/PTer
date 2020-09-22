@@ -2683,7 +2683,24 @@ footer {
       .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle {
         font-size: 30px;
         font-weight: 600px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        position: relative; }
+        .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .closePatentImg, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .closePatentImg {
+          width: 150px;
+          background-color: #ececec;
+          font-size: 14px;
+          text-align: center;
+          padding: 5px;
+          box-sizing: border-box;
+          cursor: pointer; }
+        .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .patentImg, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .patentImg {
+          border: 1px solid gray;
+          display: none;
+          position: absolute;
+          bottom: 0;
+          left: 300px; }
+          .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .patentImg img, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .patentImg img {
+            width: 150px; }
       .providerEditor .providerEditorRight .editBoard-jepson .tags, .providerEditor .providerEditorRight .editBoard-markush .tags {
         cursor: text;
         width: 1040px;

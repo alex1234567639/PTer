@@ -223,4 +223,18 @@ window.addEventListener("load",function(){
         setTimeout('ShowTime()',1000);
     }
     ShowTime();
+
+    //輸入超過一定字數後，顯示專利照片
+    document.getElementById('tags-markush').addEventListener("keyup", add = function(){
+        let value = document.getElementById('tags-markush');
+        console.log(value.value.length);
+        if(value.value.length>=56){
+            document.getElementById('patentImg').style.display = 'block';
+            document.getElementById('tags-markush').removeEventListener("keyup",add,false);
+        }
+    },false)
+    //點擊close，關閉專利照片
+    document.getElementById('closePatentImg').onclick = function(){
+        document.getElementById('patentImg').style.display = 'none';
+    }
 },false);
