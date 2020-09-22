@@ -1,4 +1,5 @@
 window.addEventListener("load",function(){
+    //markush
     var repeatStringResult5 = [];
     $(function() {
         var availableTags = [
@@ -21,7 +22,7 @@ window.addEventListener("load",function(){
         }
 
         // let repeatString = '';
-        $( "#tags" )
+        $( "#tags-markush" )
         .bind( "keydown", function( event ) {
             if ( event.keyCode === $.ui.keyCode.TAB &&
             $( this ).data( "ui-autocomplete" ).menu.active ) {
@@ -75,7 +76,7 @@ window.addEventListener("load",function(){
                 
                 console.log(repeatStringResult);
                 console.log(repeatStringResult5);
-                document.getElementById('repeatWords').innerHTML = repeatString;
+                document.getElementById('repeatWords-markush').innerHTML = repeatString;
                 
                 return false;
             }
@@ -86,21 +87,120 @@ window.addEventListener("load",function(){
         // console.log(repeatStringResult5);
         repeatStringResult5.pop(e);
         // console.log(repeatStringResult5);
-        document.getElementById('tags').value += ' '+e;
+        document.getElementById('tags-markush').value += ' '+e;
     }
 
-    document.getElementById('editBoard').onclick = function(){
-        document.getElementById('tags').focus();
+    //jepson
+    var repeat2StringResult5 = [];
+    $(function() {
+        var availableTags = [
+            "medium segment",
+            "transmission",
+            "availableTags",
+            "a first",
+            "a second",
+            "a third",
+            "An analog surface wave multi-point repeater comprising:"
+        ];
+
+        function split( val ) {
+            return val.split( ' ' );
+        }
+
+        function extractLast( term ) {
+            //輸入的值
+            return split( term ).pop();
+        }
+
+        // let repeatString = '';
+        $( "#tags-jepson" )
+        .bind( "keydown", function( event ) {
+            if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).data( "ui-autocomplete" ).menu.active ) {
+                event.preventDefault();
+            }
+        })
+        .autocomplete({
+            minLength: 0,
+            source: function( request, response ) {
+                //回到 autocomplete，但是提取最后的条目
+                response( $.ui.autocomplete.filter(
+                availableTags, extractLast( request.term ) ) );
+            },
+            search: function() {
+                // 自定義最小長度
+                var term = extractLast( this.value );
+                if ( term.length < 1 ) {
+                    return false;
+                }
+            },
+            focus: function() {
+                // 防止在获得焦点时插入值
+                return false;
+            },
+            select: function( event, ui ) {
+                var terms = split( this.value );
+                // 移除當前输入
+                terms.pop();
+                // 添加被选项
+                terms.push( ui.item.value );
+                //將陣列所有內容取出，以空格連接
+                this.value = terms.join( " " );
+                // console.log(terms);
+                //挑出重複的值放入陣列
+                var repeat = terms.filter(function(element, index, arr){
+                    return arr.indexOf(element) !== index;
+                });
+                //去除陣列中重複的值
+                var repeatStringResult = repeat.filter(function(element, index, arr){
+                    return arr.indexOf(element) === index;
+                });
+                //去除陣列中長度少於5的值
+                repeat2StringResult5 = repeatStringResult.filter(function(element, index, arr){
+                    return element.length>=7;
+                });
+                var repeatString = '';
+                for(let i=0; i<repeat2StringResult5.length; i++){
+                    // repeatString += ' '+repeat[i];
+                    repeatString += ' ' + `<button class="suggestBtn" onclick="my2Function('${repeat2StringResult5[i]}');">${repeat2StringResult5[i]}</button>`;
+                }
+                
+                console.log(repeatStringResult);
+                console.log(repeat2StringResult5);
+                document.getElementById('repeatWords-jepson').innerHTML = repeatString;
+                
+                return false;
+            }
+        });
+    });
+    my2Function = function(e){
+        // alert(e);
+        // console.log(repeat2StringResult5);
+        repeat2StringResult5.pop(e);
+        // console.log(repeat2StringResult5);
+        document.getElementById('tags-jepson').value += ' '+e;
+    }
+    
+
+    document.getElementById('editBoard-markush').onclick = function(){
+        document.getElementById('tags-markush').focus();
+    }
+    document.getElementById('editBoard-jepson').onclick = function(){
+        document.getElementById('tags-jepson').focus();
     }
 
     //markush . jepson切換
     document.getElementById('changeToJepson').onclick = function(){
         document.getElementById('providerEditorLeftBot-markush').classList.add("close");
         document.getElementById('providerEditorLeftBot-jepson').classList.add("open");
+        document.getElementById('editBoard-markush').classList.add("close");
+        document.getElementById('editBoard-jepson').classList.add("open");
     }
     document.getElementById('changeToMarkush').onclick = function(){
         document.getElementById('providerEditorLeftBot-markush').classList.remove("close");
         document.getElementById('providerEditorLeftBot-jepson').classList.remove("open");
+        document.getElementById('editBoard-markush').classList.remove("close");
+        document.getElementById('editBoard-jepson').classList.remove("open");
     }
 
     //顯示時間
