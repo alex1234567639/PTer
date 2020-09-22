@@ -8,7 +8,7 @@ window.addEventListener("load",function(){
             "a first",
             "a second",
             "a third",
-            "An analog surface wave multi-point repeater comprising:"
+            "1. An analog surface wave multi-point repeater comprising:"
         ];
 
         function split( val ) {

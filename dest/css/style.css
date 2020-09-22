@@ -2602,6 +2602,7 @@ footer {
       font-size: 20px;
       color: #134099; }
     .providerEditor .providerEditorRight .editBoard {
+      cursor: text;
       border: 1px solid lightgray;
       display: inline-block;
       border: 1px solid whitesmoke;
