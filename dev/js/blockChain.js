@@ -1,10 +1,32 @@
+//拖曳bar
+jQuery(document).ready(function ($) {
+    $("#scale_budget").each(function () {
+        let $this = $(this);
+        let min = parseInt($this.data('min'));
+        let max = parseInt($this.data('max'));
+
+        $this.slider({
+            animate: true,
+            range: "min",
+            value: 5,
+            min: min,
+            max: max,
+            step: 1,
+            slide: function (event, ui) {
+                $("#scale-budget_btn_dropdown").text(ui.value);
+                $("#scale-budget_input").val(ui.value);
+            }
+        });
+    });
+});
+
 window.addEventListener("load",function(){
     //上傳檔案後，顯示檔案名稱
-    document.getElementById('uploadInput').onchange = function(){
-        let file = document.getElementById('uploadInput');
-        let showFileName = document.getElementById('showUploadFileName');
-        showFileName.innerHTML = file.value.split(/(\\|\/)/g).pop();
-    }
+    // document.getElementById('uploadInput').onchange = function(){
+    //     let file = document.getElementById('uploadInput');
+    //     let showFileName = document.getElementById('showUploadFileName');
+    //     showFileName.innerHTML = file.value.split(/(\\|\/)/g).pop();
+    // }
     document.getElementById('lastStepLeftUpload').onchange = function(){
         let file = document.getElementById('lastStepLeftUpload');
         let showFileName = document.getElementById('lastStepLeftUploadFileName');
@@ -23,6 +45,7 @@ window.addEventListener("load",function(){
             document.getElementById('matchInfo').classList.add("open");
         }
     }
+
     //matchInfo 點擊cancel關閉上鏈燈箱
     document.getElementById('matchInfoBtnReset').onclick = function(){
         document.getElementById('matchInfo').classList.remove("open");
@@ -98,27 +121,3 @@ window.addEventListener("load",function(){
         document.getElementById('blockChainCompleted').classList.remove("open");
     }
 },false);
-
-//拖曳bar
-// if (document.getElementById('scale_budget')) {
-    jQuery(document).ready(function ($) {
-        $("#scale_budget").each(function () {
-            let $this = $(this);
-            let min = parseInt($this.data('min'));
-            let max = parseInt($this.data('max'));
-
-            $this.slider({
-                animate: true,
-                range: "min",
-                value: 5,
-                min: min,
-                max: max,
-                step: 1,
-                slide: function (event, ui) {
-                    $("#scale-budget_btn_dropdown").text(ui.value);
-                    $("#scale-budget_input").val(ui.value);
-                }
-            });
-        });
-    });
-// }

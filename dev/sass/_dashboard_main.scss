@@ -72,7 +72,7 @@
                 .techDomainBox{
                     font-size: 12px;
                     margin: 2px;
-                    background-color: rgb(95, 95, 228);
+                    background-color: rgb(19, 64, 153);
                     padding: 5px 10px;
                     border-radius: 3px;
                     display: inline-block;
@@ -135,7 +135,7 @@
                         box-sizing: border-box;
                         margin: 5px auto;
                         &:hover .myBar{
-                            background-color: rgb(128, 128, 238);
+                            background-color: rgb(54, 54, 199);
                         }
                         .myBar{
                             font-size: 14px;
@@ -144,7 +144,7 @@
                             padding-left: 5px;
                             padding-top: 3px;
                             height: 100%;
-                            background-color: rgb(95, 95, 228);
+                            background-color: rgb(19, 64, 153);
                             color: white;
                             transition-duration: .5s;
                         }

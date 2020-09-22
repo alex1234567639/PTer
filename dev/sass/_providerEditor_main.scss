@@ -5,7 +5,7 @@
     margin-top: 80px;
     .providerEditorTitle{
         color: rgb(19, 64, 153);
-        font-size: 25px;
+        font-size: 35px;
     }
     .providerEditorLeft{
         // border: 1px solid red;
@@ -16,12 +16,14 @@
         img{
             height: 35px;
             margin-top: 10px;
+            cursor: pointer;
         }
         .iconName{
             color: gray;
             margin-top: 5px;
             margin-bottom: 10px;
             font-size: 14px;
+            cursor: pointer;
         }
         .providerEditorLeftTop, .providerEditorLeftBot{
             margin-top: 30px;
@@ -37,16 +39,22 @@
         .providerEditorRightBtns{
             text-align: right;
             .providerEditorRightBtn{
-                width: 80px;
+                width: 100px;
                 height: 33px;
                 color: rgb(19, 64, 153);
                 background-color: white;
                 border: 1px solid rgb(19, 64, 153); 
-                margin: 0 8px;             
+                margin: 0 8px; 
+                outline: none;            
                 &:hover{
                     cursor: pointer;
                     background-color: rgb(238, 238, 238);
                     transition-duration: .5s;
+                }
+                img{
+                    height: 12px;
+                    margin-right: 5px;
+                    transform: translateY(2px);
                 }
             }
         } 

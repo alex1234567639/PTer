@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .nav {
   position: fixed;
   top: 0;
@@ -733,7 +732,8 @@ table {
         padding-left: 27px;
         margin-left: calc(10% - 40px);
         margin-top: 20px;
-        border-radius: 5px; }
+        border-radius: 5px;
+        outline: none; }
       .landingPageMain .banner .bannerSearch .bannerSearchBtn {
         width: 100px;
         height: 35px;
@@ -1023,7 +1023,7 @@ footer {
         .dashboard .dashboardLeft .dashboardLeftBot .techDomain .techDomainBox {
           font-size: 12px;
           margin: 2px;
-          background-color: #5f5fe4;
+          background-color: #134099;
           padding: 5px 10px;
           border-radius: 3px;
           display: inline-block;
@@ -1071,7 +1071,7 @@ footer {
             box-sizing: border-box;
             margin: 5px auto; }
             .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateBar .myProgress:hover .myBar {
-              background-color: #8080ee; }
+              background-color: #3636c7; }
             .dashboard .dashboardLeft .dashboardLeftBot .approvalRate .approvalRateBar .myProgress .myBar {
               font-size: 14px;
               position: absolute;
@@ -1079,7 +1079,7 @@ footer {
               padding-left: 5px;
               padding-top: 3px;
               height: 100%;
-              background-color: #5f5fe4;
+              background-color: #134099;
               color: white;
               transition-duration: .5s; }
       .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotSelfIntro {
@@ -1834,10 +1834,19 @@ footer {
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale .scale_line {
             width: 140px;
             margin-left: 3px; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale .scale_line .ui-slider-range {
+              border: 4px solid #638bee;
+              transform: translateY(-12px) translateX(-1px);
+              color: #638bee;
+              box-sizing: border-box; }
+            .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale .scale_line .scale_btn {
+              border: 10px solid #638bee;
+              box-sizing: border-box;
+              color: white; }
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_text {
             position: relative;
             height: 24px;
-            font-size: 12зч;
+            font-size: 12px;
             color: #000; }
             .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_text_min {
               position: absolute;
@@ -1861,18 +1870,18 @@ footer {
             top: 5px;
             height: 8px;
             width: 100%;
-            background-color: #C4C6CC; }
+            background-color: #638bee; }
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_30 {
             position: absolute;
             top: 12px;
             height: 8px;
             width: 30%;
-            background-color: #939599; }
+            background-color: #638bee; }
             .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_30_border {
               position: absolute;
               height: 24px;
               width: 30%;
-              border-right: 2px solid #939599; }
+              border-right: 2px solid #638bee; }
           .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_progress {
             top: 12px;
             height: 8px;
@@ -1885,13 +1894,13 @@ footer {
             height: 20px;
             margin-left: -14px;
             z-index: 3;
-            background-color: #638bee;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 100%;
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
             outline: none;
+            background-color: #638bee;
             cursor: pointer; }
             .matchInfo .matchInfoLightbox form .formBot .formBotMiddle .scale_btn:focus {
               box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); }
@@ -2511,7 +2520,7 @@ footer {
   margin-top: 80px; }
   .providerEditor .providerEditorTitle {
     color: #134099;
-    font-size: 25px; }
+    font-size: 35px; }
   .providerEditor .providerEditorLeft {
     width: 85px;
     text-align: center;
@@ -2519,12 +2528,14 @@ footer {
     margin-top: 15px; }
     .providerEditor .providerEditorLeft img {
       height: 35px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      cursor: pointer; }
     .providerEditor .providerEditorLeft .iconName {
       color: gray;
       margin-top: 5px;
       margin-bottom: 10px;
-      font-size: 14px; }
+      font-size: 14px;
+      cursor: pointer; }
     .providerEditor .providerEditorLeft .providerEditorLeftTop, .providerEditor .providerEditorLeft .providerEditorLeftBot {
       margin-top: 30px;
       border: 1px solid lightgray; }
@@ -2536,16 +2547,21 @@ footer {
     .providerEditor .providerEditorRight .providerEditorRightBtns {
       text-align: right; }
       .providerEditor .providerEditorRight .providerEditorRightBtns .providerEditorRightBtn {
-        width: 80px;
+        width: 100px;
         height: 33px;
         color: #134099;
         background-color: white;
         border: 1px solid #134099;
-        margin: 0 8px; }
+        margin: 0 8px;
+        outline: none; }
         .providerEditor .providerEditorRight .providerEditorRightBtns .providerEditorRightBtn:hover {
           cursor: pointer;
           background-color: #eeeeee;
           transition-duration: .5s; }
+        .providerEditor .providerEditorRight .providerEditorRightBtns .providerEditorRightBtn img {
+          height: 12px;
+          margin-right: 5px;
+          transform: translateY(2px); }
     .providerEditor .providerEditorRight .allCases {
       margin-top: 10px;
       border: 1px solid whitesmoke;
