@@ -92,4 +92,35 @@ window.addEventListener("load",function(){
     document.getElementById('editBoard').onclick = function(){
         document.getElementById('tags').focus();
     }
+
+    //markush . jepson切換
+    document.getElementById('changeToJepson').onclick = function(){
+        document.getElementById('providerEditorLeftBot-markush').classList.add("close");
+        document.getElementById('providerEditorLeftBot-jepson').classList.add("open");
+    }
+    document.getElementById('changeToMarkush').onclick = function(){
+        document.getElementById('providerEditorLeftBot-markush').classList.remove("close");
+        document.getElementById('providerEditorLeftBot-jepson').classList.remove("open");
+    }
+
+    //顯示時間
+    ShowTime = function(){
+        var NowDate=new Date();
+        var year=NowDate.getFullYear();
+        var month=NowDate.getMonth()+1;
+        var day=NowDate.getDate();
+        var h=NowDate.getHours();
+        var m=NowDate.getMinutes();
+        var s=NowDate.getSeconds();　
+
+        //小於10的數在前面補0
+        function Appendzero(obj){
+            if(obj<10) return "0" +""+ obj;
+            else return obj;
+        }
+
+        document.getElementById('showbox').innerHTML = year+'/'+Appendzero(month)+'/'+Appendzero(day)+' '+h+':'+m+':'+s;
+        setTimeout('ShowTime()',1000);
+    }
+    ShowTime();
 },false);

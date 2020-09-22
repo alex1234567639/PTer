@@ -2536,9 +2536,17 @@ footer {
       margin-bottom: 10px;
       font-size: 14px;
       cursor: pointer; }
-    .providerEditor .providerEditorLeft .providerEditorLeftTop, .providerEditor .providerEditorLeft .providerEditorLeftBot {
+    .providerEditor .providerEditorLeft .providerEditorLeftTop, .providerEditor .providerEditorLeft .providerEditorLeftBot-markush {
       margin-top: 30px;
       border: 1px solid lightgray; }
+    .providerEditor .providerEditorLeft .providerEditorLeftBot-markush.close {
+      display: none; }
+    .providerEditor .providerEditorLeft .providerEditorLeftBot-jepson.open {
+      display: block; }
+    .providerEditor .providerEditorLeft .providerEditorLeftBot-jepson {
+      margin-top: 30px;
+      border: 1px solid lightgray;
+      display: none; }
   .providerEditor .providerEditorRight {
     display: inline-block;
     width: 1080px;
@@ -2647,6 +2655,10 @@ footer {
         background-color: #ffcd44; }
       .providerEditor .providerEditorRight .progress .myProgressCompleted .myBar {
         background-color: #fcbc48; }
+    .providerEditor .providerEditorRight .editTime {
+      margin-top: 10px;
+      text-align: right;
+      color: gray; }
     .providerEditor .providerEditorRight .editBoard {
       cursor: text;
       border: 1px solid lightgray;

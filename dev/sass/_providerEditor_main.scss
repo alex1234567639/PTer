@@ -25,9 +25,20 @@
             font-size: 14px;
             cursor: pointer;
         }
-        .providerEditorLeftTop, .providerEditorLeftBot{
+        .providerEditorLeftTop, .providerEditorLeftBot-markush{
             margin-top: 30px;
             border: 1px solid lightgray;
+        }
+        .providerEditorLeftBot-markush.close{
+            display: none;
+        }
+        .providerEditorLeftBot-jepson.open{
+            display: block;
+        }
+        .providerEditorLeftBot-jepson{
+            margin-top: 30px;
+            border: 1px solid lightgray;
+            display: none;
         }
     } 
     .providerEditorRight{
@@ -166,6 +177,11 @@
                     background-color: rgb(252, 188, 72);
                 }
             }
+        }
+        .editTime{
+            margin-top: 10px;
+            text-align: right;
+            color: gray;
         }
         .editBoard{
             cursor: text;
