@@ -2613,10 +2613,40 @@ footer {
             background-color: #3636c7;
             transition-duration: .5s; }
     .providerEditor .providerEditorRight .title {
+      display: inline-block;
       margin: 20px 10px;
       font-weight: 600;
       font-size: 20px;
       color: #134099; }
+    .providerEditor .providerEditorRight .progress {
+      width: 300px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 560px; }
+      .providerEditor .providerEditorRight .progress .pin {
+        font-size: 14px;
+        color: gray;
+        display: inline-block;
+        margin-left: 10%; }
+      .providerEditor .providerEditorRight .progress .myProgress {
+        position: relative;
+        width: 90%;
+        height: 16px;
+        background-color: #e0e0e0;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 10%; }
+        .providerEditor .providerEditorRight .progress .myProgress:hover .myBar {
+          background-color: #f66060; }
+        .providerEditor .providerEditorRight .progress .myProgress .myBar {
+          position: absolute;
+          height: 100%;
+          background-color: #cf4646;
+          transition-duration: .5s; }
+      .providerEditor .providerEditorRight .progress .myProgressCompleted:hover .myBar {
+        background-color: #ffcd44; }
+      .providerEditor .providerEditorRight .progress .myProgressCompleted .myBar {
+        background-color: #fcbc48; }
     .providerEditor .providerEditorRight .editBoard {
       cursor: text;
       border: 1px solid lightgray;
@@ -2630,13 +2660,14 @@ footer {
       .providerEditor .providerEditorRight .editBoard .suggestBtn {
         margin-bottom: 10px;
         margin-right: 10px;
-        padding: 3px 8px;
-        font-size: 12px;
+        padding: 5px 10px;
+        font-size: 14px;
         outline: none;
         cursor: pointer;
         color: #134099;
         background-color: white;
-        border: 1px solid #134099; }
+        border: 1px solid #134099;
+        border-radius: 3px; }
       .providerEditor .providerEditorRight .editBoard .textareaTitle {
         font-size: 30px;
         font-weight: 600px;

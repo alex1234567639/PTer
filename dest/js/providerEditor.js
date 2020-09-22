@@ -8,7 +8,7 @@ window.addEventListener("load",function(){
             "a first",
             "a second",
             "a third",
-            "1. An analog surface wave multi-point repeater comprising:"
+            "An analog surface wave multi-point repeater comprising:"
         ];
 
         function split( val ) {
@@ -38,7 +38,7 @@ window.addEventListener("load",function(){
             search: function() {
                 // 自定義最小長度
                 var term = extractLast( this.value );
-                if ( term.length < 2 ) {
+                if ( term.length < 1 ) {
                     return false;
                 }
             },

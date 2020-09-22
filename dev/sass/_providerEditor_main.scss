@@ -121,23 +121,65 @@
             }
         }
         .title{
+            // border: 1px solid red;
+            display: inline-block;
             margin: 20px 10px;
             font-weight: 600;
             font-size: 20px;
             color: rgb(19, 64, 153);
+        }
+        .progress{
+            // border: 1px solid blue;
+            width: 300px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 560px;
+            .pin{
+                font-size: 14px;
+                color: gray;
+                display: inline-block;
+                margin-left: 10%;
+            }
+            .myProgress{
+                position: relative;
+                width: 90%;
+                height: 16px;
+                background-color: rgb(224, 224, 224);
+                box-sizing: border-box;
+                margin-top: 10px;
+                margin-left: 10%;
+                &:hover .myBar{
+                    background-color: rgb(246, 96, 96);
+                }
+                .myBar{
+                    position: absolute;
+                    height: 100%;
+                    background-color: rgb(207, 70, 70);
+                    transition-duration: .5s;
+                }
+            }
+            .myProgressCompleted{
+                &:hover .myBar{
+                    background-color: rgb(255,205,68);
+                }
+                .myBar{
+                    background-color: rgb(252, 188, 72);
+                }
+            }
         }
         .editBoard{
             cursor: text;
             .suggestBtn{
                 margin-bottom: 10px;
                 margin-right: 10px;
-                padding: 3px 8px;
-                font-size: 12px;
+                padding: 5px 10px;
+                font-size: 14px;
                 outline: none;
                 cursor: pointer;
                 color: rgb(19, 64, 153);
                 background-color: white;
                 border: 1px solid rgb(19, 64, 153);
+                border-radius: 3px;
             }
             border: 1px solid lightgray;
             display: inline-block;
