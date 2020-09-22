@@ -119,7 +119,7 @@ window.addEventListener("load",function(){
             else return obj;
         }
 
-        document.getElementById('showbox').innerHTML = year+'/'+Appendzero(month)+'/'+Appendzero(day)+' '+h+':'+m+':'+s;
+        document.getElementById('showbox').innerHTML = year+'/'+Appendzero(month)+'/'+Appendzero(day)+' '+Appendzero(h)+':'+Appendzero(m)+':'+Appendzero(s);
         setTimeout('ShowTime()',1000);
     }
     ShowTime();
