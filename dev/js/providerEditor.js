@@ -237,4 +237,34 @@ window.addEventListener("load",function(){
     document.getElementById('closePatentImg').onclick = function(){
         document.getElementById('patentImg').style.display = 'none';
     }
+
+    //圖片庫 點擊圖片庫icon，顯示圖片庫燈箱
+    document.getElementById('library-markush').onclick = function(){
+        document.getElementById('libraryPopUp').classList.add("open");
+    }
+    document.getElementById('library-jepson').onclick = function(){
+        document.getElementById('libraryPopUp').classList.add("open");
+    }
+    //圖片庫 點擊叉叉，關閉圖片庫燈箱
+    document.getElementById('libraryCross').onclick = function(){
+        document.getElementById('libraryPopUp').classList.remove("open");
+        for(let i=0; i<13; i++){
+            document.getElementsByClassName('libraryImg')[i].style.width = "160px";
+            document.getElementsByClassName('libraryImg')[i].style.height = "200px";
+            document.getElementsByClassName('libraryImg')[i].style.border = "1px solid lightgray";
+        }
+    }
+    //圖片庫 點擊圖片庫中圖片，放大
+    for(let i=0; i<13; i++){
+        document.getElementsByClassName('libraryImg')[i].onclick = function(){
+            for(let i=0; i<13; i++){
+                document.getElementsByClassName('libraryImg')[i].style.width = "160px";
+                document.getElementsByClassName('libraryImg')[i].style.height = "200px";
+                document.getElementsByClassName('libraryImg')[i].style.border = "1px solid lightgray";
+            }
+            this.style.width = "340px";
+            this.style.height = "470px";
+            this.style.border = "1px solid rgb(19, 64, 153)";
+        }
+    }
 },false);
