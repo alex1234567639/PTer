@@ -1027,7 +1027,12 @@ footer {
           padding: 5px 10px;
           border-radius: 3px;
           display: inline-block;
-          color: white; }
+          color: white;
+          letter-spacing: 1px; }
+          .dashboard .dashboardLeft .dashboardLeftBot .techDomain .techDomainBox img {
+            height: 10px;
+            margin-right: 5px;
+            margin-top: 2px; }
       .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotTitle {
         margin-top: 10px;
         display: inline-block;
@@ -2705,6 +2710,23 @@ footer {
           left: 500px; }
           .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .patentImg img, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .patentImg img {
             width: 200px; }
+        .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .medicalTreatment, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .medicalTreatment {
+          position: absolute;
+          left: -145px;
+          top: 300px;
+          padding: 8px;
+          width: 130px;
+          box-sizing: border-box;
+          text-align: center;
+          letter-spacing: 1px;
+          border-right: 3px solid #134099; }
+          .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .medicalTreatment img, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .medicalTreatment img {
+            width: 20px;
+            margin-bottom: 5px; }
+          .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .medicalTreatment .medicalTreatmentTitle, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .medicalTreatment .medicalTreatmentTitle {
+            font-size: 14px;
+            color: #134099;
+            display: inline-block; }
       .providerEditor .providerEditorRight .editBoard-jepson .tags, .providerEditor .providerEditorRight .editBoard-markush .tags {
         cursor: text;
         width: 1040px;

@@ -235,6 +235,27 @@
                         width: 200px;
                     }
                 }
+                .medicalTreatment{
+                    // border: 1px solid red;
+                    position: absolute;
+                    left: -145px;
+                    top: 300px;
+                    padding: 8px;
+                    width: 130px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    border-right: 3px solid rgb(19, 64, 153);
+                    img{
+                        width: 20px;
+                        margin-bottom: 5px;
+                    }
+                    .medicalTreatmentTitle{
+                        font-size: 14px;
+                        color: rgb(19, 64, 153);
+                        display: inline-block;
+                    }
+                }
             }
             .tags{
                 cursor: text;  
