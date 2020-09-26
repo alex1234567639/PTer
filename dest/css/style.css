@@ -1021,10 +1021,10 @@ footer {
           color: gray;
           margin-bottom: 5px; }
         .dashboard .dashboardLeft .dashboardLeftBot .techDomain .techDomainBox {
-          font-size: 12px;
+          font-size: 14px;
           margin: 2px;
           background-color: #134099;
-          padding: 5px 10px;
+          padding: 5px 12px;
           border-radius: 3px;
           display: inline-block;
           color: white;
@@ -2695,7 +2695,7 @@ footer {
           float: right;
           cursor: pointer; }
         .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .closePatentImg, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .closePatentImg {
-          width: 200px;
+          width: 230px;
           background-color: #ececec;
           font-size: 14px;
           text-align: center;
@@ -2709,7 +2709,7 @@ footer {
           bottom: 0;
           left: 500px; }
           .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .patentImg img, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .patentImg img {
-            width: 200px; }
+            width: 230px; }
         .providerEditor .providerEditorRight .editBoard-jepson .textareaTitle .medicalTreatment, .providerEditor .providerEditorRight .editBoard-markush .textareaTitle .medicalTreatment {
           position: absolute;
           left: -145px;
