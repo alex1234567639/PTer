@@ -157,6 +157,31 @@
                     }
                 } 
             }
+            .beGoodAt{
+                margin: 0 auto;
+                margin-top: 10px;
+                // border: 1px solid red;
+                display: inline-block;
+                width: 270px;
+                .beGoodAtTitle{
+                    color: gray;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                .beGoodAtLanguage{
+                    // border: 1px solid red;
+                    width: 80px;
+                    display: inline-block;
+                    text-align: center;
+                    .flag{
+                        width: 45px;
+                        margin-bottom: 5px;
+                    }
+                    .country{
+                        font-size: 12px;
+                    }
+                }
+            }
             .dashboardLeftBotSelfIntro{
                 // border: 1px solid red;
                 font-size: 14px;

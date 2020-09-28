@@ -19,7 +19,7 @@
     .matchInfoLightbox{
         // border: 1px solid red;
         width: 700px;
-        height: 600px;       
+        height: 620px;       
         background-color: white;
         padding: 25px 20px;
         box-sizing: border-box;
@@ -131,6 +131,7 @@
                     }
                     .checkboxLeft, .checkboxRight{
                         display: inline-block;
+                        margin-bottom: 5px;
                         label{
                             cursor: pointer;
                             margin-right: 5px;
@@ -141,7 +142,26 @@
                                 padding: 4px;
                             }
                         }
-                    }            
+                    }  
+                    .countryOfApplication{
+                        transform: translateX(-10px);;
+                        width: 55px;
+                        display: inline-block;
+                        text-align: center;
+                        vertical-align: top;
+                        .flag{
+                            width: 35px;
+                        }
+                        .country{
+                            // border: 1px solid red;
+                            // width: 55px;
+                            font-size: 12px;
+                            white-space: nowrap;
+                        }
+                        .check{
+                            cursor: pointer;
+                        }
+                    }      
                 }
                 .formBotMiddle{
                     display: inline-block;

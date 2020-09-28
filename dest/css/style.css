@@ -1087,6 +1087,24 @@ footer {
               background-color: #134099;
               color: white;
               transition-duration: .5s; }
+      .dashboard .dashboardLeft .dashboardLeftBot .beGoodAt {
+        margin: 0 auto;
+        margin-top: 10px;
+        display: inline-block;
+        width: 270px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .beGoodAt .beGoodAtTitle {
+          color: gray;
+          margin-bottom: 10px;
+          margin-top: 10px; }
+        .dashboard .dashboardLeft .dashboardLeftBot .beGoodAt .beGoodAtLanguage {
+          width: 80px;
+          display: inline-block;
+          text-align: center; }
+          .dashboard .dashboardLeft .dashboardLeftBot .beGoodAt .beGoodAtLanguage .flag {
+            width: 45px;
+            margin-bottom: 5px; }
+          .dashboard .dashboardLeft .dashboardLeftBot .beGoodAt .beGoodAtLanguage .country {
+            font-size: 12px; }
       .dashboard .dashboardLeft .dashboardLeftBot .dashboardLeftBotSelfIntro {
         font-size: 14px;
         letter-spacing: .5px;
@@ -1701,7 +1719,7 @@ footer {
     opacity: 1; } }
   .matchInfo .matchInfoLightbox {
     width: 700px;
-    height: 600px;
+    height: 620px;
     background-color: white;
     padding: 25px 20px;
     box-sizing: border-box;
@@ -1787,7 +1805,8 @@ footer {
           display: inline-block;
           color: #11347a; }
         .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft, .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight {
-          display: inline-block; }
+          display: inline-block;
+          margin-bottom: 5px; }
           .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxLeft label, .matchInfo .matchInfoLightbox form .formBot .formBotLeft .checkboxRight label {
             cursor: pointer;
             margin-right: 5px;
@@ -1796,6 +1815,19 @@ footer {
               margin-bottom: 10px;
               margin-right: 5px;
               padding: 4px; }
+        .matchInfo .matchInfoLightbox form .formBot .formBotLeft .countryOfApplication {
+          transform: translateX(-10px);
+          width: 55px;
+          display: inline-block;
+          text-align: center;
+          vertical-align: top; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotLeft .countryOfApplication .flag {
+            width: 35px; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotLeft .countryOfApplication .country {
+            font-size: 12px;
+            white-space: nowrap; }
+          .matchInfo .matchInfoLightbox form .formBot .formBotLeft .countryOfApplication .check {
+            cursor: pointer; }
       .matchInfo .matchInfoLightbox form .formBot .formBotMiddle {
         display: inline-block;
         vertical-align: top;
